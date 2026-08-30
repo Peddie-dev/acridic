@@ -35,7 +35,7 @@ interface NavLink {
 const ABOUT_ITEMS: DropdownItem[] = [
   {
     icon: Landmark,
-    title: "About ARCIDC",
+    title: "About ACRIDC",
     description: "Mission, vision and our journey toward a better Africa.",
     href: "/about",
   },
@@ -104,10 +104,10 @@ interface DropdownPanelProps {
 function DropdownPanel({ eyebrow, heading, items }: DropdownPanelProps) {
   return (
     <div className="absolute left-0 top-[calc(100%+12px)] w-[420px] rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-black/5">
-      <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
+      <p className="text-xs font-semibold uppercase tracking-wide text-[#16A34A]">
         {eyebrow}
       </p>
-      <h3 className="mt-1 text-lg font-semibold text-slate-900">{heading}</h3>
+      <h3 className="mt-1 text-lg font-semibold text-[#1E293B]">{heading}</h3>
       <div className="mt-3 border-t border-slate-100" />
       <ul className="mt-3 flex flex-col">
         {items.map((item) => {
@@ -118,20 +118,18 @@ function DropdownPanel({ eyebrow, heading, items }: DropdownPanelProps) {
                 href={item.href}
                 className="group flex items-start gap-4 rounded-xl px-2 py-3 transition-colors hover:bg-emerald-50/60"
               >
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-emerald-50 text-[#16A34A]">
                   <Icon size={20} strokeWidth={1.75} />
                 </span>
                 <span className="flex-1">
                   <span className="flex items-center justify-between">
-                    <span className="font-medium text-slate-900">
-                      {item.title}
-                    </span>
+                    <span className="font-medium text-[#1E293B]">{item.title}</span>
                     <ArrowRight
                       size={16}
                       className="shrink-0 -translate-x-1 text-slate-400 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100"
                     />
                   </span>
-                  <span className="mt-0.5 block text-sm leading-snug text-slate-500">
+                  <span className="mt-0.5 block text-sm leading-snug text-[#64748B]">
                     {item.description}
                   </span>
                 </span>
@@ -144,6 +142,21 @@ function DropdownPanel({ eyebrow, heading, items }: DropdownPanelProps) {
   );
 }
 
+function Logo() {
+  return (
+    <Link href="/" className="flex shrink-0 items-center">
+      <Image
+        src="/Logos.png"
+        alt="ACRIDC-Africa"
+        width={316}
+        height={79}
+        className="h-14 w-auto object-contain sm:h-[63px]"
+        priority
+      />
+    </Link>
+  );
+}
+
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState<DropdownKey | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -151,10 +164,7 @@ export default function Navbar() {
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
-      if (
-        navRef.current &&
-        !navRef.current.contains(e.target as Node)
-      ) {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
         setOpenMenu(null);
       }
     }
@@ -171,55 +181,37 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="absolute inset-x-0 top-6 z-50 px-4 sm:px-6">
+    <header className="sticky top-0 z-50 bg-transparent px-5 pt-4 pb-3 sm:px-10 sm:pt-6 lg:px-20 lg:pt-8">
       <nav
         ref={navRef}
-        className="relative mx-auto flex min-h-[79px] max-w-[1247px] items-center justify-between rounded-full border border-white/40 bg-white/70 py-2 pl-4 pr-2 shadow-lg shadow-black/5 backdrop-blur-xl sm:pl-6 sm:pr-3"
+        className="relative mx-auto flex h-[88px] max-w-[1280px] items-center justify-between rounded-[24px] border border-white/28 bg-white/60 py-2 pl-4 pr-2 shadow-[0px_18px_60px_rgba(8,24,48,0.12)] backdrop-blur-[12px] sm:pl-4 sm:pr-3"
       >
-        {/* Logo */}
-        <Link href="/" className="flex shrink-0 items-center">
-          <Image
-            src="/Logos.png"
-            alt="ACRIDC-Africa"
-            width={316}
-            height={79}
-            className="h-14 w-auto object-contain sm:h-[63px]"
-            priority
-          />
-        </Link>
+        <Logo />
 
-        {/* Desktop links */}
-        <ul className="hidden items-center gap-1 lg:flex">
+        <ul className="hidden items-center gap-8 lg:flex">
           {NAV_LINKS.map((link) => {
             const isOpen = openMenu === link.dropdown;
-            const isActive = link.dropdown && isOpen;
             return (
               <li key={link.label} className="relative">
                 {link.dropdown ? (
                   <button
                     type="button"
-                    onClick={() =>
-                      setOpenMenu(isOpen ? null : link.dropdown ?? null)
-                    }
+                    onClick={() => setOpenMenu(isOpen ? null : (link.dropdown ?? null))}
                     aria-expanded={isOpen}
-                    className={`flex items-center gap-1 rounded-full px-4 py-2 text-[15px] font-medium transition-colors ${
-                      isActive
-                        ? "text-emerald-600"
-                        : "text-slate-700 hover:text-emerald-600"
+                    className={`flex items-center gap-2.5 text-[18px] font-medium leading-[27px] transition-colors ${
+                      isOpen ? "text-[#16A34A]" : "text-[#1E293B] hover:text-[#16A34A]"
                     }`}
                   >
                     {link.label}
                     <ChevronDown
                       size={16}
-                      className={`transition-transform duration-200 ${
-                        isOpen ? "rotate-180" : ""
-                      }`}
+                      className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
                     />
                   </button>
                 ) : (
                   <Link
                     href={link.href}
-                    className="rounded-full px-4 py-2 text-[15px] font-medium text-slate-700 transition-colors hover:text-emerald-600"
+                    className="text-[18px] font-medium leading-[27px] text-[#1E293B] transition-colors hover:text-[#16A34A]"
                   >
                     {link.label}
                   </Link>
@@ -244,58 +236,51 @@ export default function Navbar() {
           })}
         </ul>
 
-        {/* CTA */}
         <Link
           href="/partner-with-us"
-          className="hidden items-center gap-2 whitespace-nowrap rounded-full bg-[#0F3057] px-5 py-2.5 text-[15px] font-medium text-white transition-colors hover:bg-[#0c2745] lg:flex"
+          className="hidden h-14 items-center gap-5 whitespace-nowrap rounded-[14px] bg-[#0D3B66] px-5 text-base font-semibold text-white transition-colors hover:bg-[#0a2f52] lg:flex"
         >
           Partner With Us
-          <ArrowRight size={16} />
+          <ArrowRight size={24} strokeWidth={1.75} />
         </Link>
 
-        {/* Mobile toggle */}
         <button
           type="button"
           onClick={() => setMobileOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-full text-slate-700 lg:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full text-[#1E293B] lg:hidden"
           aria-label="Toggle menu"
         >
           <MenuIcon open={mobileOpen} />
         </button>
       </nav>
 
-      {/* Mobile panel */}
       {mobileOpen && (
-        <div className="mx-auto mt-2 max-w-6xl rounded-2xl border border-white/40 bg-white/90 p-4 shadow-xl backdrop-blur-xl lg:hidden">
+        <div className="mx-auto mt-2 max-w-[1280px] rounded-2xl border border-white/40 bg-white/90 p-4 shadow-xl backdrop-blur-xl lg:hidden">
           <ul className="flex flex-col divide-y divide-slate-100">
             {NAV_LINKS.map((link) => (
               <li key={link.label} className="py-1">
                 {link.dropdown ? (
                   <details>
-                    <summary className="flex cursor-pointer list-none items-center justify-between py-2 text-[15px] font-medium text-slate-700">
+                    <summary className="flex cursor-pointer list-none items-center justify-between py-2 text-[15px] font-medium text-[#1E293B]">
                       {link.label}
                       <ChevronDown size={16} />
                     </summary>
                     <ul className="pb-2 pl-2">
-                      {(link.dropdown === "about"
-                        ? ABOUT_ITEMS
-                        : RESEARCH_ITEMS
-                      ).map((item) => (
-                        <li key={item.title}>
-                          <Link
-                            href={item.href}
-                            className="block py-2 text-sm text-slate-600"
-                          >
-                            {item.title}
-                          </Link>
-                        </li>
-                      ))}
+                      {(link.dropdown === "about" ? ABOUT_ITEMS : RESEARCH_ITEMS).map(
+                        (item) => (
+                          <li key={item.title}>
+                            <Link href={item.href} className="block py-2 text-sm text-[#64748B]">
+                              {item.title}
+                            </Link>
+                          </li>
+                        ),
+                      )}
                     </ul>
                   </details>
                 ) : (
                   <Link
                     href={link.href}
-                    className="block py-2 text-[15px] font-medium text-slate-700"
+                    className="block py-2 text-[15px] font-medium text-[#1E293B]"
                   >
                     {link.label}
                   </Link>
@@ -305,10 +290,10 @@ export default function Navbar() {
           </ul>
           <Link
             href="/partner-with-us"
-            className="mt-3 flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#0F3057] px-5 py-3 text-[15px] font-medium text-white"
+            className="mt-3 flex h-14 items-center justify-center gap-3 rounded-[14px] bg-[#0D3B66] px-5 text-base font-semibold text-white"
           >
             Partner With Us
-            <ArrowRight size={16} />
+            <ArrowRight size={24} />
           </Link>
         </div>
       )}
