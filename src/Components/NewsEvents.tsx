@@ -63,14 +63,26 @@ export default function NewsEvents() {
 
       <div className="relative mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[665px] text-center">
-          <Eyebrow align="center">News & Events</Eyebrow>
-          <h2 className="mt-6 text-[36px] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] sm:text-[48px]">
+          <Eyebrow align="center">
+            <span className="lg:hidden">News & Events</span>
+            <span className="hidden lg:inline">Blogs & Insights</span>
+          </Eyebrow>
+          <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:hidden">
             Stay Informed. Stay Engaged.
           </h2>
-          <p className="mt-8 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82]">
+          <h2 className="mt-6 hidden text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:block">
+            Blogs & Insights
+          </h2>
+          <p className="mt-8 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:hidden">
             Explore our latest research reports, policy briefs, case studies, and
             publications driving evidence-based decision-making and sustainable development
             across Africa.
+          </p>
+          <p className="mt-8 hidden text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:block">
+            The ACRIDC-Africa Blogs & Insights platform shall provide an accessible space
+            for sharing evidence, ideas, reflections, innovations, lessons, research
+            insights, policy perspectives, community experiences, and institutional
+            learning.
           </p>
         </div>
 

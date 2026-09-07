@@ -21,19 +21,21 @@ export function Eyebrow({
 }
 
 const btnBase =
-  "inline-flex h-14 shrink-0 items-center justify-center gap-3 rounded-[14px] px-5 text-base font-semibold leading-[22px] transition-colors";
+  "inline-flex h-12 shrink-0 items-center justify-center gap-3 rounded-[14px] px-5 text-sm font-semibold leading-[22px] transition-colors sm:h-14 sm:text-base";
 
 export function PrimaryButton({
   href,
   children,
   icon: Icon = ArrowRight,
+  className = "",
 }: {
   href: string;
   children: React.ReactNode;
   icon?: LucideIcon;
+  className?: string;
 }) {
   return (
-    <Link href={href} className={`${btnBase} bg-[#0D3B66] text-white hover:bg-[#0a2f52]`}>
+    <Link href={href} className={`${btnBase} bg-[#0D3B66] text-white hover:bg-[#0a2f52] ${className}`}>
       {children}
       <Icon size={24} strokeWidth={1.75} />
     </Link>
@@ -65,18 +67,20 @@ export function OutlineButton({
   children,
   icon: Icon = ArrowRight,
   color = "green",
+  className = "",
 }: {
   href: string;
   children: React.ReactNode;
   icon?: LucideIcon;
   color?: "green" | "navy";
+  className?: string;
 }) {
   const styles =
     color === "navy"
       ? "border border-[#0D3B66] text-[#1E293B] hover:bg-[#0D3B66]/5"
       : "border border-[#16A34A] text-[#1E293B] hover:bg-[#16A34A]/5";
   return (
-    <Link href={href} className={`${btnBase} ${styles}`}>
+    <Link href={href} className={`${btnBase} ${styles} ${className}`}>
       {children}
       <Icon size={24} strokeWidth={1.75} className={color === "green" ? "text-[#16A34A]" : ""} />
     </Link>

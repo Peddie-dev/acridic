@@ -1,43 +1,46 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  CloudRain,
-  Landmark,
-  Heart,
-  Crosshair,
   Users,
   Globe,
   Repeat2,
   Group,
   TrendingUp,
-  Receipt,
+  FileText,
   ArrowRight,
+  Quote,
   type LucideIcon,
 } from "lucide-react";
 import { Eyebrow } from "./ui";
 
-const THEMES: { icon: LucideIcon; title: string; body: string }[] = [
+const PHASES_LEFT = [
   {
-    icon: CloudRain,
-    title: "Climate Resilience",
-    body: "Research supporting sustainable land use, conservation and climate adaptation.",
+    phase: "PHASE I",
+    title: "Turkana County Center of Excellence",
+    body: "The Organization shall prioritize integrated research, innovation, implementation science, and capacity building in Turkana County.",
   },
   {
-    icon: Landmark,
-    title: "Evidence-Based Policy",
-    body: "Helping governments make informed, data-driven decisions.",
+    phase: "PHASE II",
+    title: "Kenya Arid and Semi-Arid Lands Expansion",
+    body: "Progressive expansion to the Arid and Semi-Arid Lands of Kenya.",
   },
   {
-    icon: Heart,
-    title: "Health Systems",
-    body: "Strengthening healthcare through research, innovation.",
+    phase: "PHASE III",
+    title: "Ateker Regional Platform",
+    body: "The Organization shall promote cross-border collaboration, research, innovation, policy dialogue, and knowledge exchange.",
   },
   {
-    icon: Crosshair,
-    title: "Education & Capacity",
-    body: "Building stronger institutions and empowering future leaders.",
+    phase: "PHASE IV",
+    title: "Pan-African Expansion",
+    body: "The Organization shall progressively establish partnerships, country programs, research centers, and institutional presence across Africa.",
   },
 ];
+
+const PHASE_V = {
+  phase: "PHASE V",
+  title: "Global Strategic Partnerships",
+  body: "Without prejudice to its Pan-African identity, the Organization may establish strategic partnerships with global institutions and development networks.",
+};
 
 const FOOT_STATS: { icon: LucideIcon; value: string; title: string; subtitle: string }[] = [
   { icon: Users, value: "50+", title: "Research Projects", subtitle: "Completed" },
@@ -47,148 +50,133 @@ const FOOT_STATS: { icon: LucideIcon; value: string; title: string; subtitle: st
   { icon: TrendingUp, value: "15+", title: "Years of Impact", subtitle: "And Counting" },
 ];
 
-const MAP_DOTS = [
-  { top: "22%", left: "48%", kind: "active" },
-  { top: "28%", left: "54%", kind: "active" },
-  { top: "36%", left: "50%", kind: "past" },
-  { top: "42%", left: "56%", kind: "partner" },
-  { top: "48%", left: "47%", kind: "active" },
-  { top: "55%", left: "52%", kind: "past" },
-  { top: "62%", left: "49%", kind: "partner" },
-  { top: "38%", left: "62%", kind: "active" },
-  { top: "70%", left: "51%", kind: "past" },
-] as const;
+function PhaseCard({
+  phase,
+  title,
+  body,
+}: {
+  phase: string;
+  title: string;
+  body: string;
+}) {
+  return (
+    <article className="flex items-center gap-4 rounded-[18px] border border-[#E8EEF2] bg-white px-4 py-4 shadow-[0px_8px_24px_rgba(15,23,42,0.04)] sm:gap-5 sm:px-5 sm:py-5">
+      <span className="shrink-0 rounded-full bg-[#E2F9E7] px-3 py-1.5 text-[11px] font-semibold tracking-[0.08em] text-[#166534]">
+        {phase}
+      </span>
+      <span className="h-12 w-px shrink-0 bg-[#E2E8F0] sm:h-14" />
+      <div className="min-w-0">
+        <h4 className="text-[15px] font-bold leading-snug tracking-[-0.01em] text-[#16233B] sm:text-[16px]">
+          {title}
+        </h4>
+        <p className="mt-1 text-[13px] font-normal leading-[160%] text-[#64748B] sm:text-[14px]">
+          {body}
+        </p>
+      </div>
+    </article>
+  );
+}
 
 export default function OurReach() {
   return (
     <section className="relative overflow-hidden bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:pb-20">
       <div
         aria-hidden
-        className="pointer-events-none absolute left-[69px] top-[568px] hidden h-[520px] w-[520px] rounded-full bg-[rgba(34,197,94,0.08)] blur-[90px] lg:block"
-      />
+        className="pointer-events-none absolute right-0 top-2 hidden h-[300px] w-[260px] lg:block xl:right-8 xl:top-6 xl:h-[340px] xl:w-[300px]"
+      >
+        <Image
+          src="/images/dotted-africa.png"
+          alt=""
+          fill
+          sizes="300px"
+          className="knockout-black object-contain object-right-top opacity-[0.18] grayscale"
+        />
+      </div>
 
       <div className="relative mx-auto max-w-[1280px]">
-        <div className="mx-auto max-w-[600px] text-center">
-          <Eyebrow align="center">Our Reach</Eyebrow>
-          <h2 className="mt-6 text-[36px] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] sm:text-[48px]">
-            Transforming Evidence Into Lasting Change.
+        <div className="mx-auto max-w-[640px] text-center">
+          <Eyebrow align="center">OUR REACH</Eyebrow>
+          <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B]">
+            From <span className="text-[#166534]">Turkana</span> to{" "}
+            <span className="text-[#166534]">Africa</span>
           </h2>
-          <p className="mt-8 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82]">
-            Across Africa, our research and partnerships are helping shape stronger
-            institutions, healthier communities, resilient food systems, and sustainable
-            development.
+          <p className="mt-5 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82]">
+            ACRIDC-Africa&apos;s institutional expansion pathway.
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,840px)_421px]">
-          <div className="relative min-h-[520px] overflow-hidden rounded-[28px] border border-[#E8F2EC] bg-white/80 p-8 shadow-[0px_20px_40px_rgba(15,23,42,0.08)] backdrop-blur-[12px]">
-            <h3 className="text-[32px] font-semibold leading-[44px] tracking-[-0.01em] text-[#16233B]">
-              Our Reach Across Africa
-            </h3>
-            <span className="mt-4 block h-0.5 w-[60px] bg-[#16A34A]" />
-
-            <ul className="mt-8 flex flex-col gap-4 text-[16px] font-medium leading-[22px] tracking-[-0.01em] text-[#64748B]">
-              <li className="flex items-center gap-3">
-                <span className="h-5 w-5 rounded-full bg-[#16A34A]" />
-                Active Projects
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="h-5 w-5 rounded-full bg-[rgba(22,163,74,0.48)]" />
-                Post Projects
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="h-5 w-5 rounded-full border-[1.5px] border-[#16A34A] opacity-90" />
-                Partner Presence
-              </li>
-            </ul>
-
-            <div className="relative mx-auto mt-4 aspect-[595/474] w-full max-w-[595px]">
-              <div className="absolute inset-x-8 inset-y-6 rounded-full bg-[rgba(34,197,94,0.1)] blur-[100px]" />
-              <Image
-                src="/images/dotted-africa.png"
-                alt="Map of ACRIDC reach across Africa"
-                fill
-                sizes="595px"
-                className="knockout-black object-contain"
-              />
-              {MAP_DOTS.map((dot, i) => (
-                <span
-                  key={i}
-                  style={{ top: dot.top, left: dot.left }}
-                  className={`absolute h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full ${
-                    dot.kind === "active"
-                      ? "bg-[#16A34A]"
-                      : dot.kind === "past"
-                        ? "bg-[rgba(22,163,74,0.48)]"
-                        : "border-[1.5px] border-[#16A34A] bg-transparent"
-                  }`}
-                />
+        <div className="mt-12 rounded-[32px] border border-[#E8F2EC] bg-white p-4 shadow-[0px_20px_50px_rgba(15,23,42,0.08)] sm:p-6 lg:p-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.08fr)] lg:gap-10">
+            <div className="flex flex-col gap-3">
+              {PHASES_LEFT.map((item) => (
+                <PhaseCard key={item.phase} {...item} />
               ))}
             </div>
 
-            <div className="absolute bottom-8 left-8 hidden max-w-[300px] items-center gap-[18px] rounded-[22px] border border-[#E8F2EC] bg-white/80 p-6 shadow-[0px_20px_50px_rgba(15,23,42,0.08)] backdrop-blur-[12px] sm:flex">
-              <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[rgba(22,163,74,0.12)] text-[#16A34A] shadow-[inset_0px_4px_16px_rgba(15,23,42,0.06)]">
-                <Globe size={28} />
-              </span>
-              <p className="text-[14px] font-medium leading-6 text-[#16233B]">
-                From local communities to national systems, our impact reaches where it
-                matters most.
-              </p>
-            </div>
-          </div>
+            <div className="flex min-w-0 flex-col">
+              <h3 className="text-[20px] font-semibold leading-7 tracking-[-0.01em] text-[#16233B] sm:text-[22px]">
+                Our Reach From Turkana to Africa.
+              </h3>
+              <span className="mt-2 block h-0.5 w-11 bg-[#16A34A]" />
 
-          <div className="flex flex-col gap-[5px]">
-            {THEMES.map((theme) => {
-              const Icon = theme.icon;
-              return (
-                <div
-                  key={theme.title}
-                  className="flex min-h-[145px] items-center gap-[18px] rounded-[24px] border border-[#E8F2EC] bg-white/80 px-5 shadow-[0px_20px_50px_rgba(15,23,42,0.08)] backdrop-blur-[12px]"
-                >
-                  <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[rgba(22,163,74,0.12)] text-[#16A34A] shadow-[inset_0px_4px_16px_rgba(15,23,42,0.06)]">
-                    <Icon size={28} />
-                  </span>
-                  <span className="h-[70px] w-px bg-[#16A34A]" />
-                  <div>
-                    <h4 className="text-[18px] font-semibold leading-8 tracking-[-0.01em] text-[#16233B]">
-                      {theme.title}
-                    </h4>
-                    <p className="text-[16px] font-normal leading-[22px] text-[#64748B]">
-                      {theme.body}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+              <ul className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13px] font-medium leading-5 tracking-[-0.01em] text-[#64748B] sm:text-[14px]">
+                <li className="flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-full bg-[#166534]" />
+                  Active Projects
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-full bg-[#86EFAC]" />
+                  Past Projects
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-full border-[1.5px] border-[#16A34A] bg-transparent" />
+                  Partner Presence
+                </li>
+              </ul>
+
+              <div className="relative mt-2 flex min-h-[280px] flex-1 items-center justify-center sm:min-h-[360px]">
+                <Image
+                  src="/images/our-reach-africa-map.png"
+                  alt="Map of ACRIDC reach from Turkana across Africa"
+                  width={595}
+                  height={474}
+                  className="h-auto w-full max-w-[520px] object-contain"
+                />
+              </div>
+
+              <div className="mt-2">
+                <PhaseCard {...PHASE_V} />
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="relative mt-6 overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-white/40 px-4 py-6 shadow-[0px_24px_60px_-10px_rgba(15,23,42,0.08)] backdrop-blur-[12px] sm:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-[31px]">
+        <div className="mt-6 rounded-[28px] border border-[#E8F2EC] bg-white px-4 py-6 shadow-[0px_16px_40px_rgba(15,23,42,0.06)] sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-5 lg:gap-x-0">
             {FOOT_STATS.map((stat, i) => {
               const Icon = stat.icon;
               return (
-                <div key={stat.title} className="flex items-center gap-7">
-                  {i > 0 && (
-                    <span className="hidden h-[140px] w-px bg-[rgba(203,213,225,0.48)] lg:block" />
-                  )}
-                  <div className="flex min-w-[160px] flex-col items-start gap-5">
-                    <div className="flex items-center gap-2.5">
-                      <span className="flex h-[61px] w-[61px] items-center justify-center rounded-full bg-[rgba(22,163,74,0.12)] text-[#16A34A] shadow-[0px_8px_25px_rgba(15,23,42,0.08)]">
-                        <Icon size={32} />
-                      </span>
-                      <span className="font-display text-[40px] font-bold leading-[73px] text-[#16A34A] sm:text-[54px]">
-                        {stat.value}
-                      </span>
-                    </div>
-                    <div className="w-full text-center">
-                      <p className="font-display text-[20px] font-bold leading-[27px] text-[#0F172A]">
-                        {stat.title}
-                      </p>
-                      <p className="mt-2 text-[14px] font-medium leading-[18px] text-[#64748B]">
-                        {stat.subtitle}
-                      </p>
-                    </div>
+                <div
+                  key={stat.title}
+                  className={`flex flex-col items-center gap-3 px-2 text-center lg:px-4 ${
+                    i > 0 ? "lg:border-l lg:border-[#E2E8F0]" : ""
+                  }`}
+                >
+                  <div className="flex items-center gap-2.5">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#E2F9E7] text-[#16A34A] shadow-[0px_8px_20px_rgba(15,23,42,0.06)] sm:h-[56px] sm:w-[56px]">
+                      <Icon size={26} strokeWidth={1.75} />
+                    </span>
+                    <span className="font-display text-[clamp(1.75rem,1rem+1.8vw,2.75rem)] font-bold leading-none text-[#16A34A]">
+                      {stat.value}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="font-display text-[16px] font-bold leading-6 text-[#0F172A] sm:text-[18px]">
+                      {stat.title}
+                    </p>
+                    <p className="mt-1 text-[13px] font-medium leading-[18px] text-[#64748B]">
+                      {stat.subtitle}
+                    </p>
                   </div>
                 </div>
               );
@@ -198,34 +186,32 @@ export default function OurReach() {
 
         <Link
           href="/research/reports"
-          className="mt-6 flex min-h-[128px] items-center justify-between gap-6 rounded-[28px] border border-white/55 bg-[#F3FEF7] px-6 py-5 shadow-[0px_24px_60px_-10px_rgba(15,23,42,0.08)] sm:px-10"
+          className="mt-6 flex flex-col items-stretch gap-5 rounded-[28px] border border-[#E8F2EC] bg-white px-5 py-5 shadow-[0px_16px_40px_rgba(15,23,42,0.06)] sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:px-10"
         >
-          <div className="flex items-center gap-6">
-            <span className="hidden text-[#16A34A] sm:block">
-              <svg width="25" height="20" viewBox="0 0 25 20" fill="none" aria-hidden>
-                <path d="M24 10H10" stroke="currentColor" strokeWidth="2" />
-                <path d="M1 10H15" stroke="currentColor" strokeWidth="2" />
-              </svg>
-            </span>
-            <p className="max-w-[428px] text-[16px] font-normal leading-[19px] text-[#16233B]">
-              Evidence-driven research creating measurable impact for communities across
-              Africa.
+          <div className="flex min-w-0 items-start gap-4 sm:items-center">
+            <Quote
+              size={28}
+              className="mt-0.5 hidden shrink-0 fill-[#166534] text-[#166534] sm:block"
+            />
+            <p className="max-w-[520px] text-[16px] font-normal leading-[150%] text-[#16233B]">
+              Evidence-driven research creating measurable impact for communities{" "}
+              <span className="font-semibold text-[#16A34A]">across Africa</span>.
             </p>
           </div>
-          <span className="hidden h-16 w-px bg-[#16A34A] lg:block" />
+          <span className="hidden h-14 w-px shrink-0 bg-[#E2E8F0] lg:block" />
           <span className="flex items-center gap-4">
-            <span className="flex h-16 w-16 items-center justify-center rounded-full bg-[#16A34A] text-white">
-              <Receipt size={28} />
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#16A34A] text-white">
+              <FileText size={24} strokeWidth={1.75} />
             </span>
-            <span>
-              <span className="block text-[18px] font-semibold leading-8 tracking-[-0.01em] text-[#16233B]">
+            <span className="min-w-0">
+              <span className="block text-[17px] font-semibold leading-7 tracking-[-0.01em] text-[#16233B]">
                 Explore our Reports
               </span>
               <span className="block text-[14px] font-normal leading-[19px] text-[#64748B]">
                 See our latest impact stories.
               </span>
             </span>
-            <ArrowRight size={32} className="text-[#16A34A]" />
+            <ArrowRight size={28} className="ml-auto shrink-0 text-[#16A34A] sm:ml-2" />
           </span>
         </Link>
       </div>

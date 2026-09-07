@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
-  Navigation,
   Mail,
-  Feather,
+  Send,
+  FileText,
   Users,
   TrendingUp,
+  Maximize2,
 } from "lucide-react";
 import { FaLinkedinIn, FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
-import { Eyebrow } from "./ui";
 
 const QUICK_LINKS = [
   { label: "About Us", href: "/about" },
@@ -34,76 +34,93 @@ const SOCIAL = [
   { label: "Twitter", href: "https://x.com", icon: FaXTwitter },
 ];
 
-const VALUES = [
-  { icon: Feather, label: "Evidence-Based Solutions" },
-  { icon: Users, label: "Stronger Partnership" },
-  { icon: TrendingUp, label: "A more Resilient Africa" },
+const PILL_ITEMS = [
+  { icon: FileText, label: "Research" },
+  { icon: TrendingUp, label: "Innovate" },
+  { icon: Users, label: "Collaborate" },
+  { icon: Maximize2, label: "Transform Africa" },
 ];
 
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#F8FAFC]">
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/images/project-climate.png"
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover object-center opacity-40"
+      <div className="relative overflow-hidden">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 90% 75% at 50% 38%, #FFFFFF 0%, #EAF6EE 48%, #F4FBF6 100%)",
+          }}
         />
-        <div className="absolute inset-0 bg-[#F8FAFC]/70" />
-      </div>
-
-      <div className="relative mx-auto max-w-[1440px] px-5 pb-10 pt-12 sm:px-10 lg:px-20 lg:pt-[50px]">
-        <div className="mx-auto flex max-w-[615px] flex-col items-center text-center">
-          <Eyebrow align="center">Work With Us</Eyebrow>
-          <h2 className="mt-6 text-[36px] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] sm:text-[48px]">
-            Let&apos;s Build Africa&apos;s Future Together.
-          </h2>
-          <p className="mt-6 max-w-[566px] text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82]">
-            Our research transforms complex challenges into practical insights that inform
-            policy, strengthen institutions, and create lasting impact across Africa.
-          </p>
-          <div className="mt-[30px] flex flex-wrap items-center justify-center gap-[23px]">
-            <Link
-              href="/partner-with-us"
-              className="inline-flex h-[72px] items-center gap-3 rounded-[14px] border border-[#16A34A] bg-[#16A34A] px-5 text-[20px] font-semibold leading-[27px] text-white"
-            >
-              <Navigation size={24} />
-              Become a Partner
-              <ArrowRight size={24} />
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex h-[72px] items-center gap-3 rounded-[14px] border-2 border-[#16A34A] px-5 text-[20px] font-semibold leading-[27px] text-[#1E293B]"
-            >
-              <Mail size={24} />
-              Contact Us
-              <ArrowRight size={24} />
-            </Link>
-          </div>
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -right-[8%] top-[-4%] h-[118%] w-[78%] max-w-[820px] sm:-right-[2%] sm:w-[56%] lg:right-0 lg:w-[48%]"
+        >
+          <Image
+            src="/images/partner-africa-network.png"
+            alt=""
+            fill
+            sizes="820px"
+            className="object-contain object-right"
+          />
         </div>
 
-        <div className="mx-auto mt-12 flex max-w-[611px] flex-wrap items-center justify-center gap-5 rounded-full bg-[#E5F2EA] px-3 py-5 sm:gap-[19px] sm:px-3">
-          {VALUES.map((value, i) => {
-            const Icon = value.icon;
-            return (
-              <div key={value.label} className="flex items-center gap-5">
-                {i > 0 && <span className="hidden h-16 w-px bg-[rgba(203,213,225,0.48)] sm:block" />}
-                <div className="flex items-center gap-1.5">
-                  <span className="flex h-[51px] w-[51px] items-center justify-center rounded-full bg-[rgba(22,163,74,0.12)] text-[#16A34A]">
-                    <Icon size={26} />
+        <div className="relative mx-auto max-w-[1440px] px-5 pb-4 pt-12 sm:px-10 lg:px-20 lg:pt-[50px]">
+          <div className="mx-auto flex max-w-[640px] flex-col items-center text-center">
+            <span className="flex items-center gap-2 text-[14px] font-medium uppercase leading-[19px] tracking-[0.08em] text-[#16A34A]">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#16A34A]" />
+              Partner With Us
+            </span>
+            <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em]">
+              <span className="block text-[#16233B]">Partner With</span>
+              <span className="block text-[#16A34A]">ACRIDC-Africa</span>
+            </h2>
+            <p className="mt-6 max-w-[566px] text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82]">
+              ACRIDC-Africa welcomes strategic partnerships and collaborative relationships
+              that advance its Vision, Mission, Strategic Goal, Objects and public benefit
+              purposes.
+            </p>
+            <div className="mt-[30px] flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:items-center sm:justify-center sm:gap-[23px]">
+              <Link
+                href="/research/areas"
+                className="inline-flex h-[56px] items-center justify-center gap-3 rounded-[14px] border border-[#16A34A] bg-[#16A34A] px-5 text-base font-semibold leading-[27px] text-white sm:h-[72px] sm:text-[20px]"
+              >
+                <Send size={24} />
+                Research With Us
+                <ArrowRight size={24} />
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex h-[56px] items-center justify-center gap-3 rounded-[14px] border-2 border-[#16A34A] bg-white/70 px-5 text-base font-semibold leading-[27px] text-[#1E293B] sm:h-[72px] sm:text-[20px]"
+              >
+                <Mail size={24} />
+                Contact Us
+                <ArrowRight size={24} />
+              </Link>
+            </div>
+          </div>
+
+          <div className="mx-auto mt-12 flex max-w-[920px] flex-col items-center gap-5 rounded-[32px] bg-[#E5F2EA] px-6 py-5 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-8 sm:gap-y-4 sm:rounded-full sm:px-8 lg:flex-nowrap lg:justify-between lg:px-10">
+            {PILL_ITEMS.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div key={item.label} className="flex w-full items-center gap-1.5 sm:w-auto">
+                  <span className="flex h-[51px] w-[51px] shrink-0 items-center justify-center rounded-full bg-[rgba(22,163,74,0.12)] text-[#16A34A] shadow-[0px_6.76px_20.27px_rgba(15,23,42,0.08)]">
+                    <Icon size={26} strokeWidth={1.75} />
                   </span>
-                  <span className="max-w-[113px] text-left text-[14px] font-semibold leading-[130%] text-[#1E293B]">
-                    {value.label}
+                  <span className="text-left text-[14px] font-semibold leading-[130%] text-[#1E293B]">
+                    {item.label}
                   </span>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
+      </div>
 
-        <div className="relative mt-16">
+      <div className="relative mx-auto max-w-[1440px] px-5 pb-10 sm:px-10 lg:px-20">
+        <div className="relative mt-12">
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[293px] rounded-[90px] bg-white blur-[60px]" />
           <div className="relative grid grid-cols-1 gap-10 lg:grid-cols-[303px_minmax(0,1fr)]">
             <Link href="/" className="flex items-center">

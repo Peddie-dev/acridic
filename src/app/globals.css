@@ -18,12 +18,15 @@
 
 html {
   background: var(--background);
+  overflow-x: clip;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-manrope), sans-serif;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 .font-display {
@@ -33,4 +36,34 @@ body {
 
 .knockout-black {
   filter: url(#knockout-black);
+}
+
+/* Desktop hero: keep the Figma 1440×1024 composition; scale it below 1440 */
+.hero-section {
+  --hero-scale: 1;
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    --hero-scale: min(1, calc(100vw / 1440px));
+    margin-top: calc(-132px * var(--hero-scale));
+  }
+
+  .hero-desktop {
+    height: calc(1024px * var(--hero-scale));
+    overflow: hidden;
+  }
+
+  .hero-desktop-stage {
+    width: 1440px;
+    height: 1024px;
+    padding-top: 175px;
+    margin-left: calc(50% - 720px);
+    transform: scale(min(1, calc(100vw / 1440px)));
+    transform-origin: top center;
+  }
+
+  .hero-desktop-stage > * {
+    margin-inline: auto;
+  }
 }

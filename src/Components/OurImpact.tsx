@@ -43,7 +43,7 @@ export default function OurImpact() {
       <div className="relative mx-auto max-w-[1280px]">
         <div className="max-w-[600px]">
           <Eyebrow>Our Impact</Eyebrow>
-          <h2 className="mt-6 text-[36px] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] sm:text-[48px]">
+          <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B]">
             Creating measurable
             <br />
             change across Africa.
@@ -57,7 +57,7 @@ export default function OurImpact() {
           </div>
         </div>
 
-        <div className="mt-16 rounded-[32px] border border-white/55 bg-white/40 px-6 py-10 shadow-[0px_20px_60px_-10px_rgba(15,23,42,0.08)] backdrop-blur-[12px] sm:px-[75px] sm:py-[54px]">
+        <div className="mt-16 rounded-[32px] border border-white/55 bg-white/40 px-5 py-8 shadow-[0px_20px_60px_-10px_rgba(15,23,42,0.08)] backdrop-blur-[12px] sm:px-8 sm:py-12 lg:px-12 xl:px-[75px] xl:py-[54px]">
           <div className="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4 lg:gap-x-8 xl:gap-x-[48px]">
             {STATS.map((stat, i) => {
               const Icon = stat.icon;
@@ -71,7 +71,7 @@ export default function OurImpact() {
                       <Icon size={28} strokeWidth={1.75} />
                     </span>
                     <div>
-                      <p className="font-display text-[40px] font-bold leading-none text-[#0F172A] sm:text-[56px] xl:text-[72px] xl:leading-[1.15]">
+                      <p className="font-display text-[clamp(2rem,1.2rem+3vw,4.5rem)] font-bold leading-none text-[#0F172A] xl:leading-[1.15]">
                         {stat.value}
                       </p>
                       <p className="text-[20px] font-medium leading-[27px] text-[#64748B]">

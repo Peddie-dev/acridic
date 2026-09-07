@@ -112,15 +112,25 @@ export default function FeaturedProjects() {
       <div className="relative mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[600px] text-center">
           <Eyebrow align="center">Featured Projects</Eyebrow>
-          <h2 className="mt-6 text-[36px] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] sm:text-[48px]">
+          <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:hidden">
             Turning Research into Real-World Impact.
           </h2>
-          <p className="mt-8 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82]">
+          <h2 className="mt-6 hidden text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:block">
+            Turning Knowledge into Impact
+          </h2>
+          <p className="mt-8 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:hidden">
             Across Africa, our projects transform research into practical solutions that
             strengthen communities, inform policy, and accelerate sustainable development.
           </p>
-          <div className="mt-6 flex justify-center">
+          <p className="mt-8 hidden text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:block">
+            ACRIDC-Africa designs, implements, monitors, evaluates and scales research,
+            innovation, humanitarian and sustainable development programmes.
+          </p>
+          <div className="mt-6 flex justify-center lg:hidden">
             <OutlineButton href="/what-we-do/projects">View All Projects</OutlineButton>
+          </div>
+          <div className="mt-6 hidden justify-center lg:flex">
+            <OutlineButton href="/what-we-do/projects">Explore Our Projects</OutlineButton>
           </div>
         </div>
 

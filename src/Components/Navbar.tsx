@@ -103,7 +103,7 @@ interface DropdownPanelProps {
 
 function DropdownPanel({ eyebrow, heading, items }: DropdownPanelProps) {
   return (
-    <div className="absolute left-0 top-[calc(100%+12px)] w-[420px] rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-black/5">
+    <div className="absolute left-0 top-[calc(100%+12px)] w-[min(26.25rem,calc(100vw-2rem))] rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-black/5">
       <p className="text-xs font-semibold uppercase tracking-wide text-[#16A34A]">
         {eyebrow}
       </p>
@@ -150,7 +150,7 @@ function Logo() {
         alt="ACRIDC-Africa"
         width={316}
         height={79}
-        className="h-14 w-auto object-contain sm:h-[63px]"
+        className="h-10 w-auto object-contain sm:h-12 lg:h-14 xl:h-[63px]"
         priority
       />
     </Link>
@@ -181,14 +181,14 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-transparent px-5 pt-4 pb-3 sm:px-10 sm:pt-6 lg:px-20 lg:pt-8">
+    <header className="sticky top-0 z-50 bg-transparent px-4 pt-3 pb-2 sm:px-6 sm:pt-5 lg:px-8 lg:pt-6 xl:px-20 xl:pt-8">
       <nav
         ref={navRef}
-        className="relative mx-auto flex h-[88px] max-w-[1280px] items-center justify-between rounded-[24px] border border-white/28 bg-white/60 py-2 pl-4 pr-2 shadow-[0px_18px_60px_rgba(8,24,48,0.12)] backdrop-blur-[12px] sm:pl-4 sm:pr-3"
+        className="relative mx-auto flex h-16 min-w-0 max-w-[1280px] items-center justify-between gap-3 rounded-[20px] border border-white/28 bg-white/60 py-2 pl-3 pr-2 shadow-[0px_18px_60px_rgba(8,24,48,0.12)] backdrop-blur-[12px] sm:h-[72px] sm:rounded-[24px] sm:pl-4 sm:pr-3 lg:h-[88px]"
       >
         <Logo />
 
-        <ul className="hidden items-center gap-8 lg:flex">
+        <ul className="hidden min-w-0 items-center gap-4 lg:flex xl:gap-8">
           {NAV_LINKS.map((link) => {
             const isOpen = openMenu === link.dropdown;
             return (
@@ -198,7 +198,7 @@ export default function Navbar() {
                     type="button"
                     onClick={() => setOpenMenu(isOpen ? null : (link.dropdown ?? null))}
                     aria-expanded={isOpen}
-                    className={`flex items-center gap-2.5 text-[18px] font-medium leading-[27px] transition-colors ${
+                    className={`flex items-center gap-1.5 text-[15px] font-medium leading-[27px] whitespace-nowrap transition-colors xl:gap-2.5 xl:text-[18px] ${
                       isOpen ? "text-[#16A34A]" : "text-[#1E293B] hover:text-[#16A34A]"
                     }`}
                   >
@@ -211,7 +211,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     href={link.href}
-                    className="text-[18px] font-medium leading-[27px] text-[#1E293B] transition-colors hover:text-[#16A34A]"
+                    className="whitespace-nowrap text-[15px] font-medium leading-[27px] text-[#1E293B] transition-colors hover:text-[#16A34A] xl:text-[18px]"
                   >
                     {link.label}
                   </Link>
@@ -238,7 +238,7 @@ export default function Navbar() {
 
         <Link
           href="/partner-with-us"
-          className="hidden h-14 items-center gap-5 whitespace-nowrap rounded-[14px] bg-[#0D3B66] px-5 text-base font-semibold text-white transition-colors hover:bg-[#0a2f52] lg:flex"
+          className="hidden h-11 items-center gap-2 whitespace-nowrap rounded-[14px] bg-[#0D3B66] px-3 text-sm font-semibold text-white transition-colors hover:bg-[#0a2f52] lg:flex xl:h-14 xl:gap-5 xl:px-5 xl:text-base"
         >
           Partner With Us
           <ArrowRight size={24} strokeWidth={1.75} />
@@ -247,7 +247,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMobileOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-full text-[#1E293B] lg:hidden"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-[#1E293B] lg:hidden"
           aria-label="Toggle menu"
         >
           <MenuIcon open={mobileOpen} />

@@ -43,13 +43,20 @@ export default function Publications() {
       <div className="relative mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[600px] text-center">
           <Eyebrow align="center">Publications & Insights</Eyebrow>
-          <h2 className="mt-6 text-[36px] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] sm:text-[48px]">
+          <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:hidden">
             Research That Informs Policy and Practice.
           </h2>
-          <p className="mt-8 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82]">
+          <h2 className="mt-6 hidden text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:block">
+            Research. Evidence. Innovation. Impact.
+          </h2>
+          <p className="mt-8 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:hidden">
             Explore our latest research reports, policy briefs, case studies, and
             publications driving evidence-based decision-making and sustainable development
             across Africa.
+          </p>
+          <p className="mt-8 hidden text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:block">
+            ACRIDC-Africa generates, documents, preserves, disseminates, and translates
+            knowledge into policy, practice, and innovation.
           </p>
         </div>
 
@@ -80,12 +87,19 @@ export default function Publications() {
                   35 min read
                 </span>
               </div>
-              <h3 className="mt-4 text-[24px] font-semibold leading-[130%] text-[#16233B]">
+              <h3 className="mt-4 text-[24px] font-semibold leading-[130%] text-[#16233B] lg:hidden">
                 Building Resilient Food Systems in a Changing Climate
               </h3>
-              <p className="mt-4 text-[16px] font-medium leading-7 text-[#5B6B82]">
+              <h3 className="mt-4 hidden text-[24px] font-semibold leading-[130%] text-[#16233B] lg:block">
+                Research
+              </h3>
+              <p className="mt-4 text-[16px] font-medium leading-7 text-[#5B6B82] lg:hidden">
                 Research advancing climate-smart agriculture, food security, and community
                 resilience.
+              </p>
+              <p className="mt-4 hidden text-[16px] font-medium leading-7 text-[#5B6B82] lg:block">
+                High-quality research, operational research, implementation science, surveys,
+                evaluations, assessments and policy analysis.
               </p>
               <div className="mt-auto flex gap-5 pt-6">
                 <Link
@@ -111,14 +125,22 @@ export default function Publications() {
               <div className="relative z-10 max-w-[410px] p-6">
                 <span className="flex items-center gap-2 text-[13px] font-semibold uppercase text-[#16A34A]">
                   <ClipboardList size={24} />
-                  Policy Brief
+                  <span className="lg:hidden">Policy Brief</span>
+                  <span className="hidden lg:inline">Innovation Brief</span>
                 </span>
-                <h3 className="mt-4 max-w-[261px] text-[18px] font-semibold leading-[130%] text-[#16233B]">
+                <h3 className="mt-4 max-w-[261px] text-[18px] font-semibold leading-[130%] text-[#16233B] lg:hidden">
                   Strengthening Local Governance for Sustainable Development
                 </h3>
-                <p className="mt-6 max-w-[362px] text-[16px] font-medium leading-7 text-[#5B6B82]">
+                <h3 className="mt-4 hidden max-w-[261px] text-[18px] font-semibold leading-[130%] text-[#16233B] lg:block">
+                  Innovation
+                </h3>
+                <p className="mt-6 max-w-[362px] text-[16px] font-medium leading-7 text-[#5B6B82] lg:hidden">
                   Actionable policy recommendations that promote transparent governance,
                   institutional resilience, and inclusive public service delivery.
+                </p>
+                <p className="mt-6 hidden max-w-[362px] text-[16px] font-medium leading-7 text-[#5B6B82] lg:block">
+                  Science, technology, digital transformation, artificial intelligence and
+                  adaptive approaches to complex development challenges.
                 </p>
                 <Link
                   href="/research/local-governance"
@@ -145,7 +167,8 @@ export default function Publications() {
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <span className="flex items-center gap-2 text-[13px] font-semibold uppercase text-[#2563EB]">
                     <ChartColumn size={24} />
-                    Research Insight
+                    <span className="lg:hidden">Research Insight</span>
+                    <span className="hidden lg:inline">Knowledge Insight</span>
                   </span>
                   <span className="flex items-center gap-2 text-[14px] font-medium text-[#64748B]">
                     May 2025
@@ -155,11 +178,17 @@ export default function Publications() {
                 </div>
                 <div className="mt-6 flex gap-3">
                   <div className="min-w-0">
-                    <h3 className="text-[16px] font-semibold leading-[130%] text-[#16233B]">
+                    <h3 className="text-[16px] font-semibold leading-[130%] text-[#16233B] lg:hidden">
                       Youth Employment Trends Across East Africa
                     </h3>
-                    <p className="mt-3 text-[16px] font-medium leading-7 text-[#5B6B82]">
+                    <h3 className="hidden text-[16px] font-semibold leading-[130%] text-[#16233B] lg:block">
+                      Knowledge Translation
+                    </h3>
+                    <p className="mt-3 text-[16px] font-medium leading-7 text-[#5B6B82] lg:hidden">
                       Explore emerging labour market trends.
+                    </p>
+                    <p className="mt-3 hidden text-[16px] font-medium leading-7 text-[#5B6B82] lg:block">
+                      Turning evidence and knowledge into policy, practice and innovation.
                     </p>
                     <Link
                       href="/research/youth-employment"
@@ -206,11 +235,17 @@ export default function Publications() {
                 </div>
                 <div className="mt-5 flex gap-4">
                   <div className="min-w-0">
-                    <h3 className="text-[16px] font-semibold leading-[130%] text-[#16233B]">
+                    <h3 className="text-[16px] font-semibold leading-[130%] text-[#16233B] lg:hidden">
                       Community-Led Water Security in Kenya
                     </h3>
-                    <p className="mt-3 text-[16px] font-medium leading-7 text-[#5B6B82]">
+                    <h3 className="hidden text-[16px] font-semibold leading-[130%] text-[#16233B] lg:block">
+                      Capacity Development
+                    </h3>
+                    <p className="mt-3 text-[16px] font-medium leading-7 text-[#5B6B82] lg:hidden">
                       Learn how collaborative research and community resilience.
+                    </p>
+                    <p className="mt-3 hidden text-[16px] font-medium leading-7 text-[#5B6B82] lg:block">
+                      Education, leadership, fellowships, internships, mentorship...
                     </p>
                     <Link
                       href="/research/water-security"

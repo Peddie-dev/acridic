@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Droplet, CloudRain, Pill, Briefcase, type LucideIcon } from "lucide-react";
+import { ArrowRight, Droplet, BrainCircuit, Pill, Briefcase, type LucideIcon } from "lucide-react";
 import { Eyebrow, OutlineButton } from "./ui";
 
 interface FocusArea {
@@ -14,58 +14,49 @@ interface FocusArea {
 const FOCUS_AREAS: FocusArea[] = [
   {
     icon: Droplet,
-    title: "Climate & Environment",
-    description: "Building resilient ecosystems for a sustainable future.",
+    title: "Research and Evidence",
+    description:
+      "Conduct research, implementation science, operational research, surveys...",
     image: "/images/what-we-do-climate.png",
-    href: "/what-we-do/climate-environment",
+    href: "/what-we-do/research-and-evidence",
   },
   {
-    icon: CloudRain,
-    title: "Agriculture & Food Systems",
-    description: "Strengthening food security through innovation.",
+    icon: BrainCircuit,
+    title: "Innovation and Digital Transformation",
+    description:
+      "Promote science, technology, digital transformation, artificial intelligence, and data-driven...",
     image: "/images/what-we-do-agriculture.png",
-    href: "/what-we-do/agriculture-food-systems",
+    href: "/what-we-do/innovation-and-digital-transformation",
   },
   {
     icon: Pill,
-    title: "Health & Wellbeing",
-    description: "Improving lives with evidence-based healthcare.",
+    title: "Programme Development",
+    description:
+      "Design, implement, monitor, evaluate, and scale research, innovation, humanitarian...",
     image: "/images/what-we-do-health.png",
-    href: "/what-we-do/health-wellbeing",
+    href: "/what-we-do/programme-development",
   },
   {
     icon: Briefcase,
-    title: "Governance & Policy",
-    description: "Shaping policies for inclusive development.",
+    title: "Knowledge Translation",
+    description:
+      "Generate, document, preserve, disseminate, and translate knowledge into policy ...",
     image: "/images/what-we-do-governance.png",
-    href: "/what-we-do/governance-policy",
+    href: "/what-we-do/knowledge-translation",
   },
 ];
 
 export default function WhatWeDo() {
   return (
     <section className="relative overflow-hidden bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:py-[120px]">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-[80px] top-0 hidden h-[582px] w-[559px] lg:block"
-      >
-        <Image
-          src="/images/dotted-africa.png"
-          alt=""
-          fill
-          sizes="559px"
-          className="knockout-black object-contain object-top opacity-80"
-        />
-      </div>
-
       <div className="relative mx-auto max-w-[1290px]">
-        <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-start">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-[600px]">
-            <Eyebrow>What We Do</Eyebrow>
-            <h2 className="mt-6 text-[32px] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] sm:text-[40px]">
+            <Eyebrow>WHAT WE DO / INSTITUTIONAL FUNCTIONS</Eyebrow>
+            <h2 className="mt-6 text-[clamp(1.75rem,1rem+2.2vw,2.5rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B]">
               Creating solutions for
               <br />
-              Africa&apos;s biggest challenges.
+              <span className="text-[#16A34A]">Africa&apos;s</span> biggest challenges.
             </h2>
             <p className="mt-6 max-w-[440px] text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82]">
               Delivering research, innovation, and partnerships that improve lives across
@@ -73,7 +64,9 @@ export default function WhatWeDo() {
             </p>
           </div>
 
-          <OutlineButton href="/what-we-do">View all Areas</OutlineButton>
+          <OutlineButton href="/what-we-do" className="shrink-0 self-start lg:mt-[43px]">
+            View all Areas
+          </OutlineButton>
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-[30px] sm:grid-cols-2 xl:grid-cols-4">
@@ -83,7 +76,7 @@ export default function WhatWeDo() {
               <Link
                 key={area.title}
                 href={area.href}
-                className="group relative flex min-h-[477px] flex-col overflow-hidden rounded-[24px] border border-[#EEF2F7] bg-white shadow-[0px_28px_64px_rgba(12,25,48,0.1)]"
+                className="group relative flex min-h-0 min-w-0 flex-col overflow-hidden rounded-[24px] border border-[#EEF2F7] bg-white shadow-[0px_28px_64px_rgba(12,25,48,0.1)] sm:min-h-[477px]"
               >
                 <div className="relative h-[224px] w-full shrink-0">
                   <Image
@@ -105,7 +98,7 @@ export default function WhatWeDo() {
                   <p className="mt-4 text-[16px] font-medium leading-7 text-[#5B6B82]">
                     {area.description}
                   </p>
-                  <span className="mt-6 text-[#18A957] transition-transform group-hover:translate-x-1">
+                  <span className="mt-auto pt-6 text-[#18A957] transition-transform group-hover:translate-x-1">
                     <ArrowRight size={20} strokeWidth={1.6} />
                   </span>
                 </div>

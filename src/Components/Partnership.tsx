@@ -32,7 +32,7 @@ const PARTNERS: Partner[] = [
     icon: GraduationCap,
     title: "Universities",
     description:
-      "Collaborating with higher education institutions to advance research, foster innovation, and strengthen the next generation.",
+      "Collaborating with higher education institutions to advance research, foster innovation, and strengthen the next generation..",
     logosImage: "/images/partners/universities-partners.png",
     area: "lg:col-start-1 lg:row-start-2",
   },
@@ -95,15 +95,24 @@ export default function Partnership() {
       </div>
 
       <div className="relative mx-auto max-w-[1280px]">
-        <div className="mx-auto max-w-[600px] text-center">
+        <div className="mx-auto max-w-[600px] text-center lg:max-w-[706px]">
           <Eyebrow align="center">Our Partnership Ecosystem</Eyebrow>
-          <h2 className="mt-6 text-[36px] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] sm:text-[48px]">
+          <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:hidden">
             Building Partnerships That Create Lasting Impact.
           </h2>
-          <p className="mt-8 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82]">
+          <h2 className="mt-6 hidden text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:block">
+            Strategic Partnerships and Organizational Collaboration
+          </h2>
+          <p className="mt-8 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:hidden">
             We collaborate with governments, universities, development organizations,
             businesses, and communities to transform research into practical solutions that
             improve lives across Africa.
+          </p>
+          <p className="mt-8 hidden text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:block">
+            ACRIDC-Africa establishes and strengthens strategic partnerships, networks,
+            alliances, and collaborative platforms with governments, development partners,
+            academic institutions, civil society organizations, private sector entities, and
+            communities.
           </p>
         </div>
 
