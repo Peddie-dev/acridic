@@ -68,8 +68,8 @@ const KNOWLEDGE_PRODUCTS: KnowledgeProduct[] = [
 
 function ReportCover() {
   return (
-    <div className="relative mx-auto w-full max-w-[336px] @[720px]:mt-5">
-      <div className="relative aspect-[336/535] overflow-hidden rounded-[18px] bg-[#0B1B33] shadow-[0px_30px_80px_rgba(0,0,0,0.18)]">
+    <div className="relative mx-auto w-full min-w-0 max-w-[336px] pb-5 min-[1440px]:mx-0 min-[1440px]:pb-3">
+      <div className="relative aspect-[336/535] w-full min-w-0 overflow-hidden rounded-[18px] bg-[#0B1B33] shadow-[0px_30px_80px_rgba(0,0,0,0.18)]">
         <div className="absolute left-1/2 top-[80px] h-[272px] w-[272px] -translate-x-1/2 rounded-full bg-[rgba(34,197,94,0.12)]" />
         <div className="absolute inset-x-8 top-16 aspect-[180/210]">
           <Image
@@ -77,19 +77,19 @@ function ReportCover() {
             alt=""
             fill
             sizes="240px"
-            className="knockout-black object-contain"
+            className="object-contain mix-blend-screen brightness-125 saturate-150"
           />
         </div>
         <div className="relative flex h-full flex-col justify-between p-6 text-white">
-          <div className="flex items-start justify-between">
+          <div className="flex items-start justify-between gap-2">
             <Image
               src="/images/acridic-research-logo.png"
               alt="ACRIDC"
               width={158}
               height={38}
-              className="h-auto w-[140px] object-contain"
+              className="h-auto w-[140px] max-w-[46%] min-w-0 object-contain mix-blend-screen"
             />
-            <span className="rounded-[32px] border border-[#0D3B66] bg-[rgba(13,59,102,0.32)] px-2.5 py-1.5 text-[13px] font-semibold leading-[18px]">
+            <span className="shrink-0 rounded-[32px] border border-white/80 bg-white/10 px-2.5 py-1.5 text-[13px] font-semibold leading-[18px]">
               2025 EDITION
             </span>
           </div>
@@ -110,7 +110,7 @@ function ReportCover() {
       <Link
         href="/research/state-of-research-2025/download"
         aria-label="Download report"
-        className="absolute -bottom-2 -right-2 flex h-[72px] w-[72px] items-center justify-center rounded-full border border-white/70 bg-white text-[#16A34A] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_rgba(0,0,0,0.3)]"
+        className="absolute bottom-1 right-1 flex h-[72px] w-[72px] items-center justify-center rounded-full border border-white/70 bg-white text-[#16A34A] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_rgba(0,0,0,0.3)] min-[1440px]:-bottom-2 min-[1440px]:right-0 min-[1440px]:translate-x-1/4"
       >
         <Download size={28} />
       </Link>
@@ -120,31 +120,19 @@ function ReportCover() {
 
 export default function FeaturedResearch() {
   return (
-    <section className="relative bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:py-16">
+    <section className="relative overflow-x-clip bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:py-[104px]">
       <div
         aria-hidden
-        className="pointer-events-none absolute left-[80px] top-[507px] hidden h-[279px] w-[240px] lg:block"
-      >
-        <Image
-          src="/images/dotted-africa.png"
-          alt=""
-          fill
-          sizes="240px"
-          className="knockout-black object-contain opacity-70"
-        />
-      </div>
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-[120px] top-[200px] hidden h-[479px] w-[478px] rounded-full bg-[linear-gradient(270deg,rgba(34,197,94,0.1)_0%,rgba(34,197,94,0)_100%)] blur-[48px] lg:block"
+        className="pointer-events-none absolute bottom-[-40px] left-[80px] hidden h-[320px] w-[420px] rounded-full bg-[rgba(34,197,94,0.08)] blur-[60px] lg:block"
       />
 
-      <div className="relative mx-auto grid min-w-0 max-w-[1280px] grid-cols-1 gap-10 xl:grid-cols-[minmax(0,410px)_minmax(0,1fr)] xl:items-start">
-        <div className="relative min-w-0 pt-6 xl:pt-[80px]">
+      <div className="relative mx-auto grid w-full min-w-0 max-w-[1280px] grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,410px)_minmax(0,1fr)] lg:gap-10">
+        <div className="relative min-w-0 max-w-[440px] lg:pt-6">
           <span className="lg:hidden">
             <Eyebrow>Featured Research</Eyebrow>
           </span>
           <span className="hidden lg:inline">
-            <Eyebrow>Publications & Insights</Eyebrow>
+            <Eyebrow>PUBLICATIONS & INSIGHTS</Eyebrow>
           </span>
           <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:hidden">
             Evidence that
@@ -158,20 +146,22 @@ export default function FeaturedResearch() {
             Our research transforms complex challenges into practical insights that inform
             policy, strengthen institutions, and create lasting impact across Africa.
           </p>
-          <p className="mt-6 hidden max-w-[440px] text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:block">
-            ACRIDC-Africa is committed to generating, documenting, preserving, disseminating
+          <p className="mt-6 hidden max-w-[410px] text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:block">
+            ACRIDC–Africa is committed to generating, documenting, preserving, disseminating
             and translating knowledge into policy, practice and innovation.
           </p>
           <div className="mt-8">
-            <OutlineButton href="/research">Explore All Research</OutlineButton>
+            <OutlineButton href="/research" className="!rounded-[14px] text-[#16A34A]">
+              Explore All Research
+            </OutlineButton>
           </div>
         </div>
 
-        <div className="@container relative min-w-0 overflow-visible rounded-[32px] border border-white/65 bg-white/80 p-5 shadow-[0px_24px_60px_-12px_rgba(15,23,42,0.18)] backdrop-blur-[12px] sm:p-8 sm:pb-10">
-          <div className="grid min-w-0 grid-cols-1 gap-8 @[720px]:grid-cols-[minmax(200px,336px)_minmax(0,1fr)] @[720px]:items-start">
+        <div className="relative min-w-0 w-full max-w-full overflow-x-clip rounded-[32px] bg-white p-6 shadow-[0px_24px_60px_-12px_rgba(15,23,42,0.18)] sm:p-8">
+          <div className="grid min-w-0 grid-cols-1 items-start gap-8 min-[1440px]:grid-cols-[minmax(0,336px)_minmax(0,1fr)] min-[1440px]:gap-x-[60px]">
             <ReportCover />
 
-            <div className="min-w-0 pt-0 @[720px]:pt-5 lg:hidden">
+            <div className="min-w-0 lg:hidden">
               <span className="inline-flex h-8 items-center rounded-[32px] bg-[rgba(22,163,74,0.12)] px-4 text-[13px] font-semibold uppercase text-[#0D3B66]">
                 Annual Reports
               </span>
@@ -210,7 +200,7 @@ export default function FeaturedResearch() {
                         <span className="flex h-[60px] w-[60px] items-center justify-center rounded-2xl bg-[rgba(22,163,74,0.12)] text-[#16A34A]">
                           <Icon size={24} strokeWidth={2} />
                         </span>
-                        <div className="w-[82px] text-center">
+                        <div className="min-w-0 shrink text-center sm:w-[82px]">
                           <p className="text-[32px] font-medium leading-[44px] tracking-[-0.02em] text-[#1E293B]">
                             {stat.value}
                           </p>
@@ -232,26 +222,24 @@ export default function FeaturedResearch() {
                 <EmeraldButton href="/research/state-of-research-2025/download" icon={Download}>
                   Download Report
                 </EmeraldButton>
-                <TextArrowLink href="/research/state-of-research-2025">
-                  Read Summary
-                </TextArrowLink>
+                <TextArrowLink href="/research/state-of-research-2025">Read Summary</TextArrowLink>
               </div>
             </div>
 
-            <div className="hidden min-w-0 pt-0 lg:block @[720px]:pt-5">
-              <h3 className="max-w-[392px] text-[28px] font-semibold leading-[110%] tracking-[-0.02em] text-[#16233B] sm:text-[32px]">
+            <div className="hidden min-w-0 flex-col lg:flex">
+              <h3 className="text-[24px] font-semibold leading-[110%] tracking-[-0.02em] text-[#16233B]">
                 Our knowledge products may include:
               </h3>
-              <div className="mt-8 grid grid-cols-2 gap-x-5 gap-y-6">
+              <div className="mt-8 grid min-w-0 grid-cols-2 gap-x-4 gap-y-6 min-[1440px]:gap-x-5">
                 {KNOWLEDGE_PRODUCTS.map((item) => {
                   const Icon = item.icon;
                   return (
-                    <div key={item.label} className="flex min-w-0 items-center gap-3">
-                      <span className="flex h-[60px] w-[60px] shrink-0 items-center justify-center rounded-2xl bg-[rgba(22,163,74,0.12)] text-[#16A34A]">
+                    <div key={item.label} className="flex min-w-0 items-start gap-3 sm:items-center">
+                      <span className="flex h-[60px] w-[60px] shrink-0 items-center justify-center rounded-2xl bg-[#EAF9EE] text-[#16A34A]">
                         <Icon size={24} strokeWidth={2} />
                       </span>
-                      <div className="min-w-0">
-                        <p className="text-[32px] font-medium leading-[44px] tracking-[-0.02em] text-[#1E293B]">
+                      <div className="min-w-0 flex-1">
+                        <p className="text-[28px] font-medium leading-[1.2] tracking-[-0.02em] text-[#1E293B] min-[1440px]:text-[32px] min-[1440px]:leading-[44px]">
                           {item.value}
                         </p>
                         <p className="text-[14px] font-medium leading-[19px] tracking-[-0.02em] text-[#64748B]">
@@ -264,10 +252,10 @@ export default function FeaturedResearch() {
               </div>
               <Link
                 href="/research"
-                className="mt-8 inline-flex items-center gap-3 text-base font-semibold text-[#16A34A]"
+                className="mt-8 inline-flex items-center gap-3 self-end text-base font-semibold text-[#16A34A]"
               >
                 View All
-                <ArrowRight size={24} />
+                <ArrowRight size={24} strokeWidth={1.75} />
               </Link>
             </div>
           </div>

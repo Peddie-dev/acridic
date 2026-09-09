@@ -77,22 +77,6 @@ export default function Partnership() {
         aria-hidden
         className="pointer-events-none absolute left-[69px] top-[568px] hidden h-[520px] w-[520px] rounded-full bg-[rgba(34,197,94,0.08)] blur-[90px] lg:block"
       />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-[80px] top-[506px] hidden h-[520px] w-[520px] rounded-full bg-[rgba(34,197,94,0.08)] blur-[90px] lg:block"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-6 top-6 hidden h-[362px] w-[274px] lg:block"
-      >
-        <Image
-          src="/images/dotted-africa.png"
-          alt=""
-          fill
-          sizes="274px"
-          className="knockout-black object-contain opacity-50"
-        />
-      </div>
 
       <div className="relative mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[600px] text-center lg:max-w-[706px]">

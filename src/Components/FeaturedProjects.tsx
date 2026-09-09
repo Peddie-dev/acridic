@@ -84,31 +84,6 @@ const DARK_PROJECTS: ProjectCard[] = [
 export default function FeaturedProjects() {
   return (
     <section className="relative overflow-hidden bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:py-12">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute left-[80px] top-7 hidden h-[385px] w-[286px] lg:block"
-      >
-        <Image
-          src="/images/dotted-africa.png"
-          alt=""
-          fill
-          sizes="286px"
-          className="knockout-black object-contain opacity-50"
-        />
-      </div>
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-6 top-6 hidden h-[362px] w-[274px] lg:block"
-      >
-        <Image
-          src="/images/dotted-africa.png"
-          alt=""
-          fill
-          sizes="274px"
-          className="knockout-black object-contain opacity-50"
-        />
-      </div>
-
       <div className="relative mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[600px] text-center">
           <Eyebrow align="center">Featured Projects</Eyebrow>
