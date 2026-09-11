@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Radio, Eye, Crown, Plane, type LucideIcon } from "lucide-react";
-import { Eyebrow, IconTile, PrimaryButton } from "./ui";
+import { ArrowRight, Target, Eye, Crown, Plane, type LucideIcon } from "lucide-react";
+import { IconTile, PrimaryButton } from "./ui";
 
 interface Pillar {
   icon: LucideIcon;
@@ -12,7 +12,7 @@ interface Pillar {
 
 const DESKTOP_PILLARS: Pillar[] = [
   {
-    icon: Radio,
+    icon: Target,
     title: "Our Purpose",
     description: "To advance equitable, resilient, and sustainable development through research...",
     href: "/about#purpose",
@@ -42,7 +42,7 @@ const DESKTOP_PILLARS: Pillar[] = [
 
 const MOBILE_PILLARS: Pillar[] = [
   {
-    icon: Radio,
+    icon: Target,
     title: "Our Mission",
     description: "Generating evidence that empowers communities and drives development.",
     href: "/about#mission",
@@ -67,25 +67,38 @@ const MOBILE_PILLARS: Pillar[] = [
   },
 ];
 
-function PillarGrid({ pillars }: { pillars: Pillar[] }) {
+function AboutEyebrow({ children }: { children: string }) {
   return (
-    <div className="mt-5 grid grid-cols-1 gap-[11px] sm:grid-cols-2 xl:grid-cols-4">
+    <span className="flex items-center gap-2 text-[14px] font-medium uppercase leading-[19px] tracking-[0.08em] text-[#16A34A]">
+      <span className="h-1 w-1 shrink-0 rounded-full bg-[#1E293B]" />
+      {children}
+    </span>
+  );
+}
+
+function PillarGrid({ pillars, compact = false }: { pillars: Pillar[]; compact?: boolean }) {
+  return (
+    <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[11px]">
       {pillars.map((pillar) => {
         const Icon = pillar.icon;
         return (
           <Link
             key={pillar.title}
             href={pillar.href}
-            className="group flex min-h-0 flex-col rounded-[24px] border border-[#EEF2F7] bg-white px-6 py-6 shadow-[0px_24px_60px_rgba(12,25,48,0.06)] sm:min-h-[328px] sm:px-8 sm:py-9"
+            className={`group flex flex-col rounded-[24px] border border-[#EEF2F7] bg-white shadow-[0px_24px_60px_rgba(12,25,48,0.06)] ${
+              compact
+                ? "min-h-[228px] px-6 py-6"
+                : "min-h-[280px] px-6 py-8 sm:min-h-[328px] sm:px-8 sm:py-9"
+            }`}
           >
-            <IconTile icon={Icon} />
-            <span className="mt-7 text-[24px] font-medium leading-[130%] text-[#16233B]">
+            <IconTile icon={Icon} size={compact ? 56 : 64} iconSize={compact ? 24 : 28} />
+            <span className="mt-4 text-[24px] font-medium leading-[130%] text-[#16233B] lg:mt-7">
               {pillar.title}
             </span>
-            <span className="mt-4 text-[16px] font-medium leading-[170%] text-[#5B6B82]">
+            <span className="mt-2 text-[16px] font-medium leading-[170%] text-[#5B6B82] lg:mt-4">
               {pillar.description}
             </span>
-            <span className="mt-4 text-[#18A957] transition-transform group-hover:translate-x-1">
+            <span className="mt-auto pt-4 text-[#18A957] transition-transform group-hover:translate-x-1">
               <ArrowRight size={20} strokeWidth={1.6} />
             </span>
           </Link>
@@ -97,41 +110,43 @@ function PillarGrid({ pillars }: { pillars: Pillar[] }) {
 
 export default function About() {
   return (
-    <section className="bg-[#F8FAFC] px-5 py-10 sm:px-10 lg:px-20 lg:py-12">
-      <div className="relative isolate mx-auto max-w-[1280px] overflow-hidden rounded-[32px] border border-white/60 bg-white/92 shadow-[0px_20px_60px_rgba(12,25,48,0.08)]">
-        <div className="absolute inset-0 -z-10 overflow-hidden bg-white">
-          <div className="absolute left-[-39.5%] top-[-7%] h-[112%] w-[138%]">
+    <section id="about" className="bg-[#F8FAFC] px-5 py-10 sm:px-10 lg:px-20 lg:py-24">
+        <div className="relative isolate mx-auto max-w-[1280px] overflow-hidden rounded-[32px] border border-white/60 bg-white shadow-[0px_20px_60px_rgba(12,25,48,0.08)]">
+        <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden bg-white">
+          <div className="absolute inset-y-0 left-0 hidden w-full bg-white lg:block lg:w-[48%]" />
+          <div className="absolute inset-y-0 right-0 hidden h-full w-[62%] lg:block">
             <Image
               src="/images/about-acridc.png"
               alt="ACRIDC field team engaging with a community"
               fill
-              sizes="1768px"
-              className="object-cover"
+              sizes="(min-width: 1280px) 800px, 60vw"
+              className="object-cover object-[70%_18%]"
+              priority
             />
           </div>
-          <div className="absolute inset-0 bg-[linear-gradient(281.73deg,rgba(255,255,255,0)_42.84%,rgba(255,255,255,0.32)_61.54%,#FFFFFF_71.07%)]" />
-          <div className="absolute inset-0 bg-[linear-gradient(358.26deg,#FFFFFF_20.21%,rgba(255,255,255,0.64)_32.9%,rgba(255,255,255,0)_44.18%)]" />
+          <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,#FFFFFF_0%,#FFFFFF_42%,rgba(255,255,255,0.96)_48%,rgba(255,255,255,0.55)_56%,rgba(255,255,255,0)_70%)] lg:block" />
+          <div className="absolute inset-x-0 bottom-0 hidden h-[46%] bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.55)_42%,#FFFFFF_82%)] lg:block" />
         </div>
 
-        <div className="px-6 py-10 sm:px-10 lg:px-12 lg:py-14 xl:px-[70px] xl:py-[70px]">
+        <div className="relative z-10 px-5 py-8 sm:px-10 lg:px-12 lg:py-14 xl:px-[70px] xl:pt-[70px] xl:pb-[70px]">
           <span className="lg:hidden">
-            <Eyebrow>About Acridc</Eyebrow>
+            <AboutEyebrow>About ACRIDC</AboutEyebrow>
           </span>
           <span className="hidden lg:inline">
-            <Eyebrow>About ACRIDC-Africa</Eyebrow>
+            <AboutEyebrow>About ACRIDC-Africa</AboutEyebrow>
           </span>
 
           <h2 className="mt-6 max-w-[522px] text-[clamp(1.75rem,1rem+2.2vw,2.5rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:hidden">
             Advancing Knowledge.
             <br />
-            Empowering Communities.
+            <span className="text-[#16A34A]">Empowering Communities.</span>
             <br />
             Building Africa&apos;s Future.
           </h2>
-          <h2 className="mt-6 hidden max-w-[522px] text-[clamp(1.75rem,1rem+2.2vw,2.5rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:block">
+          <h2 className="mt-6 hidden max-w-[522px] text-[40px] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:block">
             Advancing Knowledge.
             <br />
-            Empowering Communities.
+            <span className="text-[#16A34A]">Empowering Communities.</span>
             <br />
             Strengthening Institutions.
           </h2>
@@ -146,29 +161,34 @@ export default function About() {
             dedicated to advancing research.
           </p>
 
-          <p className="mt-6 max-w-[442px] text-[18px] font-medium leading-[170%] tracking-[-0.02em] text-[#16233B] lg:hidden">
+          <p className="mt-6 max-w-[442px] text-[18px] font-medium leading-[170%] tracking-[-0.02em] text-[#5B6B82] lg:hidden">
             Working with governments, institutions, and communities to turn knowledge into
             action.
           </p>
-          <p className="mt-6 hidden max-w-[442px] text-[18px] font-medium leading-[170%] tracking-[-0.02em] text-[#16233B] lg:block">
+          <p className="mt-6 hidden max-w-[442px] text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:block">
             ACRIDC-Africa works to generate evidence, foster innovation, strengthen
             institutions and systems, build strategic partnerships, and empower communities
             through research
           </p>
 
-          <div className="mt-8">
-            <PrimaryButton href="/about">Our Story</PrimaryButton>
+          <div className="mt-8 w-full max-w-[400px]">
+            <PrimaryButton href="/about" className="w-full lg:w-auto">
+              Our Story
+            </PrimaryButton>
           </div>
 
-          <div className="mt-[72px] flex items-center gap-3">
-            <span className="whitespace-nowrap text-[13px] font-medium uppercase leading-6 tracking-[0.08em] text-[#7C8798]">
-              Our Core Pillars
-            </span>
-            <span className="h-px w-[240px] max-w-full bg-[#E2E8F0]" />
+          <div className="mt-10 lg:mt-[72px]">
+            <div className="flex items-center gap-3">
+              <span className="whitespace-nowrap text-[13px] font-medium uppercase leading-6 tracking-[0.08em] text-[#7C8798]">
+                Our Core Pillars
+              </span>
+              <span className="hidden h-px w-[240px] bg-[#E2E8F0] lg:block" />
+            </div>
+            <span className="mt-3 block h-px w-full bg-[#E2E8F0] lg:hidden" />
           </div>
 
           <div className="lg:hidden">
-            <PillarGrid pillars={MOBILE_PILLARS} />
+            <PillarGrid pillars={MOBILE_PILLARS} compact />
           </div>
           <div className="hidden lg:block">
             <PillarGrid pillars={DESKTOP_PILLARS} />

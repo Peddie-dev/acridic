@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  AlignLeft,
   ArrowRight,
   Menu,
   ChartNoAxesColumn,
@@ -16,6 +17,12 @@ import {
 import { OutlineButton, PrimaryButton } from "./ui";
 
 const TAGS = ["African-Led", "Evidence Driven", "Impact Focused"];
+
+const MOBILE_BADGES: { icon: LucideIcon; label: string; color: string }[] = [
+  { icon: RefreshCw, label: "Collaboration", color: "bg-[#6750A4]" },
+  { icon: ChartNoAxesColumn, label: "Innovation", color: "bg-[#16A34A]" },
+  { icon: AlignLeft, label: "Research", color: "bg-[#0D3B66]" },
+];
 
 const FLOATING_BADGES: {
   icon: LucideIcon;
@@ -83,7 +90,7 @@ function Heading({ compact = false }: { compact?: boolean }) {
     <h1
       className={
         compact
-          ? "text-[34px] font-extrabold leading-[120%] tracking-[0.02em] text-[#1E293B]"
+          ? "text-[28px] font-extrabold leading-[123%] tracking-[0.02em] text-[#1E293B]"
           : "text-[50px] font-extrabold leading-[56px] tracking-[0.02em] text-[#1E293B]"
       }
     >
@@ -101,8 +108,8 @@ function Heading({ compact = false }: { compact?: boolean }) {
 function Body({ compact = false }: { compact?: boolean }) {
   return (
     <p
-      className={`max-w-[482px] text-[18px] font-normal text-[#64748B] ${
-        compact ? "leading-7" : "leading-[36px]"
+      className={`max-w-[482px] text-[16px] font-normal text-[#64748B] sm:text-[18px] ${
+        compact ? "leading-6" : "leading-[36px]"
       }`}
     >
       Through collaborative research, policy engagement and innovation, ACRIDC empowers
@@ -227,6 +234,69 @@ function DesktopCanvas() {
   );
 }
 
+function MobileMarquee() {
+  const items = [...THUMBNAILS, ...THUMBNAILS];
+  return (
+    <div className="mt-10 -mx-5 overflow-hidden">
+      <div className="hero-marquee-track flex w-max gap-4 pl-5">
+        {items.map((thumb, i) => (
+          <ThumbCard key={`${thumb.title}-${i}`} thumb={thumb} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function MobileBadges() {
+  return (
+    <div className="mt-6 flex gap-3 overflow-x-auto no-scrollbar">
+      {MOBILE_BADGES.map((badge) => {
+        const Icon = badge.icon;
+        return (
+          <div
+            key={badge.label}
+            className="flex h-16 shrink-0 items-center gap-2 rounded-[20px] border border-white/40 bg-[rgba(227,238,248,0.45)] px-3 shadow-[0px_12px_40px_rgba(255,255,255,0.18)] backdrop-blur-[10px]"
+          >
+            <span
+              className={`flex h-10 w-10 items-center justify-center rounded-full text-white ${badge.color}`}
+            >
+              <Icon size={20} strokeWidth={1.75} />
+            </span>
+            <span className="text-[16px] font-semibold leading-[30px] text-[#1E293B]">
+              {badge.label}
+            </span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function MobileEcosystem() {
+  return (
+    <div className="mt-6 w-full max-w-[400px] rounded-[24px] border border-white/40 bg-[rgba(227,238,248,0.45)] px-4 py-8 shadow-[0px_18px_60px_rgba(8,24,48,0.08)] backdrop-blur-[12px]">
+      <p className="text-center text-[14px] font-normal leading-[19px] tracking-[0.08em] text-[#1E293B]">
+        OUR IMPACT ECOSYSTEM
+      </p>
+      <span className="mx-auto mt-3 block h-px w-[250px] max-w-full bg-[#1E293B]" />
+      <div className="mt-6 grid grid-cols-3 gap-x-3 gap-y-6">
+        {ECOSYSTEM.map((item) => {
+          const Icon = item.icon;
+          return (
+            <div key={item.label} className="flex flex-col items-center">
+              <Icon size={24} strokeWidth={1.5} className="text-[#1E293B]" />
+              <span className="mt-2 text-center text-[12px] font-medium leading-[14px] text-[#1E293B]">
+                {item.label}
+              </span>
+              <span className="mt-2 h-px w-full bg-[#CBD5E1]" />
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 function HeroBackground() {
   return (
     <div className="pointer-events-none absolute inset-0">
@@ -250,25 +320,23 @@ export default function Hero() {
     <section className="hero-section relative isolate overflow-hidden bg-[#F8FAFC]">
       <div className="relative lg:hidden">
         <HeroBackground />
-        <div className="relative mx-auto w-full max-w-[1280px] px-5 pb-8 pt-8 sm:px-10">
-        <Tags />
-        <div className="mt-4 flex flex-col gap-5">
-          <Heading compact />
-          <Body compact />
-          <div className="flex w-full max-w-[400px] flex-col items-stretch gap-4">
-            <PrimaryButton href="/our-work" className="w-full">
-              Explore our Work
-            </PrimaryButton>
-            <OutlineButton href="/partner-with-us" color="navy" className="w-full bg-white/90">
-              Become a Partner
-            </OutlineButton>
+        <div className="relative mx-auto w-full max-w-[1280px] px-5 pb-10 pt-8 sm:px-10">
+          <Tags />
+          <div className="mt-4 flex flex-col gap-5">
+            <Heading compact />
+            <Body compact />
+            <div className="flex w-full max-w-[400px] flex-col items-stretch gap-4">
+              <PrimaryButton href="/our-work" className="w-full">
+                Explore our Work
+              </PrimaryButton>
+              <OutlineButton href="/partner-with-us" color="navy" className="w-full bg-white/90">
+                Become a Partner
+              </OutlineButton>
+            </div>
           </div>
-        </div>
-        <div className="mt-10 grid grid-cols-1 gap-3">
-          {THUMBNAILS.map((thumb) => (
-            <ThumbCard key={thumb.title} thumb={thumb} compact />
-          ))}
-        </div>
+          <MobileMarquee />
+          <MobileBadges />
+          <MobileEcosystem />
         </div>
       </div>
 

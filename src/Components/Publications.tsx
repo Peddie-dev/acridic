@@ -42,12 +42,23 @@ export default function Publications() {
 
       <div className="relative mx-auto w-full min-w-0 max-w-[1280px]">
         <div className="mx-auto max-w-[600px] text-center">
-          <Eyebrow align="center">RESEARCH, INNOVATION &amp; KNOWLEDGE</Eyebrow>
-          <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B]">
+          <Eyebrow align="center">
+            <span className="lg:hidden">Publications</span>
+            <span className="hidden lg:inline">RESEARCH, INNOVATION &amp; KNOWLEDGE</span>
+          </Eyebrow>
+          <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:hidden">
+            Research That Informs Policy and Practice.
+          </h2>
+          <h2 className="mt-6 hidden text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:block">
             Research. Evidence.{" "}
             <span className="text-[#16A34A]">Innovation. Impact.</span>
           </h2>
-          <p className="mt-8 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82]">
+          <p className="mt-8 text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:hidden">
+            We collaborate with governments, universities, development organizations,
+            businesses, and communities to transform research into practical solutions that
+            improve lives across Africa.
+          </p>
+          <p className="mt-8 hidden text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:block">
             ACRIDC-Africa generates, documents, preserves, disseminates, and translates
             knowledge into policy, practice, and innovation.
           </p>
@@ -80,10 +91,17 @@ export default function Publications() {
                   35 min read
                 </span>
               </div>
-              <h3 className="mt-4 text-[24px] font-semibold leading-[130%] text-[#16233B]">
+              <h3 className="mt-4 text-[24px] font-semibold leading-[130%] text-[#16233B] lg:hidden">
+                Building Resilient Food Systems in a Changing Climate
+              </h3>
+              <h3 className="mt-4 hidden text-[24px] font-semibold leading-[130%] text-[#16233B] lg:block">
                 Research
               </h3>
-              <p className="mt-4 text-[16px] font-medium leading-7 text-[#5B6B82]">
+              <p className="mt-4 text-[16px] font-medium leading-7 text-[#5B6B82] lg:hidden">
+                Research advancing climate-smart agriculture, food security, and community
+                resilience.
+              </p>
+              <p className="mt-4 hidden text-[16px] font-medium leading-7 text-[#5B6B82] lg:block">
                 High-quality research, operational research, implementation science, surveys,
                 evaluations, assessments and policy analysis.
               </p>
@@ -109,14 +127,25 @@ export default function Publications() {
           <div className="flex min-w-0 flex-col gap-6">
             <article className="relative min-h-0 min-w-0 overflow-hidden rounded-[24px] border border-[#EEF2F7] bg-[#F0FDF4] shadow-[0px_28px_64px_rgba(12,25,48,0.1)] lg:min-h-[305px]">
               <div className="relative z-10 max-w-[410px] p-6 lg:pr-0">
-                <span className="flex items-center gap-2 text-[13px] font-semibold uppercase text-[#16A34A]">
+                <span className="flex items-center gap-2 text-[13px] font-semibold uppercase text-[#16A34A] lg:hidden">
+                  <ClipboardList size={24} />
+                  Policy Brief
+                </span>
+                <span className="hidden items-center gap-2 text-[13px] font-semibold uppercase text-[#16A34A] lg:flex">
                   <ClipboardList size={24} />
                   Innovation Brief
                 </span>
-                <h3 className="mt-4 text-[18px] font-semibold leading-[130%] text-[#16233B]">
+                <h3 className="mt-4 text-[18px] font-semibold leading-[130%] text-[#16233B] lg:hidden">
+                  Strengthening Local Governance for Sustainable Development
+                </h3>
+                <h3 className="mt-4 hidden text-[18px] font-semibold leading-[130%] text-[#16233B] lg:block">
                   Innovation
                 </h3>
-                <p className="mt-6 max-w-[362px] text-[16px] font-medium leading-7 text-[#5B6B82]">
+                <p className="mt-6 max-w-[362px] text-[16px] font-medium leading-7 text-[#5B6B82] lg:hidden">
+                  Actionable policy recommendations that promote transparent governance,
+                  institutional resilience, and inclusive public service delivery.
+                </p>
+                <p className="mt-6 hidden max-w-[362px] text-[16px] font-medium leading-7 text-[#5B6B82] lg:block">
                   Science, technology, digital transformation, artificial intelligence and
                   adaptive approaches to complex development challenges.
                 </p>
@@ -128,9 +157,9 @@ export default function Publications() {
                   <ArrowRight size={24} />
                 </Link>
               </div>
-              <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[min(52%,430px)] lg:block">
-                <span className="absolute right-[-40px] top-10 size-[280px] rounded-full bg-[#E9F7ED]" />
-                <div className="absolute bottom-[-8px] right-[-12px] h-[290px] w-[380px] max-w-[110%]">
+              <div className="pointer-events-none relative mt-6 h-[214px] w-full overflow-hidden rounded-[18px] lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:h-auto lg:w-[min(52%,430px)] lg:rounded-none">
+                <span className="absolute right-[-40px] top-10 hidden size-[280px] rounded-full bg-[#E9F7ED] lg:block" />
+                <div className="absolute inset-0 lg:bottom-[-8px] lg:right-[-12px] lg:left-auto lg:top-auto lg:h-[290px] lg:w-[380px] lg:max-w-[110%]">
                   <Image
                     src="/images/innovation-brief.png"
                     alt="Innovation Brief"
@@ -145,7 +174,11 @@ export default function Publications() {
             <div className="grid min-w-0 grid-cols-1 gap-5 sm:grid-cols-2">
               <article className="min-h-0 min-w-0 rounded-[24px] border border-[#EEF2F7] bg-white p-6 shadow-[0px_28px_64px_rgba(12,25,48,0.1)] lg:min-h-[275px]">
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <span className="flex items-center gap-2 text-[13px] font-semibold uppercase text-[#2563EB]">
+                  <span className="flex items-center gap-2 text-[13px] font-semibold uppercase text-[#2563EB] lg:hidden">
+                    <ChartColumn size={24} />
+                    Research Insight
+                  </span>
+                  <span className="hidden items-center gap-2 text-[13px] font-semibold uppercase text-[#2563EB] lg:flex">
                     <ChartColumn size={24} />
                     Knowledge Insight
                   </span>
@@ -157,10 +190,16 @@ export default function Publications() {
                 </div>
                 <div className="mt-6 flex min-w-0 items-start gap-3">
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-[16px] font-semibold leading-[130%] text-[#16233B]">
+                    <h3 className="text-[16px] font-semibold leading-[130%] text-[#16233B] lg:hidden">
+                      Youth Employment Trends Across East Africa
+                    </h3>
+                    <h3 className="hidden text-[16px] font-semibold leading-[130%] text-[#16233B] lg:block">
                       Knowledge Translation
                     </h3>
-                    <p className="mt-3 text-[16px] font-medium leading-7 text-[#5B6B82]">
+                    <p className="mt-3 text-[16px] font-medium leading-7 text-[#5B6B82] lg:hidden">
+                      Explore emerging labour market trends.
+                    </p>
+                    <p className="mt-3 hidden text-[16px] font-medium leading-7 text-[#5B6B82] lg:block">
                       Turning evidence and knowledge into policy, practice and innovation.
                     </p>
                     <Link
@@ -171,7 +210,7 @@ export default function Publications() {
                       <ArrowRight size={24} />
                     </Link>
                   </div>
-                  <div className="hidden w-[128px] shrink-0 flex-col items-center sm:flex">
+                  <div className="flex w-[128px] shrink-0 flex-col items-center">
                     <div className="relative h-[128px] w-[128px]">
                       <svg viewBox="0 0 128 128" className="h-full w-full -rotate-90">
                         <circle
@@ -217,10 +256,16 @@ export default function Publications() {
                 </div>
                 <div className="mt-5 flex min-w-0 gap-4">
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-[16px] font-semibold leading-[130%] text-[#16233B]">
+                    <h3 className="text-[16px] font-semibold leading-[130%] text-[#16233B] lg:hidden">
+                      Community-Led Water Security in Kenya
+                    </h3>
+                    <h3 className="hidden text-[16px] font-semibold leading-[130%] text-[#16233B] lg:block">
                       Capacity Development
                     </h3>
-                    <p className="mt-3 text-[16px] font-medium leading-7 text-[#5B6B82]">
+                    <p className="mt-3 text-[16px] font-medium leading-7 text-[#5B6B82] lg:hidden">
+                      Learn how collaborative research and community resilience.
+                    </p>
+                    <p className="mt-3 hidden text-[16px] font-medium leading-7 text-[#5B6B82] lg:block">
                       Education, leadership, fellowships, internships, mentorship...
                     </p>
                     <Link
@@ -231,7 +276,7 @@ export default function Publications() {
                       <ArrowRight size={24} />
                     </Link>
                   </div>
-                  <div className="relative hidden h-[170px] w-[126px] shrink-0 overflow-hidden rounded-[18px] sm:block">
+                  <div className="relative h-[170px] w-[126px] shrink-0 overflow-hidden rounded-[18px]">
                     <Image
                       src="/images/project-agriculture.png"
                       alt="Researcher with a tablet in an agricultural field"

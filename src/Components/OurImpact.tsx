@@ -52,13 +52,27 @@ export default function OurImpact() {
             Delivering research, innovation, and partnerships that improve lives across
             Africa.
           </p>
-          <div className="mt-6">
-            <OutlineButton href="/impact">View Impact Report</OutlineButton>
+          <div className="mt-6 w-full max-w-[400px]">
+            <OutlineButton href="/impact" className="w-full lg:w-auto">
+              View Impact Report
+            </OutlineButton>
           </div>
         </div>
 
-        <div className="mt-16 rounded-[32px] border border-white/55 bg-white/40 px-5 py-8 shadow-[0px_20px_60px_-10px_rgba(15,23,42,0.08)] backdrop-blur-[12px] sm:px-8 sm:py-12 lg:px-12 xl:px-[75px] xl:py-[54px]">
-          <div className="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4 lg:gap-x-8 xl:gap-x-[48px]">
+        <div className="relative mt-10 lg:mt-16">
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 top-16 overflow-hidden rounded-[32px] lg:hidden">
+            <Image
+              src="/images/about-acridc.png"
+              alt=""
+              fill
+              sizes="400px"
+              className="object-cover object-[70%_40%]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-white via-white/70 to-white/20" />
+          </div>
+
+          <div className="relative rounded-[32px] border border-white/55 bg-white/70 px-5 py-8 shadow-[0px_20px_60px_-10px_rgba(15,23,42,0.08)] backdrop-blur-[12px] sm:px-8 sm:py-12 lg:bg-white/40 lg:px-12 xl:px-[75px] xl:py-[54px]">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-4 lg:gap-x-8 xl:gap-x-[48px]">
             {STATS.map((stat, i) => {
               const Icon = stat.icon;
               return (
@@ -66,15 +80,15 @@ export default function OurImpact() {
                   {i > 0 && (
                     <span className="hidden h-[140px] w-px shrink-0 bg-[rgba(203,213,225,0.35)] lg:block" />
                   )}
-                  <div className="flex min-w-0 flex-1 flex-col items-center gap-4 text-center sm:gap-6">
-                    <span className="flex h-[72px] w-[72px] items-center justify-center rounded-full border border-white/70 bg-[rgba(248,251,249,0.85)] text-[#16A34A] shadow-[0px_10px_30px_rgba(15,23,42,0.08)] backdrop-blur-[6px]">
-                      <Icon size={28} strokeWidth={1.75} />
+                  <div className="flex min-w-0 flex-1 flex-col items-center gap-3 text-center sm:gap-6">
+                    <span className="flex h-14 w-14 items-center justify-center rounded-[20px] bg-[#F3F8F5] text-[#16A34A] lg:h-[72px] lg:w-[72px] lg:rounded-full lg:border lg:border-white/70 lg:bg-[rgba(248,251,249,0.85)] lg:shadow-[0px_10px_30px_rgba(15,23,42,0.08)] lg:backdrop-blur-[6px]">
+                      <Icon size={22} strokeWidth={1.75} className="lg:h-7 lg:w-7" />
                     </span>
                     <div>
                       <p className="font-display text-[clamp(2rem,1.2rem+3vw,4.5rem)] font-bold leading-none text-[#0F172A] xl:leading-[1.15]">
                         {stat.value}
                       </p>
-                      <p className="text-[20px] font-medium leading-[27px] text-[#64748B]">
+                      <p className="mt-2 text-[14px] font-medium leading-[19px] text-[#64748B] lg:text-[20px] lg:leading-[27px]">
                         {stat.label}
                       </p>
                     </div>
@@ -82,6 +96,7 @@ export default function OurImpact() {
                 </div>
               );
             })}
+          </div>
           </div>
         </div>
       </div>

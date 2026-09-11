@@ -14,6 +14,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { Eyebrow, OutlineButton } from "./ui";
+import MobileCarousel from "./MobileCarousel";
 
 interface ProjectCard {
   icon: LucideIcon;
@@ -83,7 +84,7 @@ const DARK_PROJECTS: ProjectCard[] = [
 
 export default function FeaturedProjects() {
   return (
-    <section className="relative overflow-hidden bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:py-12">
+    <section className="relative overflow-x-clip bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:py-12">
       <div className="relative mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[600px] text-center">
           <Eyebrow align="center">Featured Projects</Eyebrow>
@@ -101,21 +102,34 @@ export default function FeaturedProjects() {
             ACRIDC-Africa designs, implements, monitors, evaluates and scales research,
             innovation, humanitarian and sustainable development programmes.
           </p>
-          <div className="mt-6 flex justify-center lg:hidden">
-            <OutlineButton href="/what-we-do/projects">View All Projects</OutlineButton>
+          <div className="mt-6 w-full max-w-[400px] lg:hidden">
+            <OutlineButton href="/what-we-do/projects" className="w-full">
+              View All Projects
+            </OutlineButton>
           </div>
           <div className="mt-6 hidden justify-center lg:flex">
             <OutlineButton href="/what-we-do/projects">Explore Our Projects</OutlineButton>
           </div>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-[25px] sm:grid-cols-2 lg:grid-cols-3">
+        <MobileCarousel className="mt-12 lg:hidden">
+          {LIGHT_PROJECTS.map((project) => (
+            <LightCard key={project.title} project={project} />
+          ))}
+        </MobileCarousel>
+
+        <MobileCarousel className="mt-8 lg:hidden">
+          <GovernanceCard project={DARK_PROJECTS[0]} />
+          <EducationCard project={DARK_PROJECTS[1]} />
+        </MobileCarousel>
+
+        <div className="mt-12 hidden grid-cols-1 gap-[25px] lg:grid lg:grid-cols-3">
           {LIGHT_PROJECTS.map((project) => (
             <LightCard key={project.title} project={project} />
           ))}
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="mt-8 hidden grid-cols-1 gap-8 lg:grid lg:grid-cols-2">
           <GovernanceCard project={DARK_PROJECTS[0]} />
           <EducationCard project={DARK_PROJECTS[1]} />
         </div>
@@ -126,8 +140,8 @@ export default function FeaturedProjects() {
 
 function ProjectIcon({ icon: Icon }: { icon: LucideIcon }) {
   return (
-    <span className="absolute left-6 top-6 z-10 flex h-16 w-16 items-center justify-center rounded-[20px] bg-[#E2F9E7] text-[#16A34A] shadow-[inset_0px_4px_16px_rgba(15,23,42,0.06)]">
-      <Icon size={28} strokeWidth={1.75} />
+    <span className="absolute left-5 top-5 z-20 flex h-14 w-14 items-center justify-center rounded-[20px] bg-[#E2F9E7] text-[#16A34A] shadow-[inset_0px_4px_16px_rgba(15,23,42,0.06)] lg:left-6 lg:top-6 lg:h-16 lg:w-16">
+      <Icon size={24} strokeWidth={1.75} className="lg:h-7 lg:w-7" />
     </span>
   );
 }
@@ -147,9 +161,9 @@ function LightCard({ project }: { project: ProjectCard }) {
   return (
     <Link
       href={project.href}
-      className="group relative flex min-h-[477px] flex-col overflow-hidden rounded-[24px] border border-[#EEF2F7] bg-white shadow-[0px_28px_64px_rgba(12,25,48,0.1)]"
+      className="group relative flex h-full min-h-[435px] flex-col overflow-hidden rounded-[24px] border border-[#EEF2F7] bg-white shadow-[0px_28px_64px_rgba(12,25,48,0.1)] lg:min-h-[477px]"
     >
-      <div className="relative h-[224px] w-full shrink-0">
+      <div className="relative h-[224px] w-full shrink-0 overflow-hidden">
         <Image
           src={project.image}
           alt={project.title}
@@ -164,15 +178,15 @@ function LightCard({ project }: { project: ProjectCard }) {
         {project.title === "Health & Wellbeing" && <CommunityReachWidget />}
       </div>
 
-      <div className="flex flex-1 flex-col px-6 pb-6 pt-5">
+      <div className="relative z-10 flex flex-1 flex-col bg-white px-5 pb-6 pt-5 lg:px-6">
         <Meta location={project.location} year={project.year} />
-        <h3 className="mt-[15px] text-[24px] font-semibold leading-[130%] text-[#16233B]">
+        <h3 className="mt-3 text-[20px] font-semibold leading-[130%] text-[#16233B] lg:mt-[15px] lg:text-[24px]">
           {project.title}
         </h3>
-        <p className="mt-3 text-[16px] font-medium leading-7 text-[#5B6B82]">
+        <p className="mt-3 text-[15px] font-medium leading-6 text-[#5B6B82] lg:text-[16px] lg:leading-7">
           {project.description}
         </p>
-        <span className="mt-6 inline-flex items-center gap-3 text-base font-semibold leading-[22px] text-[#1E293B]">
+        <span className="mt-4 inline-flex items-center gap-3 text-base font-semibold leading-[22px] text-[#1E293B] lg:mt-6">
           View Project
           <ArrowRight size={24} className="text-[#16A34A]" />
         </span>
@@ -186,27 +200,29 @@ function GovernanceCard({ project }: { project: ProjectCard }) {
   return (
     <Link
       href={project.href}
-      className="group relative isolate flex min-h-[380px] overflow-hidden rounded-[32px] border border-white/65 shadow-[0px_24px_60px_-12px_rgba(15,23,42,0.18)]"
+      className="group relative isolate flex min-h-[435px] flex-col overflow-hidden rounded-[32px] border border-white/65 shadow-[0px_24px_60px_-12px_rgba(15,23,42,0.18)] lg:min-h-[380px] lg:flex-row"
     >
-      <Image
-        src={project.image}
-        alt={project.title}
-        fill
-        sizes="624px"
-        className="object-cover transition-transform duration-300 group-hover:scale-105"
-      />
-      <div className="absolute inset-0 bg-[linear-gradient(250.38deg,rgba(30,41,59,0.12)_1.4%,rgba(30,41,59,0.78)_42.89%,#1E293B_97.85%)]" />
-      <ProjectIcon icon={Icon} />
-      <PolicyInfluenceWidget />
-      <div className="relative z-10 mt-auto max-w-[min(362px,calc(100%-13.5rem))] p-6">
+      <div className="relative h-[180px] w-full shrink-0 lg:absolute lg:inset-0 lg:h-auto">
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          sizes="624px"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(30,41,59,0.12)_0%,rgba(30,41,59,0.55)_100%)] lg:bg-[linear-gradient(250.38deg,rgba(30,41,59,0.12)_1.4%,rgba(30,41,59,0.78)_42.89%,#1E293B_97.85%)]" />
+        <ProjectIcon icon={Icon} />
+        <PolicyInfluenceWidget />
+      </div>
+      <div className="relative z-10 mt-auto bg-[#1E293B] p-5 lg:max-w-[min(362px,calc(100%-13.5rem))] lg:bg-transparent lg:p-6">
         <Meta location={project.location} year={project.year} />
-        <h3 className="mt-4 text-[24px] font-semibold leading-[130%] text-white">
+        <h3 className="mt-3 text-[20px] font-semibold leading-[130%] text-white lg:mt-4 lg:text-[24px]">
           {project.title}
         </h3>
-        <p className="mt-3 text-[16px] font-medium leading-7 text-white">
+        <p className="mt-3 text-[15px] font-medium leading-6 text-white lg:text-[16px] lg:leading-7">
           {project.description}
         </p>
-        <span className="mt-8 inline-flex items-center gap-3 text-base font-semibold text-white">
+        <span className="mt-4 inline-flex items-center gap-3 text-base font-semibold text-white lg:mt-8">
           View Project
           <ArrowRight size={24} className="text-[#16A34A]" />
         </span>
@@ -220,27 +236,29 @@ function EducationCard({ project }: { project: ProjectCard }) {
   return (
     <Link
       href={project.href}
-      className="group relative isolate min-h-[380px] overflow-hidden rounded-[32px] border border-white/65 shadow-[0px_24px_60px_-12px_rgba(15,23,42,0.18)]"
+      className="group relative isolate flex min-h-[435px] flex-col overflow-hidden rounded-[32px] border border-white/65 shadow-[0px_24px_60px_-12px_rgba(15,23,42,0.18)] lg:min-h-[380px]"
     >
-      <Image
-        src={project.image}
-        alt={project.title}
-        fill
-        sizes="624px"
-        className="object-cover transition-transform duration-300 group-hover:scale-105"
-      />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(100,116,139,0)_9.62%,#16233B_95.51%)]" />
-      <ProjectIcon icon={Icon} />
-      <LearningImprovementWidget />
-      <div className="absolute bottom-0 left-0 z-10 w-full max-w-[min(362px,calc(100%-13.5rem))] rounded-tr-[18px] rounded-bl-[32px] bg-white/92 p-5">
+      <div className="relative h-[180px] w-full shrink-0 lg:absolute lg:inset-0 lg:h-auto">
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          sizes="624px"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-[rgba(30,41,59,0.2)] lg:bg-[linear-gradient(90deg,rgba(100,116,139,0)_9.62%,#16233B_95.51%)]" />
+        <ProjectIcon icon={Icon} />
+        <LearningImprovementWidget />
+      </div>
+      <div className="relative z-10 mt-auto w-full bg-white p-5 lg:absolute lg:bottom-0 lg:left-0 lg:max-w-[min(362px,calc(100%-13.5rem))] lg:rounded-tr-[18px] lg:rounded-bl-[32px] lg:bg-white/92">
         <Meta location={project.location} year={project.year} />
-        <h3 className="mt-3.5 text-[24px] font-semibold leading-[130%] text-[#1E293B]">
+        <h3 className="mt-3 text-[20px] font-semibold leading-[130%] text-[#1E293B] lg:mt-3.5 lg:text-[24px]">
           {project.title}
         </h3>
-        <p className="mt-3 text-[16px] font-medium leading-7 text-[#64748B]">
+        <p className="mt-3 text-[15px] font-medium leading-6 text-[#64748B] lg:text-[16px] lg:leading-7">
           {project.description}
         </p>
-        <span className="mt-8 inline-flex items-center gap-3 text-base font-semibold text-[#1E293B]">
+        <span className="mt-4 inline-flex items-center gap-3 text-base font-semibold text-[#1E293B] lg:mt-8">
           View Project
           <ArrowRight size={24} className="text-[#16A34A]" />
         </span>
@@ -272,7 +290,7 @@ function WeatherWidget() {
     { icon: CloudRain, value: "12mm", label: "Rainfall" },
   ];
   return (
-    <WidgetShell className="right-7 top-7 flex h-[160px] w-[113px] flex-col justify-center gap-[7px] rounded-[18px] px-3">
+    <WidgetShell className="right-4 top-5 flex h-[148px] w-[108px] flex-col justify-center gap-[7px] rounded-[18px] px-2.5 lg:right-7 lg:top-7 lg:h-[160px] lg:w-[113px] lg:px-3">
       {rows.map((row) => {
         const Icon = row.icon;
         return (
@@ -300,7 +318,7 @@ function SoilMoistureWidget() {
     [22, 28, 27],
   ];
   return (
-    <WidgetShell className="right-7 top-7 flex h-[160px] w-[157px] flex-col rounded-[18px] px-3.5 py-3">
+    <WidgetShell className="right-4 top-5 flex h-[148px] w-[140px] flex-col rounded-[18px] px-3 py-3 lg:right-7 lg:top-7 lg:h-[160px] lg:w-[157px] lg:px-3.5">
       <div className="flex items-center gap-2.5 text-white">
         <Droplet size={28} className="text-[#93D6AC]" />
         <span>
@@ -323,7 +341,7 @@ function SoilMoistureWidget() {
 
 function CommunityReachWidget() {
   return (
-    <WidgetShell className="right-0 top-0 flex h-[189px] w-[168px] flex-col rounded-b-[18px] rounded-t-none px-4 py-4">
+    <WidgetShell className="right-0 top-0 flex h-[170px] w-[150px] flex-col rounded-b-[18px] rounded-t-none px-3 py-3 lg:h-[189px] lg:w-[168px] lg:px-4 lg:py-4">
       <span className="text-[13px] font-semibold leading-[130%] text-[#F8FAFC]">Community reach</span>
       <span className="mt-1 text-[20px] font-semibold leading-[130%] text-white">24,850</span>
       <span className="text-[12px] font-semibold leading-[130%] text-white">People Reached</span>
@@ -388,7 +406,7 @@ function PolicyInfluenceWidget() {
     { icon: Briefcase, value: "12", label: "Capacity Building Programmes" },
   ];
   return (
-    <WidgetShell className="right-7 top-7 hidden h-[230px] w-[195px] flex-col rounded-[18px] border-white/16 bg-[rgba(30,41,59,0.12)] p-5 sm:flex">
+    <WidgetShell className="right-7 top-7 hidden h-[230px] w-[195px] flex-col rounded-[18px] border-white/16 bg-[rgba(30,41,59,0.12)] p-5 lg:flex">
       <span className="text-[14px] font-semibold leading-[130%] text-white">Policy Influence</span>
       <div className="mt-3 flex flex-col gap-[7px]">
         {items.map((item) => {
@@ -416,7 +434,7 @@ function PolicyInfluenceWidget() {
 
 function LearningImprovementWidget() {
   return (
-    <WidgetShell className="right-7 top-7 hidden h-[230px] w-[195px] flex-col rounded-[18px] p-5 sm:flex">
+    <WidgetShell className="right-7 top-7 hidden h-[230px] w-[195px] flex-col rounded-[18px] p-5 lg:flex">
       <span className="text-[13px] font-semibold leading-[130%] text-white">Learning Improvement</span>
       <span className="mt-1 text-[20px] font-semibold leading-[130%] text-white">73%</span>
       <span className="text-[12px] font-semibold leading-[130%] text-white">Average Score Increase</span>

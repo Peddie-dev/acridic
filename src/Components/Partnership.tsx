@@ -70,6 +70,15 @@ const PARTNERS: Partner[] = [
   },
 ];
 
+const MOBILE_PARTNERS: Partner[] = [
+  PARTNERS[0],
+  PARTNERS[1],
+  PARTNERS[3],
+  PARTNERS[5],
+  PARTNERS[2],
+  PARTNERS[4],
+];
+
 export default function Partnership() {
   return (
     <section className="relative overflow-hidden bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:pb-24">
@@ -121,13 +130,27 @@ export default function Partnership() {
           ))}
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:hidden">
-          {PARTNERS.map((partner) => (
-            <PartnerCard key={partner.title} partner={partner} />
+        <div className="mt-12 grid grid-cols-2 gap-4 lg:hidden">
+          {MOBILE_PARTNERS.map((partner) => (
+            <PartnerTile key={partner.title} partner={partner} />
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function PartnerTile({ partner }: { partner: Partner }) {
+  const Icon = partner.icon;
+  return (
+    <div className="flex h-[142px] flex-col items-center justify-center rounded-[24px] border border-[#E5E7EB] bg-white px-3 shadow-[0px_28px_64px_rgba(12,25,48,0.08)]">
+      <span className="inline-flex h-14 w-14 items-center justify-center rounded-[20px] bg-[#EAF9EE] text-[#16A34A]">
+        <Icon size={24} strokeWidth={1.75} />
+      </span>
+      <h3 className="mt-4 text-center text-[16px] font-semibold leading-[18px] tracking-[-0.01em] text-[#16233B]">
+        {partner.title}
+      </h3>
+    </div>
   );
 }
 

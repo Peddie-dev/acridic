@@ -38,6 +38,15 @@ body {
   filter: url(#knockout-black);
 }
 
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* Desktop hero: keep the Figma 1440×1024 composition; scale it below 1440 */
 .hero-section {
   --hero-scale: 1;
@@ -66,4 +75,17 @@ body {
   .hero-desktop-stage > * {
     margin-inline: auto;
   }
+}
+
+@keyframes hero-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.hero-marquee-track {
+  animation: hero-marquee 22s linear infinite;
 }

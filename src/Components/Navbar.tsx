@@ -15,6 +15,8 @@ import {
   FileText,
   BookOpen,
   ClipboardList,
+  Menu,
+  X,
 } from "lucide-react";
 
 type DropdownKey = "about" | "research";
@@ -247,10 +249,15 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMobileOpen((v) => !v)}
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-[#1E293B] lg:hidden"
+          className="flex h-14 shrink-0 items-center gap-2 rounded-[14px] bg-[#16A34A] px-5 text-[14px] font-semibold leading-[19px] text-white hover:bg-[#15803d] lg:hidden"
           aria-label="Toggle menu"
         >
-          <MenuIcon open={mobileOpen} />
+          Menu
+          {mobileOpen ? (
+            <X size={24} strokeWidth={2} className="shrink-0" />
+          ) : (
+            <Menu size={24} strokeWidth={2} className="shrink-0" />
+          )}
         </button>
       </nav>
 
@@ -298,27 +305,5 @@ export default function Navbar() {
         </div>
       )}
     </header>
-  );
-}
-
-function MenuIcon({ open }: { open: boolean }) {
-  return (
-    <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none">
-      {open ? (
-        <path
-          d="M6 6l12 12M18 6L6 18"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-      ) : (
-        <path
-          d="M4 7h16M4 12h16M4 17h16"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-      )}
-    </svg>
   );
 }

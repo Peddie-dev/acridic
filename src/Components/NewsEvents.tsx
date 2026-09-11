@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar, Receipt } from "lucide-react";
 import { Eyebrow } from "./ui";
+import MobileCarousel from "./MobileCarousel";
 
 const STORIES = [
   {
@@ -17,7 +18,7 @@ const STORIES = [
     kind: "EVENT" as const,
     color: "bg-[#2563EB]",
     image: "/images/project-education.png",
-    meta: "June 10–12, 2025  •  Nairobi, Kenya",
+    meta: "May 22, 2025  •  June 10–12, 2025",
     title: "ACRIDC Annual Research Dialogue 2025",
     body: "Bringing together researchers, policymakers, and partners to exchange knowledge and advance evidence-based development.",
     href: "/events/research-dialogue-2025",
@@ -33,9 +34,45 @@ const STORIES = [
   },
 ];
 
+type Story = (typeof STORIES)[number];
+
+function StoryCard({ story }: { story: Story }) {
+  return (
+    <article className="relative flex h-full min-h-[460px] flex-col overflow-hidden rounded-[24px] border border-[#EEF2F7] bg-white shadow-[0px_28px_64px_rgba(12,25,48,0.1)] lg:min-h-[600px]">
+      <div className="relative h-[212px] w-full lg:h-[300px]">
+        <Image src={story.image} alt="" fill sizes="410px" className="object-cover" />
+        <div className="absolute inset-0 bg-[rgba(30,41,59,0.2)]" />
+        <span
+          className={`absolute left-6 top-6 inline-flex h-10 items-center gap-2.5 rounded-lg px-2.5 text-[14px] font-semibold text-[#F8FAFC] ${story.color}`}
+        >
+          {story.kind === "EVENT" ? <Calendar size={24} /> : <Receipt size={24} />}
+          {story.kind}
+        </span>
+      </div>
+      <div className="flex flex-1 flex-col px-6 py-6">
+        <p className="flex items-center gap-2 text-[14px] font-medium tracking-[0.02em] text-[#64748B]">
+          <Calendar size={24} />
+          {story.meta}
+        </p>
+        <h3 className="mt-4 text-[24px] font-semibold leading-[130%] text-[#16233B]">
+          {story.title}
+        </h3>
+        <p className="mt-3 text-[16px] font-medium leading-7 text-[#5B6B82]">{story.body}</p>
+        <Link
+          href={story.href}
+          className="mt-auto inline-flex items-center gap-3 pt-6 text-base font-semibold text-[#16A34A]"
+        >
+          Read More
+          <ArrowRight size={24} />
+        </Link>
+      </div>
+    </article>
+  );
+}
+
 export default function NewsEvents() {
   return (
-    <section className="relative overflow-hidden bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:pb-16">
+    <section className="relative overflow-x-clip bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:pb-16">
       <div className="relative mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[665px] text-center">
           <Eyebrow align="center">
@@ -61,42 +98,15 @@ export default function NewsEvents() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-[25px] md:grid-cols-2 xl:grid-cols-3">
+        <MobileCarousel className="mt-12 lg:hidden">
           {STORIES.map((story) => (
-            <article
-              key={story.title}
-              className="relative flex min-h-[600px] flex-col overflow-hidden rounded-[24px] border border-[#EEF2F7] bg-white shadow-[0px_28px_64px_rgba(12,25,48,0.1)]"
-            >
-              <div className="relative h-[300px] w-full">
-                <Image src={story.image} alt="" fill sizes="410px" className="object-cover" />
-                <div className="absolute inset-0 bg-[rgba(30,41,59,0.2)]" />
-                <span
-                  className={`absolute left-6 top-6 inline-flex h-10 items-center gap-2.5 rounded-lg px-2.5 text-[14px] font-semibold text-[#F8FAFC] ${story.color}`}
-                >
-                  {story.kind === "EVENT" ? <Calendar size={24} /> : <Receipt size={24} />}
-                  {story.kind}
-                </span>
-              </div>
-              <div className="flex flex-1 flex-col px-6 py-6">
-                <p className="flex items-center gap-2 text-[14px] font-medium tracking-[0.02em] text-[#64748B]">
-                  <Calendar size={24} />
-                  {story.meta}
-                </p>
-                <h3 className="mt-4 text-[24px] font-semibold leading-[130%] text-[#16233B]">
-                  {story.title}
-                </h3>
-                <p className="mt-3 text-[16px] font-medium leading-7 text-[#5B6B82]">
-                  {story.body}
-                </p>
-                <Link
-                  href={story.href}
-                  className="mt-auto inline-flex items-center gap-3 pt-6 text-base font-semibold text-[#16A34A]"
-                >
-                  Read More
-                  <ArrowRight size={24} />
-                </Link>
-              </div>
-            </article>
+            <StoryCard key={story.title} story={story} />
+          ))}
+        </MobileCarousel>
+
+        <div className="mt-12 hidden grid-cols-1 gap-[25px] md:grid-cols-2 lg:grid xl:grid-cols-3">
+          {STORIES.map((story) => (
+            <StoryCard key={story.title} story={story} />
           ))}
         </div>
 

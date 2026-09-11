@@ -8,6 +8,8 @@ import {
   Users,
   TrendingUp,
   Maximize2,
+  Compass,
+  Feather,
 } from "lucide-react";
 import { FaLinkedinIn, FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
@@ -32,6 +34,12 @@ const SOCIAL = [
   { label: "Facebook", href: "https://www.facebook.com", icon: FaFacebookF },
   { label: "Instagram", href: "https://www.instagram.com", icon: FaInstagram },
   { label: "Twitter", href: "https://x.com", icon: FaXTwitter },
+];
+
+const MOBILE_PILLS = [
+  { icon: Feather, label: "Evidence-Based Solutions" },
+  { icon: Users, label: "Stronger Partnership" },
+  { icon: TrendingUp, label: "A more Resilient Africa" },
 ];
 
 const PILL_ITEMS = [
@@ -72,19 +80,34 @@ export default function Footer() {
               <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#16A34A]" />
               Partner With Us
             </span>
-            <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em]">
+            <h2 className="mt-6 text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] text-[#16233B] lg:hidden">
+              Let&apos;s Build Africa&apos;s Future Together.
+            </h2>
+            <h2 className="mt-6 hidden text-[clamp(1.875rem,1rem+2.6vw,3rem)] font-bold leading-[110%] tracking-[-0.02em] lg:block">
               <span className="block text-[#16233B]">Partner With</span>
               <span className="block text-[#16A34A]">ACRIDC-Africa</span>
             </h2>
-            <p className="mt-6 max-w-[566px] text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82]">
+            <p className="mt-6 max-w-[566px] text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:hidden">
+              Our research transforms complex challenges into practical insights that inform
+              policy, strengthen institutions, and create lasting impact across Africa.
+            </p>
+            <p className="mt-6 hidden max-w-[566px] text-[18px] font-normal leading-[175%] tracking-[-0.02em] text-[#5B6B82] lg:block">
               ACRIDC-Africa welcomes strategic partnerships and collaborative relationships
               that advance its Vision, Mission, Strategic Goal, Objects and public benefit
               purposes.
             </p>
             <div className="mt-[30px] flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:items-center sm:justify-center sm:gap-[23px]">
               <Link
+                href="/partner-with-us"
+                className="inline-flex h-[64px] items-center justify-center gap-3 rounded-[14px] border border-[#16A34A] bg-[#16A34A] px-5 text-base font-semibold leading-[27px] text-white lg:hidden"
+              >
+                <Compass size={24} />
+                Become a Partner
+                <ArrowRight size={24} />
+              </Link>
+              <Link
                 href="/research/areas"
-                className="inline-flex h-[56px] items-center justify-center gap-3 rounded-[14px] border border-[#16A34A] bg-[#16A34A] px-5 text-base font-semibold leading-[27px] text-white sm:h-[72px] sm:text-[20px]"
+                className="hidden h-[56px] items-center justify-center gap-3 rounded-[14px] border border-[#16A34A] bg-[#16A34A] px-5 text-base font-semibold leading-[27px] text-white sm:h-[72px] sm:text-[20px] lg:inline-flex"
               >
                 <Send size={24} />
                 Research With Us
@@ -92,7 +115,7 @@ export default function Footer() {
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex h-[56px] items-center justify-center gap-3 rounded-[14px] border-2 border-[#16A34A] bg-white/70 px-5 text-base font-semibold leading-[27px] text-[#1E293B] sm:h-[72px] sm:text-[20px]"
+                className="inline-flex h-[64px] items-center justify-center gap-3 rounded-[14px] border-2 border-[#16A34A] bg-white/70 px-5 text-base font-semibold leading-[27px] text-[#1E293B] sm:h-[72px] sm:text-[20px]"
               >
                 <Mail size={24} />
                 Contact Us
@@ -101,7 +124,23 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="mx-auto mt-12 flex max-w-[920px] flex-col items-center gap-5 rounded-[32px] bg-[#E5F2EA] px-6 py-5 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-8 sm:gap-y-4 sm:rounded-full sm:px-8 lg:flex-nowrap lg:justify-between lg:px-10">
+          <div className="mx-auto mt-10 grid w-full max-w-[400px] grid-cols-2 gap-x-4 gap-y-6 rounded-[24px] bg-[#E5F2EA] px-5 py-5 lg:hidden">
+            {MOBILE_PILLS.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div key={item.label} className="flex items-center gap-2">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] bg-[rgba(22,163,74,0.12)] text-[#16A34A]">
+                    <Icon size={20} strokeWidth={1.75} />
+                  </span>
+                  <span className="text-left text-[14px] font-semibold leading-[18px] text-[#1E293B]">
+                    {item.label}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mx-auto mt-12 hidden max-w-[920px] flex-col items-center gap-5 rounded-[32px] bg-[#E5F2EA] px-6 py-5 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-8 sm:gap-y-4 sm:rounded-full sm:px-8 lg:flex lg:flex-nowrap lg:justify-between lg:px-10">
             {PILL_ITEMS.map((item) => {
               const Icon = item.icon;
               return (
