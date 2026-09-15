@@ -18,7 +18,7 @@ const STATS: Stat[] = [
 
 export default function OurImpact() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:py-12">
+    <section id="impact" className="relative isolate overflow-hidden bg-[#F8FAFC] px-5 py-16 sm:px-10 lg:px-20 lg:py-12">
       <div
         aria-hidden
         className="pointer-events-none absolute left-[calc(50%-400px-167px)] top-[418px] hidden h-[600px] w-[800px] rounded-full bg-[linear-gradient(136.77deg,rgba(34,197,94,0.22)_24.23%,rgba(37,99,235,0)_49.95%)] blur-[70px] lg:block"

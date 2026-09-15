@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="relative overflow-x-clip bg-[#F8FAFC]">
+      <main className="relative z-0 overflow-x-clip bg-[#F8FAFC]">
         <Hero />
         <About />
         <WhatWeDo />

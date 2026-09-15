@@ -19,6 +19,7 @@
 html {
   background: var(--background);
   overflow-x: clip;
+  scroll-padding-top: 7.5rem;
 }
 
 body {
@@ -45,6 +46,13 @@ body {
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+/* About page hero sits under the sticky navbar, matching Figma 1440×677 */
+@media (min-width: 1024px) {
+  .about-hero {
+    margin-top: -128px;
+  }
 }
 
 /* Desktop hero: keep the Figma 1440×1024 composition; scale it below 1440 */

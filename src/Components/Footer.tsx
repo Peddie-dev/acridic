@@ -17,7 +17,7 @@ const QUICK_LINKS = [
   { label: "About Us", href: "/about" },
   { label: "Research Areas", href: "/research/areas" },
   { label: "Projects", href: "/our-work" },
-  { label: "Partnerships", href: "/about/partners" },
+  { label: "Partnerships", href: "/about#partners" },
   { label: "Publications", href: "/research/publications" },
 ];
 

@@ -71,7 +71,7 @@ export function OutlineButton({
 }: {
   href: string;
   children: React.ReactNode;
-  icon?: LucideIcon;
+  icon?: LucideIcon | null;
   color?: "green" | "navy";
   className?: string;
 }) {
@@ -82,7 +82,9 @@ export function OutlineButton({
   return (
     <Link href={href} className={`${btnBase} ${styles} ${className}`}>
       {children}
-      <Icon size={24} strokeWidth={1.75} className={color === "green" ? "text-[#16A34A]" : ""} />
+      {Icon ? (
+        <Icon size={24} strokeWidth={1.75} className={color === "green" ? "text-[#16A34A]" : ""} />
+      ) : null}
     </Link>
   );
 }
@@ -122,8 +124,9 @@ export function IconTile({
     <span
       style={{ width: size, height: size }}
       className={`inline-flex shrink-0 items-center justify-center rounded-[20px] text-[#16A34A] ${className}`}
+      suppressHydrationWarning
     >
-      <Icon size={iconSize} strokeWidth={1.75} />
+      <Icon size={iconSize} strokeWidth={1.75} aria-hidden />
     </span>
   );
 }
