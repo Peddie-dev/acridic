@@ -12,7 +12,7 @@ import {
 import type { LucideIcon } from "lucide-react";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { IconTile } from "../ui";
-import { AfricaMark, SectionHeading } from "./shared";
+import { AfricaMark, SectionHeading, aboutSectionPad } from "./shared";
 
 const LEADERS = [
   {
@@ -69,47 +69,122 @@ function LeaderCard({
   role,
   bio,
   image,
-}: (typeof LEADERS)[number]) {
+  className = "",
+  stretchPhoto = false,
+}: (typeof LEADERS)[number] & { className?: string; stretchPhoto?: boolean }) {
   return (
-    <article className="h-auto rounded-[20px] border border-[#E2E8F0] bg-white p-4 shadow-[0px_20px_60px_rgba(15,23,42,0.08)] sm:h-[280px] sm:max-w-[390px]">
-      <div className="flex h-full flex-col gap-3 sm:flex-row sm:items-center">
-        <div className="relative mx-auto h-[238px] w-[170px] shrink-0 overflow-hidden rounded-[20px] sm:mx-0">
-          <Image
-            src={image}
-            alt={name}
-            fill
-            sizes="170px"
-            quality={100}
-            unoptimized
-            className="object-cover object-[center_12%]"
-          />
-        </div>
-        <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col sm:h-[239px] sm:w-[170px] sm:flex-none">
-          <h3 className="text-[18px] font-bold leading-[130%] text-[#16233B]">{name}</h3>
-          <p className="mt-2 text-[13px] font-semibold uppercase leading-[130%] text-[#16A34A]">{role}</p>
-          <p className="mt-2 line-clamp-5 text-[14px] font-medium leading-[160%] text-[#5B6B82]">{bio}</p>
-          <div className="mt-4 sm:mt-auto">
-            <span className="mb-4 block h-px w-full bg-[#E2E8F0]" />
-            <Link
-              href="https://www.linkedin.com"
-              className="inline-flex items-center gap-2 text-[13px] font-semibold text-[#16A34A]"
-            >
-              <span className="flex h-8 w-8 items-center justify-center rounded-[10px] border-[1.5px] border-[#16A34A]">
-                <FaLinkedinIn size={14} />
-              </span>
-              View LinkedIn
-              <ArrowUpRight size={18} />
-            </Link>
-          </div>
+    <article
+      className={`flex min-w-0 flex-row items-stretch gap-3 overflow-hidden rounded-[20px] border border-[#E2E8F0] bg-white p-3 shadow-[0px_20px_60px_rgba(15,23,42,0.08)] sm:gap-3 sm:p-4 ${className}`}
+    >
+      <div
+        className={`relative shrink-0 overflow-hidden rounded-[20px] bg-[#E8EDF2] ${
+          stretchPhoto
+            ? "h-full w-[44%] max-w-[170px] min-h-[220px] self-stretch"
+            : "w-[min(148px,42%)] self-stretch"
+        }`}
+      >
+        {stretchPhoto ? null : (
+          <span className="block aspect-[148/220] w-full" aria-hidden />
+        )}
+        <Image
+          src={image}
+          alt={name}
+          fill
+          sizes="340px"
+          quality={100}
+          unoptimized
+          className="object-cover object-top"
+        />
+      </div>
+      <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+        <h3 className="text-[16px] font-bold leading-[130%] tracking-[-0.02em] text-[#16233B] sm:text-[18px]">
+          {name}
+        </h3>
+        <p className="mt-1.5 text-[12px] font-semibold uppercase leading-[130%] text-[#16A34A] sm:mt-2 sm:text-[13px]">
+          {role}
+        </p>
+        <p className="mt-2 text-[13px] font-medium leading-[150%] text-[#5B6B82] sm:text-[14px] sm:leading-[160%]">
+          {bio}
+        </p>
+        <div className="mt-3 min-w-0 sm:mt-auto sm:pt-3">
+          <span className="mb-3 block h-px w-full bg-[#E2E8F0] sm:mb-4" />
+          <Link
+            href="https://www.linkedin.com"
+            className="inline-flex max-w-full items-center gap-2 text-[13px] font-semibold text-[#16A34A]"
+          >
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-[10px] border-[1.5px] border-[#16A34A]">
+              <FaLinkedinIn size={14} />
+            </span>
+            <span className="min-w-0 truncate">View LinkedIn</span>
+            <ArrowUpRight size={18} className="shrink-0" />
+          </Link>
         </div>
       </div>
     </article>
   );
 }
 
+function SectionLabel({
+  icon: Icon,
+  children,
+}: {
+  icon: LucideIcon;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="flex items-center gap-3">
+      <IconTile
+        icon={Icon}
+        size={64}
+        iconSize={32}
+        className="rounded-full bg-[rgba(22,163,74,0.12)]"
+      />
+      <span className="whitespace-nowrap text-[16px] font-medium uppercase tracking-[0.08em] text-[#1E293B]">
+        {children}
+      </span>
+      <span className="h-px min-w-8 flex-1 bg-[#16A34A]" />
+    </div>
+  );
+}
+
+function GovernanceStack() {
+  return (
+    <div>
+      {GOVERNANCE.map((item, i) => (
+        <div key={item.title}>
+          <div className="flex flex-col gap-5 rounded-[18px] border border-[#E2E8F0] bg-[rgba(238,251,243,0.32)] px-5 py-5 shadow-[0px_20px_60px_rgba(15,23,42,0.08)] lg:flex-row lg:items-center lg:gap-6 lg:py-4">
+            <IconTile
+              icon={item.icon}
+              size={64}
+              iconSize={32}
+              className="rounded-[12px] border border-[#E2E8F0] bg-[rgba(22,163,74,0.04)]"
+            />
+            <div className="min-w-0">
+              <h3 className="text-[18px] font-semibold leading-[130%] text-[#16233B]">
+                {item.title}
+              </h3>
+              <p className="mt-1 text-[14px] font-medium leading-[170%] text-[#5B6B82]">
+                {item.description}
+              </p>
+            </div>
+          </div>
+          {i < GOVERNANCE.length - 1 && (
+            <div className="flex flex-col items-center py-1">
+              <span className="flex h-[11px] w-[11px] items-center justify-center rounded-full bg-[#16A34A] text-[8px] text-white">
+                ✓
+              </span>
+              <span className="h-6 w-px border-l border-dashed border-[#92C8A5]" />
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function Leadership() {
   return (
-    <section id="leadership" className="relative overflow-hidden bg-[#F8FAFC] px-5 py-12 sm:px-10 lg:px-20 lg:py-16">
+    <section id="leadership" className={`relative overflow-hidden bg-[#F8FAFC] ${aboutSectionPad}`}>
       <div
         aria-hidden
         className="pointer-events-none absolute right-5 top-6 hidden h-[362px] w-[274px] lg:block"
@@ -121,73 +196,57 @@ export default function Leadership() {
           <SectionHeading
             align="center"
             eyebrow="Leadership"
-            title="Guiding Research. Inspiring Lasting Impact."
+            title={
+              <>
+                Guiding Research.
+                <br />
+                Inspiring <span className="text-[#16A34A]">Lasting Impact.</span>
+              </>
+            }
             description="Our leadership brings together experienced researchers, development practitioners, and strategic leaders dedicated to advancing evidence-based solutions that strengthen institutions, empower communities, and drive sustainable development across Africa."
           />
         </div>
 
-        <div className="mt-12 flex flex-col items-start gap-5 lg:flex-row lg:items-center">
-          <div className="flex items-center gap-5">
-            <IconTile
-              icon={Users}
-              size={64}
-              iconSize={32}
-              className="rounded-full bg-[rgba(22,163,74,0.12)]"
-            />
-            <span className="text-[16px] font-medium uppercase tracking-[0.08em] text-[#1E293B]">
-              Leadership Team
-            </span>
-          </div>
-          <span className="hidden h-px flex-1 bg-[#16A34A] lg:block" />
-          <div className="flex items-center gap-5">
-            <IconTile
-              icon={Landmark}
-              size={64}
-              iconSize={32}
-              className="rounded-full bg-[rgba(22,163,74,0.12)]"
-            />
-            <span className="text-[16px] font-medium tracking-[0.08em] text-[#1E293B]">
-              Governance Structure
-            </span>
-          </div>
-          <span className="hidden h-px w-40 bg-[#16A34A] lg:block" />
-        </div>
-
-        <div className="mt-10 grid grid-cols-1 gap-[30px] xl:grid-cols-[800px_450px]">
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {LEADERS.map((leader) => (
-              <LeaderCard key={leader.name} {...leader} />
-            ))}
-          </div>
-
-          <aside>
-            <div className="rounded-[24px] bg-white p-5 shadow-[0px_20px_60px_rgba(15,23,42,0.08)]">
-            {GOVERNANCE.map((item, i) => (
-              <div key={item.title}>
-                <div className="flex items-center gap-6 rounded-[18px] border border-[#E2E8F0] bg-[rgba(238,251,243,0.32)] px-5 py-3 shadow-[0px_20px_60px_rgba(15,23,42,0.08)]">
-                  <IconTile
-                    icon={item.icon}
-                    size={64}
-                    iconSize={32}
-                    className="rounded-[12px] border border-[#E2E8F0] bg-[rgba(22,163,74,0.04)]"
+        <div className="mt-10 lg:hidden">
+          <SectionLabel icon={Users}>Leadership Team</SectionLabel>
+          <div className="mt-6 space-y-4">
+            {[LEADERS.slice(0, 2), LEADERS.slice(2)].map((row, rowIndex) => (
+              <div
+                key={rowIndex}
+                className="no-scrollbar -mx-5 flex snap-x snap-mandatory gap-3 overflow-x-auto px-5"
+              >
+                {row.map((leader) => (
+                  <LeaderCard
+                    key={leader.name}
+                    {...leader}
+                    className="w-[min(390px,calc(100vw-72px))] shrink-0 snap-start"
                   />
-                  <div className="min-w-0">
-                    <h3 className="text-[18px] font-semibold leading-[130%] text-[#16233B]">{item.title}</h3>
-                    <p className="mt-1 text-[14px] font-medium leading-[170%] text-[#5B6B82]">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-                {i < GOVERNANCE.length - 1 && (
-                  <div className="flex flex-col items-center py-1">
-                    <span className="flex h-[11px] w-[11px] items-center justify-center rounded-full bg-[#16A34A] text-[8px] text-white">
-                      ✓
-                    </span>
-                    <span className="h-6 w-px border-l border-dashed border-[#92C8A5]" />
-                  </div>
-                )}
+                ))}
               </div>
             ))}
+          </div>
+
+          <div className="mt-10">
+            <SectionLabel icon={Landmark}>Governance Structure</SectionLabel>
+            <div className="mt-6">
+              <GovernanceStack />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 hidden gap-8 lg:grid xl:grid-cols-[minmax(0,1fr)_minmax(300px,400px)]">
+          <div className="min-w-0">
+            <SectionLabel icon={Users}>Leadership Team</SectionLabel>
+            <div className="mt-6 grid auto-rows-fr grid-cols-2 gap-5">
+              {LEADERS.map((leader) => (
+                <LeaderCard key={leader.name} {...leader} stretchPhoto className="h-full" />
+              ))}
+            </div>
+          </div>
+          <aside className="min-w-0">
+            <SectionLabel icon={Landmark}>Governance Structure</SectionLabel>
+            <div className="mt-6">
+              <GovernanceStack />
             </div>
           </aside>
         </div>
@@ -209,20 +268,20 @@ export default function Leadership() {
         <div className="relative mt-8 overflow-hidden rounded-[24px] border border-[#E2E8F0] bg-[rgba(238,251,243,0.32)] px-5 py-6 shadow-[0px_20px_60px_rgba(15,23,42,0.08)] sm:px-8">
           <div
             aria-hidden
-            className="pointer-events-none absolute right-0 top-[-40px] hidden h-[165px] w-[248px] lg:block"
+            className="pointer-events-none absolute right-0 bottom-0 h-[106px] w-[160px] lg:top-[-40px] lg:h-[165px] lg:w-[248px]"
           >
             <AfricaMark sizes="248px" className="opacity-[0.12]" />
           </div>
-          <div className="relative z-10 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex items-center gap-5">
-              <span className="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-full border border-[#E2E8F0] bg-white text-[#16A34A]">
-                <ThumbsUp size={32} />
+          <div className="relative z-10 flex flex-col items-start gap-5 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex w-full flex-col items-start gap-5 lg:flex-row lg:items-center">
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#E2E8F0] bg-white text-[#16A34A] lg:h-[72px] lg:w-[72px]">
+                <ThumbsUp size={25} className="lg:h-8 lg:w-8" />
               </span>
               <div className="max-w-[587px]">
-                <h3 className="text-[18px] font-bold leading-[130%] text-[#16233B]">
+                <h3 className="text-[16px] font-bold leading-[130%] text-[#16233B] lg:text-[18px]">
                   Committed to Good Governance
                 </h3>
-                <p className="mt-1 text-[14px] font-medium leading-[170%] text-[#5B6B82]">
+                <p className="mt-3 text-[14px] font-medium leading-[140%] text-[#5B6B82] lg:mt-1 lg:leading-[170%]">
                   We uphold the highest standards of transparency, accountability, and ethical
                   leadership to build trust with our partners, communities, and stakeholders.
                 </p>

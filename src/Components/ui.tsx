@@ -10,7 +10,7 @@ export function Eyebrow({
 }) {
   return (
     <span
-      className={`flex items-center gap-2 text-[14px] font-medium capitalize leading-[19px] tracking-[0.08em] text-[#16A34A] ${
+      className={`flex items-center gap-2 text-[12px] font-medium capitalize leading-4 tracking-[0.08em] text-[#16A34A] lg:text-[14px] lg:leading-[19px] ${
         align === "center" ? "justify-center" : ""
       }`}
     >
@@ -46,15 +46,17 @@ export function EmeraldButton({
   href,
   children,
   icon: Icon = Download,
+  className = "",
 }: {
   href: string;
   children: React.ReactNode;
   icon?: LucideIcon;
+  className?: string;
 }) {
   return (
     <Link
       href={href}
-      className={`${btnBase} border border-[#16A34A] bg-[#16A34A] text-white hover:bg-[#15803d]`}
+      className={`${btnBase} border border-[#16A34A] bg-[#16A34A] text-white hover:bg-[#15803d] ${className}`}
     >
       {children}
       <Icon size={24} strokeWidth={1.75} />

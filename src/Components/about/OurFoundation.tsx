@@ -1,6 +1,6 @@
 import { Target, Globe, ThumbsUp, Users, Wrench, ChartLine } from "lucide-react";
 import { IconTile } from "../ui";
-import { AfricaMark, SectionHeading, ValuesRow } from "./shared";
+import { AfricaMark, SectionHeading, ValuesRow, aboutSectionPad } from "./shared";
 
 const VALUES = [
   {
@@ -27,7 +27,7 @@ const VALUES = [
 
 export default function OurFoundation() {
   return (
-    <section id="foundation" className="relative overflow-hidden bg-[#F8FAFC] px-5 py-12 sm:px-10 lg:px-20 lg:py-20">
+    <section id="foundation" className={`relative overflow-hidden bg-[#F8FAFC] ${aboutSectionPad}`}>
       <div
         aria-hidden
         className="pointer-events-none absolute right-[5%] top-[40%] hidden h-[479px] w-[478px] rounded-full bg-[linear-gradient(270deg,rgba(34,197,94,0.1)_0%,rgba(34,197,94,0)_100%)] blur-[48px] lg:block"
@@ -53,29 +53,29 @@ export default function OurFoundation() {
           description="Our mission, vision, and values define who we are and guide every partnership, research initiative, and solution we deliver. Together, they reflect our commitment to advancing evidence-based development and creating lasting impact across Africa."
         />
 
-        <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="mt-10 grid grid-cols-1 gap-5 lg:mt-16 lg:grid-cols-2">
           <article className="relative overflow-hidden rounded-[18px] bg-white p-8 shadow-[0px_20px_60px_rgba(15,23,42,0.08)] lg:h-[300px]">
             <div
               aria-hidden
-              className="pointer-events-none absolute left-0 top-1/2 hidden h-[298px] w-[447px] -translate-y-1/2 lg:block"
+              className="pointer-events-none absolute left-0 top-1/2 h-[155px] w-[440px] -translate-y-1/2 opacity-40 lg:h-[298px] lg:w-[447px] lg:opacity-100"
             >
-              <AfricaMark sizes="447px" className="opacity-[0.05]" />
+              <AfricaMark sizes="447px" className="opacity-[0.08] lg:opacity-[0.05]" />
             </div>
-            <div className="relative z-10 flex items-start gap-6">
+            <div className="relative z-10 flex items-start gap-5 lg:gap-6">
               <IconTile
                 icon={Target}
-                size={100}
-                iconSize={50}
-                className="rounded-full bg-[rgba(22,163,74,0.12)]"
+                size={56}
+                iconSize={28}
+                className="rounded-full bg-[rgba(22,163,74,0.12)] lg:h-[100px] lg:w-[100px] [&_svg]:lg:h-[50px] [&_svg]:lg:w-[50px]"
               />
               <div>
                 <p className="text-[14px] font-semibold uppercase leading-[130%] text-[#16A34A]">
                   Our Mission
                 </p>
-                <h3 className="mt-4 text-[24px] font-semibold leading-[140%] text-[#1E293B]">
+                <h3 className="mt-4 text-[20px] font-semibold leading-[140%] text-[#1E293B] lg:text-[24px]">
                   To generate high-quality evidence, inform policy, and strengthen institutions
                 </h3>
-                <p className="mt-4 text-[16px] font-medium leading-[170%] text-[#5B6B82]">
+                <p className="mt-4 text-[14px] font-medium leading-[140%] text-[#5B6B82] lg:text-[16px] lg:leading-[170%]">
                   through collaborative research, innovation, and sustainable development
                   solutions that improve lives across Africa.
                 </p>
@@ -86,22 +86,22 @@ export default function OurFoundation() {
           <article className="relative overflow-hidden rounded-[18px] bg-white p-8 shadow-[0px_20px_60px_rgba(15,23,42,0.08)] lg:h-[300px]">
             <div
               aria-hidden
-              className="pointer-events-none absolute right-0 top-[78px] hidden h-[325px] w-[488px] lg:block"
+              className="pointer-events-none absolute right-0 bottom-0 h-[163px] w-[244px] lg:top-[78px] lg:h-[325px] lg:w-[488px]"
             >
-              <AfricaMark sizes="488px" className="opacity-[0.05]" />
+              <AfricaMark sizes="488px" className="opacity-[0.08] lg:opacity-[0.05]" />
             </div>
-            <div className="relative z-10 flex items-start gap-6">
+            <div className="relative z-10 flex items-start gap-5 lg:gap-6">
               <IconTile
                 icon={Globe}
-                size={100}
-                iconSize={50}
-                className="rounded-full bg-[rgba(22,163,74,0.12)]"
+                size={56}
+                iconSize={28}
+                className="rounded-full bg-[rgba(22,163,74,0.12)] lg:h-[100px] lg:w-[100px] [&_svg]:lg:h-[50px] [&_svg]:lg:w-[50px]"
               />
               <div>
                 <p className="text-[14px] font-semibold uppercase leading-[130%] text-[#16A34A]">
                   Our Vision
                 </p>
-                <h3 className="mt-4 text-[24px] font-semibold leading-[140%] text-[#1E293B]">
+                <h3 className="mt-4 text-[20px] font-semibold leading-[140%] text-[#1E293B] lg:text-[24px]">
                   A resilient, prosperous, and inclusive Africa where evidence-based knowledge
                   drives informed decisions, sustainable growth, and transformative development.
                 </h3>
