@@ -9,7 +9,15 @@ import {
   Star,
   FileText,
 } from "lucide-react";
-import { SectionHeading, StatsGrid, AfricaMark, AfricaMapPlaceholder, aboutSectionPad } from "./shared";
+import { SectionHeading, StatChip, StatsGrid, AfricaMark, AfricaMapPlaceholder, aboutSectionPad } from "./shared";
+
+const IMPACT_STATS = [
+  { icon: FileText, value: "18+", label: "Active Research Projects" },
+  { icon: Users, value: "250+", label: "Research Partners" },
+  { icon: Globe, value: "35+", label: "African Countries Reached" },
+  { icon: FileText, value: "1.2M", label: "Active Research Projects" },
+  { icon: Users, value: "13+", label: "Research Partners" },
+];
 
 const IMPACT_AREAS = [
   {
@@ -42,7 +50,7 @@ export default function AboutImpact() {
   return (
     <section id="impact" className={`bg-[#F8FAFC] ${aboutSectionPad}`}>
       <div className="mx-auto max-w-[1280px]">
-        <div className="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:items-start xl:grid-cols-[minmax(0,1fr)_minmax(560px,1.15fr)]">
+        <div className="flex flex-col gap-10 lg:grid lg:grid-cols-2 lg:items-start lg:gap-8 xl:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
           <SectionHeading
             eyebrow="Our Impact"
             title={
@@ -54,21 +62,23 @@ export default function AboutImpact() {
             }
             description="For more than a decade, ACRIDC has translated research into practical action. Through evidence-based solutions, strategic partnerships, and community engagement, we help shape policies, strengthen institutions, and improve livelihoods across Africa."
           />
-          <div className="min-w-0">
-            <StatsGrid
-              items={[
-                { icon: FileText, value: "18+", label: "Active Research Projects" },
-                { icon: Users, value: "250+", label: "Research Partners" },
-                { icon: Globe, value: "35+", label: "African Countries Reached" },
-                { icon: FileText, value: "1.2M", label: "Active Research Projects" },
-                { icon: Users, value: "13+", label: "Research Partners" },
-              ]}
-            />
+          <div className="min-w-0 lg:hidden">
+            <StatsGrid items={IMPACT_STATS} />
+          </div>
+          <div className="hidden min-w-0 lg:grid lg:grid-cols-3 lg:gap-y-8 min-[1440px]:gap-y-10">
+            {IMPACT_STATS.map((item, i) => (
+              <div
+                key={`${item.value}-${item.label}-${i}`}
+                className={`min-w-0 ${i % 3 !== 0 ? "border-l border-[rgba(203,213,225,0.35)] pl-3 min-[1440px]:pl-5" : "pr-2 min-[1440px]:pr-3"}`}
+              >
+                <StatChip icon={item.icon} value={item.value} label={item.label} />
+              </div>
+            ))}
           </div>
         </div>
 
-        <div className="mt-12 overflow-hidden rounded-[24px] bg-white shadow-[0px_20px_60px_rgba(15,23,42,0.08)] xl:mt-16">
-          <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1.05fr)_minmax(220px,355px)_minmax(0,1.35fr)]">
+        <div className="mt-12 overflow-hidden rounded-[24px] border border-[#E2E8F0] bg-white shadow-[0px_20px_60px_rgba(15,23,42,0.08)] lg:mt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-[minmax(0,0.95fr)_minmax(220px,355px)_minmax(0,1.25fr)]">
             <div className="flex flex-col justify-center p-5 lg:p-8">
               <div className="flex items-center gap-3">
                 <span className="flex h-12 w-12 items-center justify-center rounded-[20px] bg-[#EAF9EE] text-[#16A34A] shadow-[inset_0px_4px_16px_rgba(15,23,42,0.06)]">
@@ -92,8 +102,8 @@ export default function AboutImpact() {
               </Link>
             </div>
 
-            <div className="hidden min-h-[240px] items-center justify-center px-4 py-6 xl:flex lg:min-h-[379px]">
-              <div className="h-[min(100%,340px)] w-full max-w-[355px]">
+            <div className="hidden min-h-[240px] items-center justify-center px-4 py-6 xl:flex xl:min-h-[379px]">
+              <div className="relative h-[340px] w-full max-w-[355px]">
                 <AfricaMapPlaceholder
                   src="/images/impact-africa-map.png"
                   alt="ACRIDC reach across Africa"
@@ -101,7 +111,7 @@ export default function AboutImpact() {
               </div>
             </div>
 
-            <div className="p-5 xl:border-l xl:p-8">
+            <div className="p-5 lg:border-l xl:p-8">
               <h3 className="text-[16px] font-semibold leading-8 tracking-[-0.01em] text-[#16233B] lg:text-[20px]">
                 Our Impact Areas
               </h3>

@@ -64,12 +64,12 @@ export default function AboutPartners() {
             <div className="relative w-full min-w-0 shrink-0 lg:w-auto">
               <IconTile
                 icon={Users}
-                size={56}
-                iconSize={28}
-                className="rounded-[28px] bg-[rgba(22,163,74,0.12)] lg:h-16 lg:w-16 lg:rounded-[32px]"
+                size={64}
+                iconSize={32}
+                className="rounded-[28px] bg-[rgba(22,163,74,0.12)] max-lg:!h-14 max-lg:!w-14 lg:rounded-[32px]"
               />
               <p className="mt-5 text-[16px] font-semibold text-[#16233B]">Stronger Together.</p>
-              <p className="font-display mt-4 text-[40px] font-bold leading-[54px] text-[#16A34A] lg:text-[clamp(2.25rem,4vw,3rem)] lg:leading-none">
+              <p className="font-display mt-4 text-[40px] font-bold leading-[54px] text-[#16A34A] lg:text-[48px] lg:leading-[65px]">
                 60+
               </p>
               <p className="mt-2 max-w-[350px] text-[14px] font-medium leading-[140%] text-[#64748B] lg:max-w-[188px] lg:text-[13px] lg:leading-[18px]">
@@ -79,21 +79,21 @@ export default function AboutPartners() {
             </div>
             <div className="relative h-[251px] w-full max-w-[235px] lg:h-[251px] lg:flex-1">
               <AfricaMapPlaceholder
-                src="/images/partners-africa-map.png"
-                alt="Partnerships across Africa"
+                src="/images/impact-africa-map.png"
+                alt="Partner network across Africa"
               />
             </div>
           </div>
         </div>
 
-        <div className="no-scrollbar mt-12 flex gap-4 overflow-x-auto xl:grid xl:grid-cols-5 xl:gap-[33px] xl:overflow-visible">
+        <div className="no-scrollbar mt-12 flex gap-4 overflow-x-auto lg:grid lg:grid-cols-5 lg:gap-[33px] lg:overflow-visible">
           {TYPES.map((item) => {
             const Icon = item.icon;
             return (
               <Link
                 key={item.title}
                 href={item.href}
-                className={`flex w-[230px] shrink-0 flex-col items-center rounded-[12px] bg-white px-5 py-5 text-center xl:w-auto ${
+                className={`flex w-[230px] shrink-0 flex-col items-center rounded-[12px] bg-white px-5 py-5 text-center lg:w-auto ${
                   item.active ? "border-[1.5px] border-[#16A34A]" : ""
                 }`}
               >
@@ -113,9 +113,9 @@ export default function AboutPartners() {
           })}
         </div>
 
-        <div className="no-scrollbar mt-10 flex gap-4 overflow-x-auto xl:grid xl:grid-cols-6 xl:gap-4 xl:overflow-visible">
+        <div className="no-scrollbar mt-10 flex gap-4 overflow-x-auto lg:grid lg:grid-cols-6 lg:gap-4 lg:overflow-visible">
           {Array.from({ length: 18 }, (_, i) => (
-            <div key={i} className="w-[200px] shrink-0 xl:w-auto">
+            <div key={i} className="w-[200px] shrink-0 lg:w-auto">
               <LogoPlaceholder />
             </div>
           ))}

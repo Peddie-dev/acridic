@@ -52,9 +52,9 @@ export default function WhoWeAre() {
             <div className="absolute bottom-1 left-1 z-10 flex w-[min(100%,296px)] items-center gap-4 rounded-xl bg-white px-4 py-2 shadow-[0px_1px_4px_rgba(12,12,13,0.1),0px_1px_4px_rgba(12,12,13,0.05)] lg:bottom-0 lg:left-0 lg:h-[140px] lg:w-[min(100%,309px)] lg:gap-6 lg:rounded-[18px] lg:px-5 lg:py-3">
               <IconTile
                 icon={Calendar}
-                size={56}
-                iconSize={28}
-                className="rounded-full bg-[rgba(22,163,74,0.12)] lg:h-16 lg:w-16"
+                size={64}
+                iconSize={32}
+                className="rounded-full bg-[rgba(22,163,74,0.12)] max-lg:!h-14 max-lg:!w-14"
               />
               <div>
                 <p className="text-[20px] font-extrabold leading-[27px] text-[#16A34A] lg:text-[24px] lg:leading-[33px]">

@@ -64,9 +64,9 @@ export default function OurFoundation() {
             <div className="relative z-10 flex items-start gap-5 lg:gap-6">
               <IconTile
                 icon={Target}
-                size={56}
-                iconSize={28}
-                className="rounded-full bg-[rgba(22,163,74,0.12)] lg:h-[100px] lg:w-[100px] [&_svg]:lg:h-[50px] [&_svg]:lg:w-[50px]"
+                size={100}
+                iconSize={50}
+                className="rounded-full bg-[rgba(22,163,74,0.12)] max-lg:!h-14 max-lg:!w-14 [&_svg]:max-lg:!h-7 [&_svg]:max-lg:!w-7"
               />
               <div>
                 <p className="text-[14px] font-semibold uppercase leading-[130%] text-[#16A34A]">
@@ -93,9 +93,9 @@ export default function OurFoundation() {
             <div className="relative z-10 flex items-start gap-5 lg:gap-6">
               <IconTile
                 icon={Globe}
-                size={56}
-                iconSize={28}
-                className="rounded-full bg-[rgba(22,163,74,0.12)] lg:h-[100px] lg:w-[100px] [&_svg]:lg:h-[50px] [&_svg]:lg:w-[50px]"
+                size={100}
+                iconSize={50}
+                className="rounded-full bg-[rgba(22,163,74,0.12)] max-lg:!h-14 max-lg:!w-14 [&_svg]:max-lg:!h-7 [&_svg]:max-lg:!w-7"
               />
               <div>
                 <p className="text-[14px] font-semibold uppercase leading-[130%] text-[#16A34A]">

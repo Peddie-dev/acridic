@@ -26,7 +26,7 @@ export default function AboutHero() {
           className="pointer-events-none absolute inset-x-0 top-0 h-[min(100%,1521px)] bg-[linear-gradient(186.09deg,#FFFFFF_31.67%,rgba(255,255,255,0.1)_78.01%)] lg:hidden"
         />
 
-        <div className="relative z-10 mx-auto flex max-w-[1440px] flex-col px-5 pt-10 sm:px-8 md:px-10 lg:h-[677px] lg:min-h-[677px] lg:justify-start lg:px-12 lg:pb-16 lg:pt-[200px] xl:px-20">
+        <div className="relative z-10 mx-auto flex max-w-[1440px] flex-col px-5 pt-10 sm:px-8 md:px-10 lg:h-[677px] lg:min-h-[677px] lg:justify-start lg:px-20 lg:pb-16 lg:pt-[200px]">
           <span className="flex w-fit items-center gap-2 text-[12px] font-medium capitalize leading-4 tracking-[0.08em] text-[#16A34A] lg:text-[14px] lg:uppercase lg:leading-[19px]">
             <span className="h-1 w-1 shrink-0 rounded-full bg-[#1E293B]" />
             About ACRIDC

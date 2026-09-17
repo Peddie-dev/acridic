@@ -5,7 +5,7 @@ import { ImageIcon } from "lucide-react";
 import { Eyebrow, IconTile } from "../ui";
 
 export const aboutSectionPad =
-  "px-5 py-10 sm:px-8 md:px-10 lg:px-12 lg:py-16 xl:px-20 xl:py-20";
+  "px-5 py-10 sm:px-8 md:px-10 lg:px-12 lg:py-16 min-[1440px]:px-20 xl:py-20";
 
 export function LogoPlaceholder() {
   return (
@@ -143,9 +143,9 @@ export function ValueColumn({
     <div className="flex max-w-[202px] flex-col items-center text-center">
       <IconTile
         icon={icon}
-        size={56}
-        iconSize={28}
-        className="rounded-full bg-[rgba(22,163,74,0.12)] lg:h-16 lg:w-16"
+        size={64}
+        iconSize={32}
+        className="rounded-full bg-[rgba(22,163,74,0.12)] max-lg:!h-14 max-lg:!w-14"
       />
       <h3 className="mt-6 text-[16px] font-semibold leading-[130%] text-[#16233B] lg:mt-8 lg:text-[18px]">
         {title}
@@ -182,7 +182,7 @@ export function ValuesRow({
 }
 
 export function StatChip({
-  icon,
+  icon: Icon,
   value,
   label,
 }: {
@@ -191,18 +191,15 @@ export function StatChip({
   label: string;
 }) {
   return (
-    <div className="flex flex-col items-start gap-3 xl:flex-row xl:items-start xl:gap-4 min-[1440px]:gap-5">
-      <IconTile
-        icon={icon}
-        size={56}
-        iconSize={28}
-        className="shrink-0 rounded-[12px] bg-[rgba(22,163,74,0.12)]"
-      />
-      <div className="shrink-0">
-        <p className="font-display whitespace-nowrap text-[40px] font-bold leading-[54px] text-[#16A34A] min-[1440px]:text-[48px] min-[1440px]:leading-[1.1]">
+    <div className="flex flex-col items-start gap-3 lg:flex-row lg:items-start lg:gap-2.5 min-[1440px]:gap-4">
+      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[12px] bg-[rgba(22,163,74,0.12)] text-[#16A34A] lg:h-11 lg:w-11 min-[1440px]:h-14 min-[1440px]:w-14">
+        <Icon size={24} strokeWidth={1.75} className="lg:h-6 lg:w-6 min-[1440px]:h-8 min-[1440px]:w-8" />
+      </span>
+      <div className="min-w-0">
+        <p className="font-display whitespace-nowrap text-[40px] font-bold leading-[54px] text-[#16A34A] lg:text-[32px] lg:leading-10 min-[1440px]:text-[48px] min-[1440px]:leading-[65px]">
           {value}
         </p>
-        <p className="mt-1 max-w-[116px] text-[12px] font-medium leading-4 text-[#64748B] xl:mt-1.5 xl:max-w-[130px] xl:text-[13px] xl:leading-[18px]">
+        <p className="mt-1 max-w-[116px] text-[12px] font-medium leading-4 text-[#64748B] min-[1440px]:max-w-[130px] min-[1440px]:text-[13px] min-[1440px]:leading-[18px]">
           {label}
         </p>
       </div>
@@ -216,7 +213,7 @@ export function StatsGrid({
   items: { icon: LucideIcon; value: string; label: string }[];
 }) {
   return (
-    <div className="grid grid-cols-2 items-start gap-y-6 xl:grid-cols-[repeat(3,minmax(min-content,1fr))] xl:gap-y-10">
+    <div className="grid grid-cols-2 items-start gap-y-6 lg:grid-cols-3 lg:gap-y-10">
       {items.map((item, i) => (
         <div
           key={`${item.value}-${item.label}-${i}`}
@@ -226,8 +223,8 @@ export function StatsGrid({
               : "pr-2"
           } ${
             i % 3 === 0
-              ? "xl:border-l-0 xl:pl-0 xl:pr-5"
-              : "xl:border-l xl:border-[rgba(203,213,225,0.35)] xl:pl-5 xl:pr-1"
+              ? "lg:border-l-0 lg:pl-0 lg:pr-5"
+              : "lg:border-l lg:border-[rgba(203,213,225,0.35)] lg:pl-5 lg:pr-1"
           }`}
         >
           <StatChip {...item} />

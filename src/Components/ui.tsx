@@ -10,7 +10,7 @@ export function Eyebrow({
 }) {
   return (
     <span
-      className={`flex items-center gap-2 text-[12px] font-medium capitalize leading-4 tracking-[0.08em] text-[#16A34A] lg:text-[14px] lg:leading-[19px] ${
+      className={`flex items-center gap-2 text-[12px] font-medium capitalize leading-4 tracking-[0.08em] text-[#16A34A] lg:text-[14px] lg:uppercase lg:leading-[19px] ${
         align === "center" ? "justify-center" : ""
       }`}
     >
@@ -124,8 +124,8 @@ export function IconTile({
 }) {
   return (
     <span
-      style={{ width: size, height: size }}
-      className={`inline-flex shrink-0 items-center justify-center rounded-[20px] text-[#16A34A] ${className}`}
+      style={{ ["--icon-tile-size" as string]: `${size}px` }}
+      className={`inline-flex h-[var(--icon-tile-size)] w-[var(--icon-tile-size)] shrink-0 items-center justify-center rounded-[20px] text-[#16A34A] ${className}`}
       suppressHydrationWarning
     >
       <Icon size={iconSize} strokeWidth={1.75} aria-hidden />

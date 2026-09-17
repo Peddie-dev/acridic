@@ -74,18 +74,15 @@ function LeaderCard({
 }: (typeof LEADERS)[number] & { className?: string; stretchPhoto?: boolean }) {
   return (
     <article
-      className={`flex min-w-0 flex-row items-stretch gap-3 overflow-hidden rounded-[20px] border border-[#E2E8F0] bg-white p-3 shadow-[0px_20px_60px_rgba(15,23,42,0.08)] sm:gap-3 sm:p-4 ${className}`}
+      className={`flex min-w-0 flex-row items-stretch gap-3 overflow-hidden rounded-[20px] border border-[#E2E8F0] bg-white p-3 shadow-[0px_20px_60px_rgba(15,23,42,0.08)] sm:p-4 ${className}`}
     >
       <div
-        className={`relative shrink-0 overflow-hidden rounded-[20px] bg-[#E8EDF2] ${
+        className={`relative shrink-0 self-stretch overflow-hidden rounded-[20px] bg-[#E8EDF2] ${
           stretchPhoto
-            ? "h-full w-[44%] max-w-[170px] min-h-[220px] self-stretch"
-            : "w-[min(148px,42%)] self-stretch"
+            ? "w-[44%] max-w-[170px] min-h-[220px]"
+            : "w-[min(148px,42%)] min-h-[210px]"
         }`}
       >
-        {stretchPhoto ? null : (
-          <span className="block aspect-[148/220] w-full" aria-hidden />
-        )}
         <Image
           src={image}
           alt={name}
@@ -97,17 +94,31 @@ function LeaderCard({
         />
       </div>
       <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
-        <h3 className="text-[16px] font-bold leading-[130%] tracking-[-0.02em] text-[#16233B] sm:text-[18px]">
+        <h3
+          className={`font-bold leading-[130%] tracking-[-0.02em] text-[#16233B] ${
+            stretchPhoto ? "text-[16px] whitespace-nowrap xl:text-[18px]" : "text-[16px]"
+          }`}
+        >
           {name}
         </h3>
-        <p className="mt-1.5 text-[12px] font-semibold uppercase leading-[130%] text-[#16A34A] sm:mt-2 sm:text-[13px]">
+        <p
+          className={`font-semibold uppercase leading-[130%] text-[#16A34A] ${
+            stretchPhoto ? "mt-2 text-[13px]" : "mt-1.5 text-[12px]"
+          }`}
+        >
           {role}
         </p>
-        <p className="mt-2 text-[13px] font-medium leading-[150%] text-[#5B6B82] sm:text-[14px] sm:leading-[160%]">
+        <p
+          className={`mt-2 min-w-0 font-medium text-[#5B6B82] ${
+            stretchPhoto ? "text-[14px] leading-[160%]" : "text-[13px] leading-[150%]"
+          }`}
+        >
           {bio}
         </p>
-        <div className="mt-3 min-w-0 sm:mt-auto sm:pt-3">
-          <span className="mb-3 block h-px w-full bg-[#E2E8F0] sm:mb-4" />
+        <div className={`min-w-0 overflow-hidden ${stretchPhoto ? "mt-auto pt-3" : "mt-3"}`}>
+          <span
+            className={`block h-px w-full bg-[#E2E8F0] ${stretchPhoto ? "mb-4" : "mb-3"}`}
+          />
           <Link
             href="https://www.linkedin.com"
             className="inline-flex max-w-full items-center gap-2 text-[13px] font-semibold text-[#16A34A]"
@@ -234,7 +245,7 @@ export default function Leadership() {
           </div>
         </div>
 
-        <div className="mt-12 hidden gap-8 lg:grid xl:grid-cols-[minmax(0,1fr)_minmax(300px,400px)]">
+        <div className="mt-12 hidden gap-8 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(280px,400px)]">
           <div className="min-w-0">
             <SectionLabel icon={Users}>Leadership Team</SectionLabel>
             <div className="mt-6 grid auto-rows-fr grid-cols-2 gap-5">

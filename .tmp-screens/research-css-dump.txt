@@ -1,0 +1,12998 @@
+<timestamp>Thursday, Sep 17, 2026, 11:56 PM (UTC+3)</timestamp>
+<user_query>
+Now we want to work on the research page/research overview, the follow is the link to the selection desktop view https://www.figma.com/design/A0pAcAIy4mYdBSd14OgmFi/ACRIDC-s-Website?node-id=611-3922&t=DST0bajLa80m0kOc-4 plus I'm also copy pasting the CSS layers /* RESEARCH OVERVIEW */
+
+position: relative;
+width: 1440px;
+height: 4886px;
+left: 2379px;
+top: 294px;
+
+/* Background */
+background: #F8FAFC;
+border-radius: 30px;
+
+/* Frame 2147223204 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 1440px;
+height: 1442px;
+left: 0px;
+top: 0px;
+
+/* About Us */
+
+width: 1440px;
+height: 677px;
+
+background: #F8FAFC;
+border-radius: 30px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* About Us */
+
+position: absolute;
+width: 1440px;
+height: 677px;
+left: calc(50% - 1440px/2);
+top: calc(50% - 677px/2);
+
+border-radius: 32px 0px 0px 32px;
+
+/* Rectangle 9 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1439px;
+height: 639px;
+left: calc(50% - 1439px/2 + 0.5px);
+top: 37px;
+
+background: #FFFFFF;
+border: 1px solid rgba(255, 255, 255, 0.6);
+box-shadow: 0px 20px 60px rgba(12, 25, 48, 0.08);
+border-radius: 32px 0px 0px 32px;
+
+/* Home Page */
+
+position: absolute;
+width: 1370px;
+height: 676px;
+left: 70px;
+top: 0px;
+
+border-radius: 25.2096px 0px 0px 25.2096px;
+
+/* plain bg 1 */
+
+position: absolute;
+width: 1801.42px;
+height: 1278.51px;
+left: -431px;
+top: -90px;
+
+background: url(12815e7b-8492-4d6e-b025-97dc4d880d6a.png);
+
+/* Group 2085663516 */
+
+position: absolute;
+width: 631px;
+height: 470px;
+left: calc(50% - 631px/2 - 324.5px);
+top: calc(50% - 470px/2 + 48.5px);
+
+/* Group 2085663515 */
+
+position: absolute;
+width: 631px;
+height: 470px;
+left: 80px;
+top: 152px;
+
+/* Frame 2147229348 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 310px;
+height: 20px;
+left: 80px;
+top: 152px;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 40px;
+height: 19px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 40px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Chevron down */
+
+width: 20px;
+height: 20px;
+
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 37.5%;
+right: 12.5%;
+top: 25%;
+bottom: 50%;
+
+/* Body */
+border: 1.6px solid #64748B;
+transform: rotate(-90deg);
+
+/* Frame 2147223161 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 65px;
+height: 19px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Text */
+
+width: 65px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Chevron down */
+
+width: 20px;
+height: 20px;
+
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 37.5%;
+right: 12.5%;
+top: 25%;
+bottom: 50%;
+
+/* Body */
+border: 1.6px solid #64748B;
+transform: rotate(-90deg);
+
+/* Frame 2147223162 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 133px;
+height: 19px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+/* Text */
+
+width: 133px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229350 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 631px;
+height: 394px;
+left: 80px;
+top: 228px;
+
+/* Frame 2147229350 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 500px;
+height: 190px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 176px;
+height: 19px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 164px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Evidence That Drives Better Decisions Across Africa. */
+
+width: 500px;
+height: 159px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+/* or 53px */
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229219 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 631px;
+height: 184px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Group 2085663513 */
+
+width: 500px;
+height: 96px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* We generate trusted evidence that informs policy, strengthens institutions, and empowers sustainable development across Africa. */
+
+position: absolute;
+width: 500px;
+height: 96px;
+left: calc(50% - 500px/2 - 65.5px);
+top: 0px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 175%;
+/* or 32px */
+letter-spacing: -0.02em;
+
+color: #5B6B82;
+
+/* Frame 2147223154 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 36px;
+
+width: 631px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223154 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 20px;
+gap: 20px;
+
+width: 264px;
+height: 56px;
+
+/* Emerald Green */
+background: #16A34A;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Explore Research Areas */
+
+width: 180px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* Surface */
+color: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* arrow_forward */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Surface */
+background: #FFFFFF;
+
+/* Frame 2147223155 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 20px;
+gap: 20px;
+
+width: 219px;
+height: 56px;
+
+/* Heading */
+border: 1.5px solid #1E293B;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229371 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+width: 179px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* View Publications */
+
+width: 135px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* arrow_forward */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Heading */
+background: #1E293B;
+
+/* Frame 2147229352 */
+
+position: absolute;
+width: 284.82px;
+height: 280.23px;
+left: 1125px;
+top: 145px;
+
+/* Rectangle 44278 */
+
+position: absolute;
+width: 284.82px;
+height: 280.23px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+filter: blur(110.793px);
+border-radius: 182.809px;
+
+/* 383fe896-3738-425b-ac4b-1b802d210dea 1 */
+
+position: absolute;
+width: 228.66px;
+height: 266.71px;
+left: calc(50% - 228.66px/2 + 0px);
+top: calc(50% - 266.71px/2 + 0.26px);
+
+background: url(bg_removal [Background removed].png);
+
+/* Frame 2147229351 */
+
+position: absolute;
+width: 46px;
+height: 46px;
+left: 211px;
+top: 117px;
+
+/* Ellipse 13 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 46px;
+height: 46px;
+left: 0px;
+top: 0px;
+
+/* Emerald Green */
+border: 0.69px solid #16A34A;
+
+/* Ellipse 14 */
+
+position: absolute;
+width: 13.8px;
+height: 13.8px;
+left: calc(50% - 13.8px/2 - 0px);
+top: calc(50% - 13.8px/2 + 0px);
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Who We Are */
+
+width: 1440px;
+height: 765px;
+
+background: #F6FBF8;
+border-radius: 30px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* 825e7836-bb45-4787-a707-18268bfbd8db 1 */
+
+position: absolute;
+width: 558.61px;
+height: 582px;
+left: 1035px;
+top: -50px;
+
+background: url(Lighter Africa.png);
+
+/* Group 2085663568 */
+
+position: absolute;
+width: 606px;
+height: 280px;
+left: 80px;
+top: 120px;
+
+/* Group 2085663513 */
+
+position: absolute;
+width: 513px;
+height: 128px;
+left: 80px;
+top: 272px;
+
+/* We collaborate with governments, researchers, and communities to generate practical, evidence-based solutions. Our multidisciplinary approach transforms knowledge into meaningful action and lasting impact. */
+
+position: absolute;
+width: 513px;
+height: 128px;
+left: calc(50% - 513px/2 - 383.5px);
+top: 272px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 175%;
+/* or 32px */
+
+color: #5B6B82;
+
+/* Group 2085663567 */
+
+position: absolute;
+width: 606px;
+height: 120px;
+left: 80px;
+top: 120px;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 131px;
+height: 19px;
+left: 80px;
+top: 120px;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 119px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229221 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 606px;
+height: 77px;
+left: 80px;
+top: 163px;
+
+/* Research with Purpose. */
+
+width: 606px;
+height: 53px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+/* identical to box height, or 53px */
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 12 */
+
+width: 60px;
+height: 0px;
+
+/* Emerald Green */
+border: 3px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229227 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+position: absolute;
+width: 1278px;
+height: 251px;
+left: calc(50% - 1278px/2);
+top: 432px;
+
+/* Frame 2147229223 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 20px;
+gap: 32px;
+
+width: 230px;
+height: 251px;
+
+/* Surface */
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 64px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 99px;
+
+/* activity */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: calc(50% - 32px/2);
+top: calc(50% - 32px/2);
+
+/* vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 107px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Evidence-Based */
+
+position: absolute;
+width: 190px;
+height: 23px;
+left: 20px;
+top: 120px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* Delivering trusted research that informs policy and drives sustainable solutions. */
+
+position: absolute;
+height: 72px;
+left: 20px;
+right: 20px;
+top: 155px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 170%;
+/* or 24px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Frame 2147229230 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 20px;
+gap: 32px;
+
+width: 230px;
+height: 251px;
+
+/* Surface */
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 64px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 99px;
+
+/* double tick */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: calc(50% - 32px/2);
+top: calc(50% - 32px/2);
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.34%;
+top: 28.96%;
+bottom: 28.45%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 107px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Relevant */
+
+position: absolute;
+width: 190px;
+height: 23px;
+left: 20px;
+top: 120px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* We focus on real world challenges and emerging opportunities. */
+
+position: absolute;
+height: 72px;
+left: 20px;
+right: 20px;
+top: 155px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 170%;
+/* or 24px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Frame 2147229227 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 20px;
+gap: 32px;
+
+width: 230px;
+height: 251px;
+
+/* Surface */
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 64px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 99px;
+
+/* group */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: calc(50% - 32px/2);
+top: calc(50% - 32px/2);
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.34%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 107px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Collaborative */
+
+position: absolute;
+width: 190px;
+height: 23px;
+left: 20px;
+top: 120px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* Working with partners to co-create sustainable solutions. */
+
+position: absolute;
+height: 72px;
+left: 20px;
+right: 20px;
+top: 155px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 170%;
+/* or 24px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Frame 2147229228 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 20px;
+gap: 32px;
+
+width: 230px;
+height: 251px;
+
+/* Surface */
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 64px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 99px;
+
+/* emergency */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: calc(50% - 32px/2);
+top: calc(50% - 32px/2);
+
+/* vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 107px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Innovative */
+
+position: absolute;
+width: 190px;
+height: 23px;
+left: 20px;
+top: 120px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* Applying modern research methods and data-driven insights. */
+
+position: absolute;
+height: 72px;
+left: 20px;
+right: 20px;
+top: 155px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 170%;
+/* or 24px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Frame 2147229229 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 20px;
+gap: 32px;
+
+width: 230px;
+height: 251px;
+
+/* Surface */
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 64px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 99px;
+
+/* rocket */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: calc(50% - 32px/2);
+top: calc(50% - 32px/2);
+
+/* vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.66%;
+top: 7.64%;
+bottom: 4.25%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 107px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Impact-Focused */
+
+position: absolute;
+width: 190px;
+height: 23px;
+left: 20px;
+top: 120px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* Turning evidence into measurable development outcomes. */
+
+position: absolute;
+height: 72px;
+left: 20px;
+right: 20px;
+top: 155px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 170%;
+/* or 24px */
+text-align: center;
+
+color: #5B6B82;
+
+/* 383fe896-3738-425b-ac4b-1b802d210dea 1 */
+
+position: absolute;
+width: 69px;
+height: 69px;
+left: 1360px;
+top: 258px;
+
+background: url(bg_removal [Background removed].png);
+
+/* Who We Are */
+
+width: 1440px;
+height: 765px;
+
+background: #F8FAFC;
+border-radius: 30px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* 825e7836-bb45-4787-a707-18268bfbd8db 1 */
+
+position: absolute;
+width: 558.61px;
+height: 582px;
+left: 1035px;
+top: -50px;
+
+background: url(Lighter Africa.png);
+
+/* 383fe896-3738-425b-ac4b-1b802d210dea 1 */
+
+position: absolute;
+width: 69px;
+height: 69px;
+left: 1360px;
+top: 258px;
+
+background: url(bg_removal [Background removed].png);
+
+/* Frame 2147229356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 455px;
+height: 352px;
+left: 525px;
+top: 80px;
+
+/* Group 2085663568 */
+
+width: 455px;
+height: 295px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Group 2085663513 */
+
+position: absolute;
+width: 381px;
+height: 96px;
+left: calc(50% - 381px/2);
+top: 199px;
+
+/* We turn rigorous research into practical solutions that inform policy and create lasting impact. */
+
+position: absolute;
+width: 381px;
+height: 96px;
+left: calc(50% - 381px/2);
+top: 199px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 175%;
+/* or 32px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Group 2085663567 */
+
+position: absolute;
+width: 455px;
+height: 173px;
+left: calc(50% - 455px/2);
+top: 0px;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 124px;
+height: 19px;
+left: calc(50% - 124px/2 + 0.5px);
+top: 0px;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 112px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229221 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 455px;
+height: 130px;
+left: 0px;
+top: 43px;
+
+/* From Evidence to Action */
+
+width: 455px;
+height: 106px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+/* or 53px */
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Line 12 */
+
+width: 60px;
+height: 0px;
+
+/* Emerald Green */
+border: 3px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223223 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 9.33px;
+
+width: 251px;
+height: 33px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Learn more about our Methodology */
+
+width: 223px;
+height: 18px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 13.3021px;
+line-height: 18px;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Arrow up-right */
+
+width: 18.65px;
+height: 18.65px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 29.17%;
+right: 29.16%;
+top: 29.17%;
+bottom: 29.17%;
+
+/* Emerald Green */
+border: 1.9432px solid #16A34A;
+
+/* Frame 2147229355 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 59px;
+
+position: absolute;
+width: 1278.03px;
+height: 238px;
+left: calc(50% - 1278.03px/2 + 0.02px);
+top: 464px;
+
+/* Frame 2147229223 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 190px;
+height: 238px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 64px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 99px;
+
+/* target */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: calc(50% - 32px/2);
+top: calc(50% - 32px/2);
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 6.75%;
+top: 6.75%;
+bottom: 8.33%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 142px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229354 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 190px;
+height: 142px;
+left: 0px;
+top: 96px;
+
+/* 01 */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Identify Challenges */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Understand priority issues through stakeholder engagement. */
+
+width: 190px;
+height: 72px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 170%;
+/* or 24px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Div [framer-1xxrrc7] */
+
+width: 54.68px;
+height: 54.68px;
+
+mix-blend-mode: normal;
+border-radius: 37.591px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* fi-rr-arrow-down */
+
+position: absolute;
+width: 32.81px;
+height: 32.81px;
+left: 10.94px;
+top: 11.11px;
+
+transform: rotate(-90deg);
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 46.74%;
+top: 23.52%;
+bottom: -23.51%;
+
+/* Emerald Green */
+background: #16A34A;
+transform: rotate(-90deg);
+
+/* Frame 2147229227 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 190px;
+height: 238px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 64px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 99px;
+
+/* recipt */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: calc(50% - 32px/2);
+top: calc(50% - 32px/2);
+
+/* vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.89%;
+bottom: 8.89%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 142px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229354 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 190px;
+height: 142px;
+left: 0px;
+top: 96px;
+
+/* 02 */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Conduct Research */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Gather reliable data using rigorous and evidence-based methodologies. */
+
+width: 190px;
+height: 72px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 170%;
+/* or 24px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Div [framer-1xxrrc7] */
+
+width: 54.68px;
+height: 54.68px;
+
+mix-blend-mode: normal;
+border-radius: 37.591px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* fi-rr-arrow-down */
+
+position: absolute;
+width: 32.81px;
+height: 32.81px;
+left: 10.94px;
+top: 11.11px;
+
+transform: rotate(-90deg);
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 46.74%;
+top: 23.52%;
+bottom: -23.51%;
+
+/* Emerald Green */
+background: #16A34A;
+transform: rotate(-90deg);
+
+/* Frame 2147229228 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 190px;
+height: 238px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 64px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 99px;
+
+/* leader */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: calc(50% - 32px/2);
+top: calc(50% - 32px/2);
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.34%;
+top: 20.83%;
+bottom: 20.83%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 142px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229354 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 190px;
+height: 142px;
+left: 0px;
+top: 96px;
+
+/* 03 */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Generate Insights */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Transform findings into practical recommendations and knowledge. */
+
+width: 190px;
+height: 72px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 170%;
+/* or 24px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Div [framer-1xxrrc7] */
+
+width: 54.68px;
+height: 54.68px;
+
+mix-blend-mode: normal;
+border-radius: 37.591px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+/* fi-rr-arrow-down */
+
+position: absolute;
+width: 32.81px;
+height: 32.81px;
+left: 10.94px;
+top: 11.11px;
+
+transform: rotate(-90deg);
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 46.74%;
+top: 23.52%;
+bottom: -23.51%;
+
+/* Emerald Green */
+background: #16A34A;
+transform: rotate(-90deg);
+
+/* Frame 2147229229 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 190px;
+height: 238px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 64px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 99px;
+
+/* line chart */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: calc(50% - 32px/2);
+top: calc(50% - 32px/2);
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.34%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 142px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229354 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 190px;
+height: 142px;
+left: 0px;
+top: 96px;
+
+/* 04 */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Drive Impact */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Support policies and programmes that create sustainable change. */
+
+width: 190px;
+height: 72px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 170%;
+/* or 24px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Who We Are */
+
+width: 1440px;
+height: 899px;
+
+background: #F6FBF8;
+border-radius: 30px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+/* 825e7836-bb45-4787-a707-18268bfbd8db 1 */
+
+position: absolute;
+width: 558.61px;
+height: 582px;
+left: 1035px;
+top: -50px;
+
+background: url(Lighter Africa.png);
+
+/* 383fe896-3738-425b-ac4b-1b802d210dea 1 */
+
+position: absolute;
+width: 69px;
+height: 69px;
+left: 1360px;
+top: 258px;
+
+background: url(bg_removal [Background removed].png);
+
+/* Frame 2147229356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 455px;
+height: 295px;
+left: calc(50% - 455px/2 + 0.5px);
+top: 80px;
+
+/* Group 2085663568 */
+
+width: 455px;
+height: 295px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Group 2085663513 */
+
+position: absolute;
+width: 381px;
+height: 96px;
+left: calc(50% - 381px/2);
+top: 199px;
+
+/* Our research continues to support better decisions, stronger institutions, and sustainable development across Africa. */
+
+position: absolute;
+width: 381px;
+height: 96px;
+left: calc(50% - 381px/2);
+top: 199px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 175%;
+/* or 32px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Group 2085663567 */
+
+position: absolute;
+width: 455px;
+height: 173px;
+left: calc(50% - 455px/2);
+top: 0px;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 193px;
+height: 19px;
+left: calc(50% - 193px/2 + 0.5px);
+top: 0px;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 181px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229221 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 455px;
+height: 130px;
+left: 0px;
+top: 43px;
+
+/* Driving Impact Through Evidence */
+
+width: 455px;
+height: 106px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+/* or 53px */
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Line 12 */
+
+width: 60px;
+height: 0px;
+
+/* Emerald Green */
+border: 3px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223205 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 54px 75px;
+gap: 10px;
+
+position: absolute;
+width: 1280px;
+height: 398px;
+left: calc(50% - 1280px/2 + 1px);
+top: 421px;
+
+border: 1.5px solid rgba(203, 213, 225, 0.55);
+box-shadow: 0px 20px 60px -10px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 32px;
+
+/* Frame 2147229357 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 1192px;
+height: 287px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223207 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 250px;
+height: 287px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 72px;
+height: 72px;
+
+border-radius: 99px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 0px;
+top: 0.5px;
+
+background: rgba(22, 163, 74, 0.12);
+border: 1px solid rgba(255, 255, 255, 0.7);
+box-shadow: 0px 10px 30px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(6px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 99px;
+
+/* recipt */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 + 0.5px);
+
+/* vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.89%;
+bottom: 8.89%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147223206 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 250px;
+height: 191px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* 250+ */
+
+width: 185px;
+height: 86px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 86px;
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Research Projects */
+
+width: 250px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Delivering evidence-based solutions. */
+
+width: 250px;
+height: 54px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 5 */
+
+width: 200px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223208 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 250px;
+height: 287px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 72px;
+height: 72px;
+
+border-radius: 99px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 0px;
+top: 0.5px;
+
+background: rgba(22, 163, 74, 0.12);
+border: 1px solid rgba(255, 255, 255, 0.7);
+box-shadow: 0px 10px 30px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(6px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 99px;
+
+/* globe */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 + 0.5px);
+
+/* vector */
+
+position: absolute;
+left: 8.34%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147223206 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 250px;
+height: 191px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* 35+ */
+
+width: 185px;
+height: 86px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 86px;
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Countries Reached */
+
+width: 250px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Supporting development across Africa. */
+
+width: 250px;
+height: 54px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 6 */
+
+width: 200px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* Frame 2147223209 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 250px;
+height: 287px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 72px;
+height: 72px;
+
+border-radius: 99px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 0px;
+top: 0.5px;
+
+background: rgba(22, 163, 74, 0.12);
+border: 1px solid rgba(255, 255, 255, 0.7);
+box-shadow: 0px 10px 30px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(6px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 99px;
+
+/* group */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 + 0.5px);
+
+/* vector */
+
+position: absolute;
+left: 8.34%;
+right: 8.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147223206 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 250px;
+height: 191px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* 60+ */
+
+width: 185px;
+height: 86px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 86px;
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Strategic Partners */
+
+width: 250px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Collaborating for lasting impact. */
+
+width: 250px;
+height: 54px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 7 */
+
+width: 200px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+/* Frame 2147223210 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 250px;
+height: 287px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 72px;
+height: 72px;
+
+border-radius: 99px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 72px;
+height: 72px;
+left: 0px;
+top: 0.5px;
+
+background: rgba(22, 163, 74, 0.12);
+border: 1px solid rgba(255, 255, 255, 0.7);
+box-shadow: 0px 10px 30px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(6px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 99px;
+
+/* heart */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 + 0.5px);
+
+/* vector */
+
+position: absolute;
+left: 8.34%;
+right: 8.33%;
+top: 14.58%;
+bottom: 13.98%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147223206 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 250px;
+height: 191px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* 1.2M+ */
+
+width: 185px;
+height: 86px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 86px;
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Lives Impacted */
+
+width: 250px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Creating meaningful change through research. */
+
+width: 250px;
+height: 54px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Who We Are */
+
+width: 1440px;
+height: 720px;
+
+background: #F8FAFC;
+border-radius: 30px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+/* 825e7836-bb45-4787-a707-18268bfbd8db 1 */
+
+position: absolute;
+width: 558.61px;
+height: 582px;
+left: 1035px;
+top: -50px;
+
+background: url(Lighter Africa.png);
+
+/* 383fe896-3738-425b-ac4b-1b802d210dea 1 */
+
+position: absolute;
+width: 69px;
+height: 69px;
+left: 1360px;
+top: 258px;
+
+background: url(bg_removal [Background removed].png);
+
+/* Frame 2147229366 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 100px;
+
+position: absolute;
+width: 1280px;
+height: 560px;
+left: 80px;
+top: 80px;
+
+/* Group 2085663568 */
+
+width: 515px;
+height: 301px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Group 2085663513 */
+
+position: absolute;
+width: 435.97px;
+height: 96px;
+left: 0px;
+top: 205px;
+
+/* Our values shape every research initiative, partnership, and decision, ensuring our work remains credible, collaborative, and impactful. */
+
+position: absolute;
+width: 435.97px;
+height: 96px;
+left: calc(50% - 435.97px/2 - 422.02px);
+top: 205px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 175%;
+/* or 32px */
+
+color: #5B6B82;
+
+/* Group 2085663567 */
+
+position: absolute;
+width: 515px;
+height: 173px;
+left: 0px;
+top: 0px;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 105px;
+height: 19px;
+left: 0px;
+top: 0px;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 93px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229221 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 515px;
+height: 130px;
+left: 0px;
+top: 43px;
+
+/* Principles That Guide Our Research */
+
+width: 515px;
+height: 106px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+/* or 53px */
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 12 */
+
+width: 60px;
+height: 0px;
+
+/* Emerald Green */
+border: 3px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229365 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 649px;
+height: 560px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229363 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+width: 649px;
+height: 280px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229358 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 649px;
+height: 280px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229361 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 284px;
+height: 113px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* insight */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* vector */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147229360 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 196px;
+height: 113px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Integrity */
+
+width: 196px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Conducting research with honesty, ethics, and transparency. */
+
+width: 196px;
+height: 66px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 5 */
+
+width: 280px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229362 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 284px;
+height: 113px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* group */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147229360 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 196px;
+height: 113px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Excellence */
+
+width: 196px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Delivering rigorous, high-quality research and evidence. */
+
+width: 196px;
+height: 66px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 6 */
+
+width: 649px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229364 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+width: 649px;
+height: 280px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229358 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 649px;
+height: 280px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229361 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 284px;
+height: 113px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* double tick */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 28.96%;
+bottom: 28.45%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147229360 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 196px;
+height: 113px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Collaboration */
+
+width: 196px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Working together to achieve meaningful and lasting impact. */
+
+width: 196px;
+height: 66px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 5 */
+
+width: 280px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229362 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 284px;
+height: 113px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* line chart */
+
+width: 64px;
+height: 64px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147229360 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 196px;
+height: 113px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Innovation */
+
+width: 196px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Applying creative thinking and modern research approaches. */
+
+width: 196px;
+height: 66px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* FOOTER */
+
+width: 1440px;
+height: 1060px;
+
+background: url(ChatGPT Image Aug 1, 2026, 12_27_55 AM.png);
+border-radius: 30px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+/* Group 2085663557 */
+
+position: absolute;
+width: 627px;
+height: 494.95px;
+left: calc(50% - 627px/2 + 0.5px);
+top: calc(50% - 494.95px/2 - 232.52px);
+
+/* Frame 2147229122 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 615px;
+height: 371px;
+left: 419px;
+top: 50px;
+
+/* Frame 2147229120 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 615px;
+height: 269px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229119 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 410px;
+height: 149px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 165px;
+height: 19px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 153px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Let's Build Africa's Future Together. */
+
+width: 410px;
+height: 106px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+/* or 53px */
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Group 2085663513 */
+
+width: 566px;
+height: 96px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Our research transforms complex challenges into practical insights that inform policy, strengthen institutions, and create lasting impact across Africa. */
+
+position: absolute;
+width: 566px;
+height: 96px;
+left: calc(50% - 566px/2);
+top: 173px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 175%;
+/* or 32px */
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #5B6B82;
+
+/* Frame 2147229121 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 23px;
+
+width: 583px;
+height: 72px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223153 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 20px;
+gap: 12px;
+
+width: 293px;
+height: 72px;
+
+/* Emerald Green */
+background: #16A34A;
+/* Emerald Green */
+border: 1px solid #16A34A;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Navigation */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 8.33%;
+top: 8.33%;
+bottom: 12.5%;
+
+/* Surface */
+border: 1.6px solid #FFFFFF;
+
+/* Become a Partner */
+
+width: 184px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+
+/* Surface */
+color: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* arrow_forward */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Surface */
+background: #FFFFFF;
+
+/* Frame 2147223161 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 12px;
+
+width: 270px;
+height: 72px;
+
+/* Emerald Green */
+border: 2px solid #16A34A;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* mail */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Heading */
+background: #1E293B;
+
+/* Contact Us */
+
+width: 152px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* arrow_forward */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Heading */
+background: #1E293B;
+
+/* Frame 2147223263 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 12px;
+gap: 19.17px;
+
+position: absolute;
+width: 611px;
+height: 103.9px;
+left: calc(50% - 611px/2 - 7.5px);
+top: calc(50% - 103.9px/2 - 37px);
+
+background: #E5F2EA;
+border-radius: 99px;
+
+/* Frame 2147223261 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 19.17px;
+
+width: 183.17px;
+height: 63.9px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223260 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16.22px;
+
+width: 164px;
+height: 51.12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223259 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5.41px;
+
+width: 164px;
+height: 51.12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 51.12px;
+height: 51.12px;
+
+border-radius: 66.9061px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 48.66px;
+height: 48.66px;
+left: 0px;
+top: 0.34px;
+
+/* Blue Fade */
+background: rgba(22, 163, 74, 0.12);
+box-shadow: 0px 6.75819px 20.2746px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(4.05491px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 66.9061px;
+
+/* Feather */
+
+position: absolute;
+width: 25.56px;
+height: 25.56px;
+left: calc(50% - 25.56px/2 + 0px);
+top: calc(50% - 25.56px/2 - 0.33px);
+
+/* Icon */
+
+position: absolute;
+left: 8.34%;
+right: 8.34%;
+top: 8.3%;
+bottom: 8.33%;
+
+/* Emerald Green */
+border: 1.5976px solid #16A34A;
+
+/* Evidence-Based Solutions */
+
+width: 111px;
+height: 36px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Line 5 */
+
+width: 63.9px;
+height: 0px;
+
+border: 0.675819px solid rgba(203, 213, 225, 0.48);
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223264 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 19.17px;
+
+width: 154.17px;
+height: 63.9px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223260 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16.22px;
+
+width: 135px;
+height: 51.12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223259 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5.41px;
+
+width: 156.38px;
+height: 51.12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 51.12px;
+height: 51.12px;
+
+border-radius: 66.9061px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 48.66px;
+height: 48.66px;
+left: 0px;
+top: 0.34px;
+
+/* Blue Fade */
+background: rgba(22, 163, 74, 0.12);
+box-shadow: 0px 6.75819px 20.2746px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(4.05491px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 66.9061px;
+
+/* Users
+
+Keywords: group
+*/
+
+position: absolute;
+width: 25.56px;
+height: 25.56px;
+left: calc(50% - 25.56px/2 + 0px);
+top: calc(50% - 25.56px/2 - 0.33px);
+
+/* Icon */
+
+position: absolute;
+left: 4.16%;
+right: 4.17%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+border: 1.5976px solid #16A34A;
+
+/* Stronger Partnership */
+
+width: 99.85px;
+height: 36px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Line 5 */
+
+width: 63.9px;
+height: 0px;
+
+border: 0.675819px solid rgba(203, 213, 225, 0.48);
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223265 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 19.17px;
+
+width: 169px;
+height: 51.12px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Frame 2147223260 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16.22px;
+
+width: 155.44px;
+height: 51.12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223259 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5.41px;
+
+width: 169.53px;
+height: 51.12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 51.12px;
+height: 51.12px;
+
+border-radius: 66.9061px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 48.66px;
+height: 48.66px;
+left: 0px;
+top: 0.34px;
+
+/* Blue Fade */
+background: rgba(22, 163, 74, 0.12);
+box-shadow: 0px 6.75819px 20.2746px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(4.05491px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 66.9061px;
+
+/* Trending up */
+
+position: absolute;
+width: 25.56px;
+height: 25.56px;
+left: calc(50% - 25.56px/2 + 0px);
+top: calc(50% - 25.56px/2 - 0.33px);
+
+/* Icon */
+
+position: absolute;
+left: 4.16%;
+right: 4.17%;
+top: 25%;
+bottom: 25%;
+
+/* Emerald Green */
+border: 1.5976px solid #16A34A;
+
+/* A more Resilient Africa */
+
+width: 113px;
+height: 36px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 2085663565 */
+
+position: absolute;
+width: 1311px;
+height: 353px;
+left: calc(50% - 1311px/2 + 15.5px);
+top: 706.95px;
+
+/* Rectangle 16 */
+
+position: absolute;
+width: 1311px;
+height: 293px;
+left: calc(50% - 1311px/2 + 15.5px);
+top: 766.95px;
+
+background: #FFFFFF;
+filter: blur(60px);
+border-radius: 90px;
+
+/* Group 2085663564 */
+
+position: absolute;
+width: 1280px;
+height: 321px;
+left: calc(50% - 1280px/2);
+top: 706.95px;
+
+/* Frame 2147229127 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 46px;
+
+position: absolute;
+width: 1280px;
+height: 189px;
+left: 80px;
+top: 706.95px;
+
+/* Logo */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 7px;
+
+width: 303.41px;
+height: 124px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* 7e2ca9c7-a915-4234-a9bc-5d06634fd12a 1 */
+
+width: 115.41px;
+height: 124px;
+
+background: url(7e2ca9c7-a915-4234-a9bc-5d06634fd12a);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229132 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 181px;
+height: 89px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* ACRIDC */
+
+width: 181px;
+height: 42.5px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 44px;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+/* Rersearch for Sustainable Development in Africa. */
+
+width: 181px;
+height: 42.5px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+/* Frame 2147229126 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 931px;
+height: 189px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 2085663559 */
+
+width: 150px;
+height: 189px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229125 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 150px;
+height: 143px;
+left: 0px;
+top: 46px;
+
+/* About Us */
+
+width: 150px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Rersearch Areas */
+
+width: 150px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Projects */
+
+width: 150px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Partnerships */
+
+width: 150px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+/* Publications */
+
+width: 150px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+/* Group 2085663558 */
+
+position: absolute;
+width: 120.7px;
+height: 30px;
+left: 0px;
+top: 0px;
+
+/* Frame 2147229123 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 120.7px;
+height: 30px;
+left: 0px;
+top: 0px;
+
+/* QUICK LINKS */
+
+width: 120.7px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 9 */
+
+width: 40px;
+height: 0px;
+
+/* Emerald Green */
+border: 2px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 2085663560 */
+
+width: 150px;
+height: 189px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229125 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 150px;
+height: 143px;
+left: 190px;
+top: 46px;
+
+/* News & Insights */
+
+width: 150px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Research Reports */
+
+width: 150px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Policy Briefs */
+
+width: 150px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Events */
+
+width: 150px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+/* Careers */
+
+width: 150px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+/* Group 2085663558 */
+
+position: absolute;
+width: 120.7px;
+height: 30px;
+left: 190px;
+top: 0px;
+
+/* Frame 2147229123 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 120.7px;
+height: 30px;
+left: 190px;
+top: 0px;
+
+/* Resources */
+
+width: 120.7px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 9 */
+
+width: 40px;
+height: 0px;
+
+/* Emerald Green */
+border: 2px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 2085663562 */
+
+width: 150px;
+height: 178px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Frame 2147229125 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 150px;
+height: 132px;
+left: 380px;
+top: 46px;
+
+/* Frame 2147223223 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 93px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Linkedin */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 12.5%;
+
+/* Body */
+border: 2px solid #64748B;
+
+/* Linkedin */
+
+width: 57px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223224 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 100px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Facebook */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 29.17%;
+right: 25%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Body */
+border: 2px solid #64748B;
+
+/* Facebook */
+
+width: 64px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223225 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 104px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Instagram
+
+Keywords: logo, camera
+*/
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Body */
+border: 2px solid #64748B;
+
+/* Instagram */
+
+width: 68px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223226 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 84px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* Twitter */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 4.17%;
+right: 4.17%;
+top: 12.46%;
+bottom: 12.78%;
+
+/* Body */
+border: 2px solid #64748B;
+
+/* Twitter */
+
+width: 48px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 2085663558 */
+
+position: absolute;
+width: 120.7px;
+height: 30px;
+left: 380px;
+top: 0px;
+
+/* Frame 2147229123 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 120.7px;
+height: 30px;
+left: 380px;
+top: 0px;
+
+/* Connect */
+
+width: 120.7px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 9 */
+
+width: 40px;
+height: 0px;
+
+/* Emerald Green */
+border: 2px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 2085663561 */
+
+width: 360.59px;
+height: 175px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* Frame 2147229125 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 360.59px;
+height: 129px;
+left: 570px;
+top: 46px;
+
+/* Receive the latest research publications, policy briefs, project updates, and upcoming events directly in your inbox. */
+
+width: 360.59px;
+height: 57px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223162 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 20px;
+gap: 12px;
+
+width: 361px;
+height: 56px;
+
+background: #FFFFFF;
+/* Border */
+border: 1px solid #E2E8F0;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Enter your Email */
+
+width: 280px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* arrow_forward */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663558 */
+
+position: absolute;
+width: 185.08px;
+height: 30px;
+left: 570px;
+top: 0px;
+
+/* Frame 2147229123 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 185.08px;
+height: 30px;
+left: 570px;
+top: 0px;
+
+/* Stay Updated */
+
+width: 116px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Line 9 */
+
+width: 40px;
+height: 0px;
+
+/* Emerald Green */
+border: 2px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 2085663563 */
+
+position: absolute;
+width: 1280px;
+height: 52px;
+left: 80px;
+top: 975.95px;
+
+/* Line 10 */
+
+position: absolute;
+width: 1280px;
+height: 0px;
+left: calc(50% - 1280px/2);
+top: 975.95px;
+
+/* Border */
+border: 1px solid #E2E8F0;
+
+/* Frame 2147229131 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 690px;
+
+position: absolute;
+width: 1280px;
+height: 20px;
+left: 80px;
+top: 1007.95px;
+
+/* © 2026 ACRIDC. All rights reserved. */
+
+width: 240px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229130 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+width: 349px;
+height: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229128 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 20px;
+
+width: 113px;
+height: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Privacy Policy */
+
+width: 93px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Line 11 */
+
+width: 20px;
+height: 0px;
+
+border: 1px solid #64748B;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229129 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 20px;
+
+width: 109px;
+height: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Terms of Use */
+
+width: 89px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Line 11 */
+
+width: 20px;
+height: 0px;
+
+border: 1px solid #64748B;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229130 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 20px;
+
+width: 87px;
+height: 19px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Accessibility */
+
+width: 87px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229223 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 12px 20px;
+gap: 24px;
+
+position: absolute;
+width: 223px;
+height: 301px;
+left: 1137px;
+top: 338px;
+
+background: #FFFFFF;
+/* Drop Shadow/200 */
+box-shadow: 0px 1px 4px rgba(12, 12, 13, 0.1), 0px 1px 4px rgba(12, 12, 13, 0.05);
+border-radius: 18px;
+
+/* _Ã«Ã®Ã©_1 */
+
+width: 24px;
+height: 19px;
+
+transform: rotate(-180deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Vector */
+
+position: absolute;
+left: 58.31%;
+right: 0%;
+top: 0.17%;
+bottom: 0%;
+
+/* Diguifarn Green */
+background: #67D96C;
+transform: rotate(-180deg);
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 58.31%;
+top: 0.16%;
+bottom: 0%;
+
+/* Diguifarn Green */
+background: #67D96C;
+transform: rotate(-180deg);
+
+/* Group 2085663566 */
+
+width: 177px;
+height: 108px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229228 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+position: absolute;
+width: 177px;
+height: 108px;
+left: 20px;
+top: 70px;
+
+/* We transform data into knowledge, and knowledge into impact. */
+
+width: 177px;
+height: 108px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 170%;
+/* or 27px */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 12 */
+
+width: 60px;
+height: 0px;
+
+/* Emerald Green */
+border: 3px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Group 2085663567 */
+
+width: 184px;
+height: 48px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* Frame 2147229228 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+position: absolute;
+width: 184px;
+height: 48px;
+left: 20px;
+top: 226px;
+
+/* ACRDC Research Philosophy */
+
+width: 184px;
+height: 48px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 170%;
+/* or 24px */
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223172 */
+
+position: absolute;
+width: 1280px;
+height: 88px;
+left: calc(50% - 1280px/2);
+top: 32px;
+
+/* Rectangle 3 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1280px;
+height: 88px;
+left: calc(50% - 1280px/2);
+top: calc(50% - 88px/2);
+
+background: rgba(255, 255, 255, 0.6);
+border: 1px solid rgba(255, 255, 255, 0.28);
+box-shadow: 0px 18px 60px rgba(8, 24, 48, 0.12);
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 24px;
+
+/* Frame 2147223171 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 1247px;
+height: 79px;
+left: calc(50% - 1247px/2);
+top: calc(50% - 79px/2 - 0.5px);
+
+/* Logos 2 */
+
+width: 316px;
+height: 79px;
+
+background: url(bg_removal [Background removed].png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Buttons Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 647px;
+height: 27px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223157 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 78px;
+height: 27px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text Button */
+
+width: 50px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* About Menu */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 88px;
+height: 27px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Text Button */
+
+width: 52px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Chevron down */
+
+width: 16px;
+height: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 37.5%;
+bottom: 37.5%;
+
+/* Heading */
+border: 1.6px solid #1E293B;
+
+/* Reasearch */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 124px;
+height: 27px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Text Button */
+
+width: 80px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Chevron down */
+
+width: 16px;
+height: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 37.5%;
+bottom: 37.5%;
+
+/* Emerald Green */
+border: 1.6px solid #16A34A;
+
+/* Frame 2147223156 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 78px;
+height: 27px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* Text Button */
+
+width: 78px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text Button */
+
+width: 47px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+/* Text Button */
+
+width: 72px;
+height: 27px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+/* Frame 2147223153 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 20px;
+gap: 20px;
+
+width: 204px;
+height: 56px;
+
+/* Primary Blue */
+background: #0D3B66;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Partner With Us */
+
+width: 120px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* Surface */
+color: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* arrow_forward */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Surface */
+background: #FFFFFF;  furthermore, I'm adding the link to the mobile view https://www.figma.com/design/A0pAcAIy4mYdBSd14OgmFi/ACRIDC-s-Website?node-id=655-3685&t=DST0bajLa80m0kOc-4 and also the css layers /* Research Details MOBILE */
+
+position: relative;
+width: 440px;
+height: 5359px;
+left: 3859px;
+top: 325px;
+
+/* Background */
+background: #F8FAFC;
+
+/* 825e7836-bb45-4787-a707-18268bfbd8db 1 */
+
+position: absolute;
+width: 440px;
+height: 458px;
+left: calc(50% - 440px/2);
+top: 2712px;
+
+background: url(Lighter Africa.png);
+
+/* Frame 2147223154 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 8px;
+
+position: absolute;
+width: 110px;
+height: 56px;
+left: 294px;
+top: 48px;
+
+background: #0D3B66;
+border-radius: 14px;
+
+/* Menu */
+
+width: 38px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Surface */
+color: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* list
+
+<p>List, Items, Inventory, Collection, Series</p><p>Use for: Displaying a list of items or options.</p>
+*/
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 29.17%;
+bottom: 29.17%;
+
+/* Surface */
+background: #FFFFFF;
+
+/* About Us */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px 20px 0px;
+gap: 50px;
+isolation: isolate;
+
+position: absolute;
+width: 440px;
+height: 879px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+border-radius: 24px;
+
+/* plain bg 1 */
+
+position: absolute;
+width: 440px;
+height: 1521px;
+left: calc(50% - 440px/2);
+top: 0px;
+
+background: linear-gradient(186.09deg, #FFFFFF 31.67%, rgba(255, 255, 255, 0.1) 78.01%);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+/* mobile nav bar */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 400px;
+height: 88px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+/* Frame 2147223172 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px 16px 16px 12px;
+gap: 10px;
+
+width: 400px;
+height: 88px;
+
+background: rgba(255, 255, 255, 0.6);
+border: 1px solid rgba(255, 255, 255, 0.28);
+box-shadow: 0px 18px 60px rgba(8, 24, 48, 0.12);
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229193 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 113px;
+
+width: 372px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223171 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 17.72px;
+
+width: 140px;
+height: 35px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Logos 2 */
+
+width: 140px;
+height: 35px;
+
+background: url(bg_removal [Background removed].png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223153 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 20px;
+gap: 12px;
+
+width: 119px;
+height: 56px;
+
+/* Emerald Green */
+background: #16A34A;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Menu */
+
+width: 43px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* Surface */
+color: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* list */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 25%;
+bottom: 25%;
+
+background: #FFFFFF;
+
+/* Frame 2147229187 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px 24px;
+gap: 24px;
+
+width: 400px;
+height: 0px;
+
+/* Emerald Green */
+background: #16A34A;
+border: 1px solid rgba(255, 255, 255, 0.28);
+box-shadow: 0px 18px 60px rgba(8, 24, 48, 0.12);
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Buttons Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 352px;
+height: 224px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* link item */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 20px;
+
+width: 352px;
+height: 32px;
+
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229194 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 268px;
+
+width: 328px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Text Button */
+
+width: 68px;
+height: 24px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+/* identical to box height, or 24px */
+
+/* Background */
+color: #F8FAFC;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Chevron down */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 37.5%;
+bottom: 37.5%;
+
+/* Background */
+border: 2.4px solid #F8FAFC;
+
+/* Frame 2147229197 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+display: none;
+width: 328px;
+height: 69.25px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223157 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 20px;
+
+width: 352px;
+height: 32px;
+
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229194 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 268px;
+
+width: 328px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Text Button */
+
+width: 101px;
+height: 24px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+/* identical to box height, or 24px */
+
+/* Background */
+color: #F8FAFC;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Chevron down */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 37.5%;
+bottom: 37.5%;
+
+/* Background */
+border: 2.4px solid #F8FAFC;
+
+/* Frame 2147223158 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 20px;
+
+width: 352px;
+height: 32px;
+
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229194 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 268px;
+
+width: 328px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Text Button */
+
+width: 119px;
+height: 24px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+/* identical to box height, or 24px */
+
+/* Background */
+color: #F8FAFC;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Chevron down */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 37.5%;
+bottom: 37.5%;
+
+/* Background */
+border: 2.4px solid #F8FAFC;
+
+/* Frame 2147223159 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 20px;
+
+width: 352px;
+height: 32px;
+
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229194 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 268px;
+
+width: 328px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Text Button */
+
+width: 162px;
+height: 24px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+/* identical to box height, or 24px */
+
+/* Background */
+color: #F8FAFC;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Chevron down */
+
+display: none;
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 20px;
+
+width: 352px;
+height: 32px;
+
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229194 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 268px;
+
+width: 328px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Text Button */
+
+width: 92px;
+height: 24px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+/* identical to box height, or 24px */
+
+/* Background */
+color: #F8FAFC;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Chevron down */
+
+display: none;
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223153 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 20px;
+
+width: 352px;
+height: 56px;
+
+/* Primary Blue */
+background: #0D3B66;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Partner With Us */
+
+width: 120px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* Surface */
+color: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* arrow_forward */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Surface */
+background: #FFFFFF;
+
+/* Frame 2147229137 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 400px;
+height: 701px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2;
+
+/* Frame 2085663515 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 400px;
+height: 701px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2085663514 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 400px;
+height: 235px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229136 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 400px;
+height: 151px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229349 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 400px;
+height: 151px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 152px;
+height: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 140px;
+height: 16px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Evidence That Drives Better Decisions Across Africa. */
+
+width: 400px;
+height: 123px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 120%;
+/* or 41px */
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* We generate trusted evidence that informs policy, strengthens institutions, and empowers sustainable development across Africa. */
+
+width: 400px;
+height: 72px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+letter-spacing: -0.02em;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229304 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 400px;
+height: 132px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223153 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 8px;
+
+width: 400px;
+height: 56px;
+
+/* Emerald Green */
+background: #16A34A;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Explore our Research */
+
+width: 142px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Surface */
+color: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* arrow_forward */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Surface */
+background: #FFFFFF;
+
+/* Frame 2147223154 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 8px;
+
+width: 400px;
+height: 56px;
+
+border: 1px solid #0D3B66;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229371 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 158px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* View Publications */
+
+width: 118px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* arrow_forward */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Heading */
+background: #1E293B;
+
+/* Frame 2147229372 */
+
+width: 401px;
+height: 270px;
+
+background: #FFFFFF;
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* plain bg 1 */
+
+position: absolute;
+width: 374px;
+height: 266px;
+right: 0px;
+top: 4px;
+
+background: url(12815e7b-8492-4d6e-b025-97dc4d880d6a.png);
+
+/* Frame 2147229223 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 20px;
+gap: 24px;
+
+position: absolute;
+width: 224px;
+height: 223px;
+left: 20px;
+top: calc(50% - 223px/2 + 0.5px);
+
+background: #FFFFFF;
+/* Drop Shadow/200 */
+box-shadow: 0px 1px 4px rgba(12, 12, 13, 0.1), 0px 1px 4px rgba(12, 12, 13, 0.05);
+border-radius: 18px;
+
+/* _Ã«Ã®Ã©_1 */
+
+width: 24px;
+height: 19px;
+
+transform: rotate(-180deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Vector */
+
+position: absolute;
+left: 58.31%;
+right: 0%;
+top: 0.17%;
+bottom: 0%;
+
+/* Diguifarn Green */
+background: #67D96C;
+transform: rotate(-180deg);
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 58.31%;
+top: 0.16%;
+bottom: 0%;
+
+/* Diguifarn Green */
+background: #67D96C;
+transform: rotate(-180deg);
+
+/* Group 2085663566 */
+
+width: 177px;
+height: 60px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229228 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+position: absolute;
+width: 177px;
+height: 60px;
+left: 20px;
+top: 63px;
+
+/* We transform data into knowledge, and knowledge into impact. */
+
+width: 177px;
+height: 60px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 12 */
+
+width: 60px;
+height: 0px;
+
+/* Emerald Green */
+border: 3px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Group 2085663567 */
+
+width: 184px;
+height: 32px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* Frame 2147229228 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+position: absolute;
+width: 184px;
+height: 32px;
+left: 20px;
+top: 171px;
+
+/* ACRDC Research Philosophy */
+
+width: 184px;
+height: 32px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 130%;
+/* or 16px */
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2085663568 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 60px 20px;
+gap: 40px;
+
+position: absolute;
+width: 440px;
+height: 620px;
+left: calc(50% - 440px/2);
+top: 879px;
+
+background: #F6FBF8;
+
+/* Frame 2147229308 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 400px;
+height: 238px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2085663567 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 400px;
+height: 70px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 114px;
+height: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 102px;
+height: 16px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229221 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 400px;
+height: 42px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Research with Purpose. */
+
+width: 400px;
+height: 26px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 110%;
+/* or 26px */
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 12 */
+
+width: 60px;
+height: 0px;
+
+/* Emerald Green */
+border: 3px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229303 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 400px;
+height: 144px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* We collaborate with governments, researchers, and communities to generate practical, evidence-based solutions. Our multidisciplinary approach transforms knowledge into meaningful action and lasting impact. */
+
+width: 400px;
+height: 144px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+letter-spacing: -0.02em;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229227 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 0px 0px 20px;
+gap: 16px;
+
+width: 440px;
+height: 222px;
+overflow-x: scroll;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229223 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 20px;
+gap: 32px;
+
+width: 230px;
+height: 222px;
+
+/* Surface */
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 56px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 86.625px;
+
+/* activity */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+/* vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 86px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Evidence-Based */
+
+position: absolute;
+width: 190px;
+height: 21px;
+left: 20px;
+top: 112px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+text-align: center;
+
+color: #16233B;
+
+/* Delivering trusted research that informs policy and drives sustainable solutions. */
+
+position: absolute;
+height: 51px;
+left: 20px;
+right: 20px;
+top: 147px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Frame 2147229230 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 20px;
+gap: 32px;
+
+width: 230px;
+height: 222px;
+
+/* Surface */
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 56px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 86.625px;
+
+/* double tick */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+/* vector */
+
+position: absolute;
+left: 8.34%;
+right: 8.33%;
+top: 28.96%;
+bottom: 28.45%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 69px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Relevant */
+
+position: absolute;
+width: 190px;
+height: 21px;
+left: 20px;
+top: 120.5px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+text-align: center;
+
+color: #16233B;
+
+/* We focus on real world challenges and emerging opportunities. */
+
+position: absolute;
+height: 34px;
+left: 20px;
+right: 20px;
+top: 155.5px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Frame 2147229227 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 20px;
+gap: 32px;
+
+width: 230px;
+height: 222px;
+
+/* Surface */
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 56px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 86.625px;
+
+/* group */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+/* vector */
+
+position: absolute;
+left: 8.34%;
+right: 8.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 69px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Collaborative */
+
+position: absolute;
+width: 190px;
+height: 21px;
+left: 20px;
+top: 120.5px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+text-align: center;
+
+color: #16233B;
+
+/* Working with partners to co-create sustainable solutions. */
+
+position: absolute;
+height: 34px;
+left: 20px;
+right: 20px;
+top: 155.5px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Frame 2147229228 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 20px;
+gap: 32px;
+
+width: 230px;
+height: 222px;
+
+/* Surface */
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 56px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 86.625px;
+
+/* emergency */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+/* vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 86px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Innovative */
+
+position: absolute;
+width: 190px;
+height: 21px;
+left: 20px;
+top: 112px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+text-align: center;
+
+color: #16233B;
+
+/* Applying modern research methods and data-driven insights. */
+
+position: absolute;
+height: 51px;
+left: 20px;
+right: 20px;
+top: 147px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Frame 2147229229 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 20px;
+gap: 32px;
+
+width: 230px;
+height: 222px;
+
+/* Surface */
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 56px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 86.625px;
+
+/* rocket */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+/* vector */
+
+position: absolute;
+left: 16.66%;
+right: 16.67%;
+top: 7.64%;
+bottom: 4.25%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 69px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Impact-Focused */
+
+position: absolute;
+width: 190px;
+height: 21px;
+left: 20px;
+top: 120.5px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+text-align: center;
+
+color: #16233B;
+
+/* Turning evidence into measurable development outcomes. */
+
+position: absolute;
+height: 34px;
+left: 20px;
+right: 20px;
+top: 155.5px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Frame 2147229345 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 100px 20px;
+gap: 40px;
+
+position: absolute;
+width: 440px;
+height: 710px;
+left: 0px;
+top: 2187px;
+
+background: #F6FBF8;
+
+/* Frame 2147229307 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 400px;
+height: 206px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2085663567 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 400px;
+height: 110px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 167px;
+height: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 155px;
+height: 16px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229221 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 400px;
+height: 82px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Driving Impact Through Evidence */
+
+width: 400px;
+height: 66px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 12 */
+
+width: 60px;
+height: 0px;
+
+/* Emerald Green */
+border: 3px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229303 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 400px;
+height: 72px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Our research continues to support better decisions, stronger institutions, and sustainable development across Africa. */
+
+width: 400px;
+height: 72px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223205 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 10px;
+
+width: 440px;
+height: 264px;
+
+border: 1.5px solid rgba(203, 213, 225, 0.55);
+box-shadow: 0px 20px 60px -10px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229357 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 400px;
+height: 224px;
+overflow-x: scroll;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223207 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 200px;
+height: 224px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 72px;
+height: 72px;
+
+border-radius: 99px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 8px;
+top: 8.5px;
+
+background: rgba(22, 163, 74, 0.12);
+border: 0.777778px solid rgba(255, 255, 255, 0.7);
+box-shadow: 0px 7.77778px 23.3333px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(4.66667px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 77px;
+
+/* recipt */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 + 0.5px);
+
+/* vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.89%;
+bottom: 8.89%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147223206 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 200px;
+height: 128px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* 250+ */
+
+width: 102px;
+height: 48px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 120%;
+/* identical to box height, or 48px */
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Research Projects */
+
+width: 200px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Delivering evidence-based solutions. */
+
+width: 150px;
+height: 34px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Line 5 */
+
+width: 200px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223208 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 200px;
+height: 224px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 56px;
+height: 56px;
+
+border-radius: 77px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 0px;
+top: 0.39px;
+
+background: rgba(22, 163, 74, 0.12);
+border: 0.777778px solid rgba(255, 255, 255, 0.7);
+box-shadow: 0px 7.77778px 23.3333px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(4.66667px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 77px;
+
+/* globe */
+
+position: absolute;
+width: 21.78px;
+height: 21.78px;
+left: calc(50% - 21.78px/2 + 0px);
+top: calc(50% - 21.78px/2 + 0.39px);
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147223206 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 200px;
+height: 128px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* 35+ */
+
+width: 185px;
+height: 48px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 120%;
+/* identical to box height, or 48px */
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Countries Reached */
+
+width: 200px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Supporting development across Africa. */
+
+width: 200px;
+height: 34px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 6 */
+
+width: 200px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+/* Frame 2147223209 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 200px;
+height: 224px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 56px;
+height: 56px;
+
+border-radius: 77px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 0px;
+top: 0.39px;
+
+background: rgba(22, 163, 74, 0.12);
+border: 0.777778px solid rgba(255, 255, 255, 0.7);
+box-shadow: 0px 7.77778px 23.3333px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(4.66667px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 77px;
+
+/* group */
+
+position: absolute;
+width: 21.78px;
+height: 21.78px;
+left: calc(50% - 21.78px/2 + 0px);
+top: calc(50% - 21.78px/2 + 0.39px);
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147223206 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 200px;
+height: 128px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* 60+ */
+
+width: 185px;
+height: 48px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 120%;
+/* identical to box height, or 48px */
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Strategic Partners */
+
+width: 200px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Collaborating for lasting impact. */
+
+width: 200px;
+height: 34px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 7 */
+
+width: 200px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+/* Frame 2147223210 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 200px;
+height: 224px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 72px;
+height: 72px;
+
+border-radius: 99px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 8px;
+top: 8.5px;
+
+background: rgba(22, 163, 74, 0.12);
+border: 0.777778px solid rgba(255, 255, 255, 0.7);
+box-shadow: 0px 7.77778px 23.3333px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(4.66667px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 77px;
+
+/* heart */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2 + 0.5px);
+
+/* vector */
+
+position: absolute;
+left: 8.34%;
+right: 8.33%;
+top: 14.58%;
+bottom: 13.98%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147223206 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 200px;
+height: 128px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* 1.2M+ */
+
+width: 185px;
+height: 48px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 120%;
+/* identical to box height, or 48px */
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Lives Impacted */
+
+width: 200px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Creating meaningful change through research. */
+
+width: 200px;
+height: 34px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229344 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 100px 20px;
+gap: 40px;
+
+position: absolute;
+width: 440px;
+height: 688px;
+left: 0px;
+top: 1499px;
+
+/* Frame 2147229307 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 400px;
+height: 182px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2085663567 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 400px;
+height: 110px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 108px;
+height: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 96px;
+height: 16px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229221 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 400px;
+height: 82px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* From Evidence to Action */
+
+width: 400px;
+height: 66px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 12 */
+
+width: 60px;
+height: 0px;
+
+/* Emerald Green */
+border: 3px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229303 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 400px;
+height: 48px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* We turn rigorous research into practical solutions that inform policy and create lasting impact. */
+
+width: 400px;
+height: 48px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229373 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 400px;
+height: 266px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223223 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 9.33px;
+
+width: 400px;
+height: 33px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Learn more about our Methodology */
+
+width: 223px;
+height: 18px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 13.3021px;
+line-height: 18px;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Arrow up-right */
+
+width: 18.65px;
+height: 18.65px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 29.17%;
+right: 29.16%;
+top: 29.17%;
+bottom: 29.17%;
+
+/* Emerald Green */
+border: 1.9432px solid #16A34A;
+
+/* Frame 2147229356 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 420px;
+height: 209px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229223 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 190px;
+height: 209px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 56px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 86.625px;
+
+/* target */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+/* vector */
+
+position: absolute;
+left: 8.34%;
+right: 6.75%;
+top: 6.75%;
+bottom: 8.33%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 117px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229354 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 190px;
+height: 117px;
+left: 0px;
+top: 90px;
+
+/* 01 */
+
+width: 190px;
+height: 21px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Identify Challenges */
+
+width: 190px;
+height: 21px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+text-align: center;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Understand priority issues through stakeholder engagement. */
+
+width: 190px;
+height: 51px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Div [framer-1xxrrc7] */
+
+width: 54.68px;
+height: 209px;
+
+mix-blend-mode: normal;
+border-radius: 37.591px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* fi-rr-arrow-down */
+
+position: absolute;
+width: 32.81px;
+height: 32.81px;
+left: 10.94px;
+top: 11.11px;
+
+transform: rotate(-90deg);
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 46.74%;
+top: 23.52%;
+bottom: -23.51%;
+
+/* Emerald Green */
+background: #16A34A;
+transform: rotate(-90deg);
+
+/* Frame 2147229227 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 190px;
+height: 209px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 56px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 86.625px;
+
+/* recipt */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+/* vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.89%;
+bottom: 8.89%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 121px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229354 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 190px;
+height: 121px;
+left: 0px;
+top: 88px;
+
+/* 02 */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Conduct Research */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Gather reliable data using rigorous and evidence-based methodologies. */
+
+width: 190px;
+height: 51px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Div [framer-1xxrrc7] */
+
+width: 54.68px;
+height: 209px;
+
+mix-blend-mode: normal;
+border-radius: 37.591px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+/* fi-rr-arrow-down */
+
+position: absolute;
+width: 32.81px;
+height: 32.81px;
+left: 10.94px;
+top: 11.11px;
+
+transform: rotate(-90deg);
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 46.74%;
+top: 23.52%;
+bottom: -23.51%;
+
+/* Emerald Green */
+background: #16A34A;
+transform: rotate(-90deg);
+
+/* Frame 2147229228 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 190px;
+height: 209px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 56px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 86.625px;
+
+/* leader */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+/* vector */
+
+position: absolute;
+left: 8.34%;
+right: 8.33%;
+top: 20.83%;
+bottom: 20.83%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 121px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229354 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 190px;
+height: 121px;
+left: 0px;
+top: 88px;
+
+/* 03 */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Generate Insights */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Transform findings into practical recommendations and knowledge. */
+
+width: 190px;
+height: 51px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Div [framer-1xxrrc7] */
+
+width: 54.68px;
+height: 209px;
+
+mix-blend-mode: normal;
+border-radius: 37.591px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+/* fi-rr-arrow-down */
+
+position: absolute;
+width: 32.81px;
+height: 32.81px;
+left: 10.94px;
+top: 11.11px;
+
+transform: rotate(-90deg);
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 46.74%;
+top: 23.52%;
+bottom: -23.51%;
+
+/* Emerald Green */
+background: #16A34A;
+transform: rotate(-90deg);
+
+/* Frame 2147229229 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 190px;
+height: 209px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229222 */
+
+width: 56px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+background: rgba(22, 163, 74, 0.12);
+border-radius: 86.625px;
+
+/* line chart */
+
+position: absolute;
+width: 28px;
+height: 28px;
+left: calc(50% - 28px/2);
+top: calc(50% - 28px/2);
+
+/* vector */
+
+position: absolute;
+left: 8.34%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663566 */
+
+width: 190px;
+height: 104px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229354 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 190px;
+height: 104px;
+left: 0px;
+top: 96.5px;
+
+/* 04 */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Drive Impact */
+
+width: 190px;
+height: 23px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+/* or 23px */
+text-align: center;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Support policies and programmes that create sustainable change. */
+
+width: 190px;
+height: 34px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+text-align: center;
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Who We Are */
+
+position: absolute;
+width: 440px;
+height: 844px;
+left: 0px;
+top: 2897px;
+
+border-radius: 24px;
+
+/* 825e7836-bb45-4787-a707-18268bfbd8db 1 */
+
+position: absolute;
+width: 292px;
+height: 304px;
+right: 0px;
+top: 0px;
+
+background: url(Lighter Africa.png);
+
+/* Frame 2147229366 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 400px;
+height: 644px;
+left: calc(50% - 400px/2);
+top: 100px;
+
+/* Frame 2085663568 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 400px;
+height: 204px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2085663567 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 400px;
+height: 108px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 92px;
+height: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 80px;
+height: 16px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229221 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 400px;
+height: 80px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Principles That Guide Our Research */
+
+width: 400px;
+height: 68px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 140%;
+/* or 34px */
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 12 */
+
+width: 60px;
+height: 0px;
+
+/* Emerald Green */
+border: 3px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 2085663513 */
+
+width: 400px;
+height: 72px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Our values shape every research initiative, partnership, and decision, ensuring our work remains credible, collaborative, and impactful. */
+
+position: absolute;
+width: 400px;
+height: 72px;
+left: calc(50% - 400px/2);
+top: 132px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+letter-spacing: -0.02em;
+
+color: #5B6B82;
+
+/* Frame 2147229365 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 20px;
+gap: 24px;
+
+width: 400px;
+height: 400px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229358 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+padding: 0px;
+gap: 16px;
+
+width: 360px;
+height: 180px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229364 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 360px;
+height: 74px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* insight */
+
+width: 48px;
+height: 48px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* vector */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147229360 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 288px;
+height: 74px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+/* Integrity */
+
+width: 288px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Conducting research with honesty, ethics, and transparency. */
+
+width: 288px;
+height: 40px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 5 */
+
+width: 288px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229362 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 360px;
+height: 74px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* group */
+
+width: 48px;
+height: 48px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147229360 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 288px;
+height: 74px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+/* Excellence */
+
+width: 288px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Delivering rigorous, high-quality research and evidence. */
+
+width: 288px;
+height: 40px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 6 */
+
+width: 360px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229358 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+padding: 0px;
+gap: 12px;
+
+width: 360px;
+height: 172px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229364 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 360px;
+height: 74px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* line chart */
+
+width: 48px;
+height: 48px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147229360 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 288px;
+height: 74px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+/* Integrity */
+
+width: 288px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Applying creative thinking and modern research approaches. */
+
+width: 288px;
+height: 40px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 5 */
+
+width: 288px;
+height: 0px;
+
+border: 1px solid rgba(203, 213, 225, 0.5);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229362 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 360px;
+height: 74px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* double tick */
+
+width: 48px;
+height: 48px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 28.96%;
+bottom: 28.45%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Frame 2147229360 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 288px;
+height: 74px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+/* Collaboration */
+
+width: 288px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Working together to achieve meaningful and lasting impact. */
+
+width: 288px;
+height: 40px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+
+color: #5B6B82;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* 383fe896-3738-425b-ac4b-1b802d210dea 1 */
+
+position: absolute;
+width: 69px;
+height: 69px;
+left: 1360px;
+top: 258px;
+
+background: url(bg_removal [Background removed].png);
+
+/* FOOTER */
+
+position: absolute;
+width: 440px;
+height: 1620px;
+left: calc(50% - 440px/2);
+top: 3741px;
+
+background: url(ChatGPT Image Aug 1, 2026, 12_27_55 AM.png);
+
+/* Rectangle 16 */
+
+position: absolute;
+width: 520px;
+height: 239px;
+left: calc(50% - 520px/2);
+top: 860px;
+
+background: #FFFFFF;
+filter: blur(60px);
+
+/* Frame 2147229374 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 80px;
+
+position: absolute;
+width: 400px;
+height: 1340.9px;
+left: calc(50% - 400px/2);
+top: 100px;
+
+/* Frame 2147229189 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+gap: 40px;
+
+width: 400px;
+height: 517.9px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229177 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 400px;
+height: 162px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229176 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 4px;
+
+width: 400px;
+height: 78px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223160 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 143px;
+height: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Ellipse 1 */
+
+width: 4px;
+height: 4px;
+
+/* Heading */
+background: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Text */
+
+width: 131px;
+height: 16px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.08em;
+text-transform: capitalize;
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Let's Build Africa's Future Together. */
+
+width: 400px;
+height: 58px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Group 2085663513 */
+
+width: 400px;
+height: 72px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Our research transforms complex challenges into practical insights that inform policy, strengthen institutions, and create lasting impact across Africa. */
+
+position: absolute;
+width: 400px;
+height: 72px;
+left: calc(50% - 400px/2);
+top: 90px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #5B6B82;
+
+/* Frame 2147229190 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 400px;
+height: 315.9px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229121 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 400px;
+height: 144px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223153 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 12px;
+
+width: 400px;
+height: 64px;
+
+/* Emerald Green */
+background: #16A34A;
+/* Emerald Green */
+border: 1px solid #16A34A;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Navigation */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 12.5%;
+right: 8.33%;
+top: 8.33%;
+bottom: 12.5%;
+
+/* Surface */
+border: 1.6px solid #FFFFFF;
+
+/* Become a Partner */
+
+width: 135px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* Surface */
+color: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* arrow_forward */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Surface */
+background: #FFFFFF;
+
+/* Frame 2147223161 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 12px;
+
+width: 400px;
+height: 64px;
+
+/* Emerald Green */
+border: 2px solid #16A34A;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* mail */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Heading */
+background: #1E293B;
+
+/* Contact Us */
+
+width: 87px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+text-align: center;
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* arrow_forward */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Heading */
+background: #1E293B;
+
+/* Frame 2147223263 */
+
+width: 400px;
+height: 155.9px;
+
+background: #E5F2EA;
+border-radius: 32px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223261 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 19.17px;
+
+position: absolute;
+width: 183.17px;
+height: 63.9px;
+left: 20px;
+top: 20px;
+
+/* Frame 2147223260 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 164px;
+height: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223259 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5.41px;
+
+width: 164px;
+height: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 40px;
+height: 40px;
+
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 38.07px;
+height: 38.07px;
+left: 0px;
+top: 0.26px;
+
+/* Blue Fade */
+background: rgba(22, 163, 74, 0.12);
+box-shadow: 0px 5.28777px 15.8633px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(3.17266px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 52.3489px;
+
+/* Feather */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: calc(50% - 20px/2);
+top: calc(50% - 20px/2 - 0.26px);
+
+/* Icon */
+
+position: absolute;
+left: 8.33%;
+right: 8.34%;
+top: 8.3%;
+bottom: 8.33%;
+
+/* Emerald Green */
+border: 1.25px solid #16A34A;
+
+/* Evidence-Based Solutions */
+
+width: 118.59px;
+height: 36px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+/* Line 5 */
+
+width: 63.9px;
+height: 0px;
+
+border: 0.675819px solid rgba(203, 213, 225, 0.48);
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223264 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 155px;
+height: 63.9px;
+left: 216px;
+top: 20px;
+
+/* Frame 2147223260 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 155px;
+height: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+/* Frame 2147223259 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5.41px;
+
+width: 155px;
+height: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 40px;
+height: 40px;
+
+border-radius: 52.3489px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 38.07px;
+height: 38.07px;
+left: 0px;
+top: 0.26px;
+
+/* Blue Fade */
+background: rgba(22, 163, 74, 0.12);
+box-shadow: 0px 5.28777px 15.8633px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(3.17266px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 52.3489px;
+
+/* Users
+
+Keywords: group
+*/
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: calc(50% - 20px/2);
+top: calc(50% - 20px/2 - 0.26px);
+
+/* Icon */
+
+position: absolute;
+left: 4.17%;
+right: 4.16%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Emerald Green */
+border: 1.25px solid #16A34A;
+
+/* Stronger Partnership */
+
+width: 110px;
+height: 36px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Line 5 */
+
+width: 63.9px;
+height: 0px;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223265 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 19.17px;
+
+position: absolute;
+width: 169px;
+height: 40px;
+left: 20px;
+top: 95.9px;
+
+/* Frame 2147223260 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 169px;
+height: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+/* Frame 2147223259 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5.41px;
+
+width: 158.41px;
+height: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147223187 */
+
+width: 40px;
+height: 40px;
+
+border-radius: 52.4224px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 38.07px;
+height: 38.07px;
+left: 0px;
+top: 0.26px;
+
+/* Blue Fade */
+background: rgba(22, 163, 74, 0.12);
+box-shadow: 0px 5.28777px 15.8633px rgba(15, 23, 42, 0.08);
+backdrop-filter: blur(3.17266px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 52.3489px;
+
+/* Trending up */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: calc(50% - 20px/2);
+top: calc(50% - 20px/2 - 0.26px);
+
+/* Icon */
+
+position: absolute;
+left: 4.17%;
+right: 4.16%;
+top: 25%;
+bottom: 25%;
+
+/* Emerald Green */
+border: 1.25px solid #16A34A;
+
+/* A more Resilient Africa */
+
+width: 113px;
+height: 36px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+
+/* Heading */
+color: #1E293B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229375 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+width: 400px;
+height: 743px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Logo */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 305px;
+height: 107px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* 7e2ca9c7-a915-4234-a9bc-5d06634fd12a 1 */
+
+width: 100px;
+height: 107px;
+
+background: url(7e2ca9c7-a915-4234-a9bc-5d06634fd12a.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229132 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 181px;
+height: 66px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* ACRIDC */
+
+width: 181px;
+height: 24px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 100% */
+
+/* Emerald Green */
+color: #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Rersearch for Sustainable Development in Africa. */
+
+width: 181px;
+height: 38px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229126 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+width: 400px;
+height: 537px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229191 */
+
+width: 400px;
+height: 537px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2085663559 */
+
+position: absolute;
+width: 160px;
+height: 189px;
+left: 20px;
+top: 0px;
+
+/* Frame 2147229125 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 160px;
+height: 143px;
+left: 0px;
+top: 46px;
+
+/* About Us */
+
+width: 160px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Rersearch Areas */
+
+width: 160px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Projects */
+
+width: 160px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Partnerships */
+
+width: 160px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+/* Publications */
+
+width: 160px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+/* Group 2085663558 */
+
+position: absolute;
+width: 120.7px;
+height: 30px;
+left: 0px;
+top: 0px;
+
+/* Frame 2147229123 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 120.7px;
+height: 30px;
+left: 0px;
+top: 0px;
+
+/* QUICK LINKS */
+
+width: 120.7px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 9 */
+
+width: 40px;
+height: 0px;
+
+/* Emerald Green */
+border: 2px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2085663560 */
+
+position: absolute;
+width: 160px;
+height: 189px;
+left: 220px;
+top: 0px;
+
+/* Frame 2147229125 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 160px;
+height: 143px;
+left: 0px;
+top: 46px;
+
+/* News & Insights */
+
+width: 160px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Research Reports */
+
+width: 160px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Policy Briefs */
+
+width: 160px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Events */
+
+width: 160px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+/* Careers */
+
+width: 160px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+/* Group 2085663558 */
+
+position: absolute;
+width: 120.7px;
+height: 30px;
+left: 0px;
+top: 0px;
+
+/* Frame 2147229123 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 120.7px;
+height: 30px;
+left: 0px;
+top: 0px;
+
+/* Resources */
+
+width: 120.7px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 9 */
+
+width: 40px;
+height: 0px;
+
+/* Emerald Green */
+border: 2px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2085663562 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 360px;
+height: 106px;
+left: 20px;
+top: 221px;
+
+/* Group 2085663558 */
+
+width: 120.7px;
+height: 30px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229123 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 120.7px;
+height: 30px;
+left: 0px;
+top: 0px;
+
+/* Connect */
+
+width: 120.7px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 9 */
+
+width: 40px;
+height: 0px;
+
+/* Emerald Green */
+border: 2px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229125 */
+
+width: 360px;
+height: 60px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223223 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 93px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+/* Linkedin */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 12.5%;
+
+/* Body */
+border: 2px solid #64748B;
+
+/* Linkedin */
+
+width: 57px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223224 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 100px;
+height: 24px;
+left: 186px;
+top: 0px;
+
+/* Facebook */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 29.17%;
+right: 25%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Body */
+border: 2px solid #64748B;
+
+/* Facebook */
+
+width: 64px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223225 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 104px;
+height: 24px;
+left: 0px;
+top: 36px;
+
+/* Instagram
+
+Keywords: logo, camera
+*/
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* Body */
+border: 2px solid #64748B;
+
+/* Instagram */
+
+width: 68px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147223226 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 84px;
+height: 24px;
+left: 186px;
+top: 36px;
+
+/* Twitter */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Icon */
+
+position: absolute;
+left: 4.17%;
+right: 4.17%;
+top: 12.46%;
+bottom: 12.78%;
+
+/* Body */
+border: 2px solid #64748B;
+
+/* Twitter */
+
+width: 48px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Group 2085663561 */
+
+position: absolute;
+width: 360px;
+height: 178px;
+left: 20px;
+top: 359px;
+
+/* Frame 2147229125 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 360px;
+height: 131.21px;
+left: 20px;
+top: 405.79px;
+
+/* Receive the latest research publications, policy briefs, project updates, and upcoming events directly in your inbox. */
+
+width: 360px;
+height: 60px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+letter-spacing: 0.02em;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147223162 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+gap: 12px;
+
+width: 360px;
+height: 56px;
+
+background: #FFFFFF;
+/* Border */
+border: 1px solid #E2E8F0;
+border-radius: 14px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+/* Enter your Email */
+
+margin: 0 auto;
+width: 280px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+/* Body */
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* arrow_forward */
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+/* Emerald Green */
+background: #16A34A;
+
+/* Group 2085663558 */
+
+position: absolute;
+width: 184.78px;
+height: 30px;
+left: 20px;
+top: 359px;
+
+/* Frame 2147229123 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 184.78px;
+height: 30px;
+left: 20px;
+top: 359px;
+
+/* Stay Updated */
+
+width: 116px;
+height: 22px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #16233B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Line 9 */
+
+width: 40px;
+height: 0px;
+
+/* Emerald Green */
+border: 2px solid #16A34A;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229192 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 400px;
+height: 59px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Line 10 */
+
+width: 400px;
+height: 0px;
+
+/* Border */
+border: 1px solid #E2E8F0;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Frame 2147229131 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 400px;
+height: 49px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* © 2026 ACRIDC. All rights reserved. */
+
+width: 240px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Frame 2147229130 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+width: 349px;
+height: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229128 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 20px;
+
+width: 113px;
+height: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Privacy Policy */
+
+width: 93px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Line 11 */
+
+width: 20px;
+height: 0px;
+
+border: 1px solid #64748B;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229129 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 20px;
+
+width: 109px;
+height: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Terms of Use */
+
+width: 89px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Line 11 */
+
+width: 20px;
+height: 0px;
+
+border: 1px solid #64748B;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* Frame 2147229130 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 0px;
+gap: 20px;
+
+width: 87px;
+height: 19px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+/* Accessibility */
+
+width: 87px;
+height: 19px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+color: #64748B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0; make them as accurate as the figma file and also make the page responsive in different devices
+</user_query>
