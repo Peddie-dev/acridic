@@ -55,6 +55,27 @@ body {
   }
 }
 
+/* Research Overview: Figma 1440 composition, scaled on laptop widths */
+.research-overview {
+  --rs: 1;
+}
+
+@media (min-width: 1024px) {
+  .research-overview {
+    --rs: min(1, calc(100vw / 1440px));
+  }
+
+  .research-overview-stage {
+    width: 1440px;
+    margin-inline: auto;
+    zoom: var(--rs);
+  }
+
+  .research-hero {
+    margin-top: calc(-128px / var(--rs));
+  }
+}
+
 /* Desktop hero: keep the Figma 1440×1024 composition; scale it below 1440 */
 .hero-section {
   --hero-scale: 1;

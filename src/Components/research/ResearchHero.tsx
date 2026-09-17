@@ -6,27 +6,29 @@ import PhilosophyCard from "./PhilosophyCard";
 
 export default function ResearchHero() {
   return (
-    <section className="relative overflow-hidden bg-[#F8FAFC]">
+    <section className="research-hero relative overflow-hidden bg-[#F8FAFC]">
       <div className="relative isolate overflow-hidden lg:h-[677px] lg:min-h-[677px]">
-        <div className="pointer-events-none absolute inset-y-0 left-0 hidden overflow-hidden lg:left-[70px] lg:right-0 lg:block lg:rounded-l-[25px]">
+        <div className="pointer-events-none absolute inset-y-0 left-[70px] right-0 hidden overflow-hidden rounded-l-[25.21px] lg:block">
           <Image
             src="/images/research/research-hero.png"
             alt="ACRIDC researcher examining a sample through a microscope"
-            fill
+            width={1536}
+            height={1024}
             priority
-            sizes="100vw"
             quality={100}
             unoptimized
-            className="object-cover object-[82%_center]"
+            className="absolute max-w-none"
+            style={{ width: 1801, height: 1200, left: -380, top: -72 }}
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,#F8FAFC_12%,rgba(248,250,252,0.45)_28%,rgba(248,250,252,0)_48%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,#F8FAFC_10%,rgba(248,250,252,0.78)_22%,rgba(248,250,252,0.28)_34%,rgba(248,250,252,0)_48%)]" />
         </div>
+
         <div
           aria-hidden
           className="pointer-events-none absolute inset-x-0 top-0 h-[min(100%,1521px)] bg-[linear-gradient(186.09deg,#FFFFFF_31.67%,rgba(255,255,255,0.1)_78.01%)] lg:hidden"
         />
 
-        <div className="relative z-10 mx-auto flex max-w-[1440px] flex-col px-5 pt-10 sm:px-8 md:px-10 lg:h-[677px] lg:min-h-[677px] lg:justify-start lg:px-12 lg:pb-16 lg:pt-[152px] xl:px-20">
+        <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col px-5 pt-10 sm:px-8 lg:h-[677px] lg:min-h-[677px] lg:px-20 lg:pt-[152px] lg:pb-16">
           <nav
             aria-label="Breadcrumb"
             className="mb-10 hidden items-center gap-2 text-[14px] font-semibold capitalize tracking-[0.02em] text-[#64748B] lg:flex"
@@ -42,40 +44,46 @@ export default function ResearchHero() {
             <span className="text-[#16A34A]">Research Overview</span>
           </nav>
 
-          <span className="flex w-fit items-center gap-2 text-[12px] font-semibold capitalize leading-4 tracking-[0.08em] text-[#16A34A] lg:text-[14px] lg:leading-[19px]">
-            <span className="h-1 w-1 shrink-0 rounded-full bg-[#1E293B]" />
-            Research Overview
-          </span>
-          <h1 className="mt-3 max-w-[500px] text-[34px] font-bold leading-[120%] tracking-[-0.02em] text-[#16233B] lg:mt-3 lg:text-[48px] lg:leading-[110%]">
-            Evidence That Drives{" "}
-            <span className="text-[#16A34A]">Better Decisions Across Africa.</span>
-          </h1>
-          <p className="mt-3 max-w-[500px] text-[16px] font-normal leading-[150%] tracking-[-0.02em] text-[#5B6B82] lg:mt-5 lg:text-[18px] lg:leading-[175%]">
-            We generate trusted evidence that informs policy, strengthens institutions, and
-            empowers sustainable development across Africa.
-          </p>
-          <div className="mt-8 flex w-full flex-col gap-5 lg:mt-8 lg:flex-row lg:items-end lg:gap-9">
-            <EmeraldButton
-              href="/research/areas"
-              icon={ArrowRight}
-              className="h-14 w-full text-[14px] lg:w-auto lg:text-[16px]"
-            >
-              <span className="lg:hidden">Explore our Research</span>
-              <span className="hidden lg:inline">Explore Research Areas</span>
-            </EmeraldButton>
-            <OutlineButton
-              href="/research/publications"
-              color="navy"
-              className="h-14 w-full border-[#0D3B66] text-[14px] lg:w-auto lg:border-[#1E293B] lg:text-[16px]"
-            >
-              View Publications
-            </OutlineButton>
+          <div className="flex w-full max-w-[631px] flex-col gap-5">
+            <div className="flex max-w-[500px] flex-col gap-3">
+              <span className="flex w-fit items-center gap-2 text-[12px] font-semibold uppercase leading-4 tracking-[0.08em] text-[#16A34A] lg:text-[14px] lg:leading-[19px]">
+                <span className="h-1 w-1 shrink-0 rounded-full bg-[#1E293B]" />
+                Research Overview
+              </span>
+              <h1 className="text-[34px] font-bold leading-[120%] tracking-[-0.02em] text-[#16233B] lg:text-[48px] lg:leading-[110%]">
+                Evidence That Drives{" "}
+                <span className="text-[#16A34A]">Better Decisions Across Africa.</span>
+              </h1>
+            </div>
+            <div className="flex flex-col gap-8">
+              <p className="max-w-[500px] text-[16px] font-normal leading-[150%] tracking-[-0.02em] text-[#5B6B82] lg:text-[18px] lg:leading-[175%]">
+                We generate trusted evidence that informs policy, strengthens institutions, and
+                empowers sustainable development across Africa.
+              </p>
+              <div className="flex w-full flex-col gap-5 lg:flex-row lg:items-end lg:gap-9">
+                <EmeraldButton
+                  href="/research/areas"
+                  icon={ArrowRight}
+                  className="h-14 w-full gap-2 text-[14px] lg:w-auto lg:gap-5 lg:text-[16px]"
+                >
+                  <span className="lg:hidden">Explore our Research</span>
+                  <span className="hidden lg:inline">Explore Research Areas</span>
+                </EmeraldButton>
+                <OutlineButton
+                  href="/research/publications"
+                  color="navy"
+                  className="h-14 w-full gap-2 border-[#0D3B66] text-[14px] lg:w-auto lg:gap-5 lg:border-[1.5px] lg:border-[#1E293B] lg:text-[16px]"
+                >
+                  View Publications
+                </OutlineButton>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="pointer-events-none absolute right-[30px] top-[145px] hidden h-[280px] w-[285px] lg:block">
+        <div className="pointer-events-none absolute top-[145px] right-[30px] z-[15] hidden h-[280px] w-[285px] lg:block">
           <div className="absolute inset-0 rounded-full bg-white blur-[110px]" />
-          <div className="relative mx-auto h-[267px] w-[229px]">
+          <div className="absolute top-1/2 left-1/2 h-[267px] w-[229px] -translate-x-1/2 -translate-y-1/2">
             <Image
               src="/images/research/research-africa.png"
               alt=""
@@ -89,26 +97,27 @@ export default function ResearchHero() {
             alt=""
             width={46}
             height={46}
-            className="absolute left-[211px] top-[117px] h-[46px] w-[46px]"
+            className="absolute top-[117px] left-[211px] h-[46px] w-[46px]"
           />
         </div>
 
-        <PhilosophyCard className="pointer-events-auto absolute right-[80px] top-[338px] z-20 hidden lg:flex lg:flex-col" />
+        <PhilosophyCard className="pointer-events-auto absolute top-[338px] right-[80px] z-20 hidden lg:flex lg:flex-col" />
 
-        <div className="relative z-10 mx-auto mt-10 max-w-[1440px] px-5 pb-10 sm:px-8 lg:hidden">
+        <div className="relative z-10 mx-auto mt-8 w-full max-w-[1440px] px-5 pb-10 sm:px-8 lg:hidden">
           <div className="relative h-[270px] w-full overflow-hidden rounded-[24px] bg-white">
-            <div className="absolute right-0 top-1 h-[266px] w-[min(100%,374px)] overflow-hidden">
+            <div className="absolute top-1 right-0 h-[266px] w-[min(374px,100%)] overflow-hidden">
               <Image
                 src="/images/research/research-hero.png"
                 alt="ACRIDC researcher examining a sample through a microscope"
-                fill
-                sizes="374px"
+                width={1536}
+                height={1024}
                 quality={100}
                 unoptimized
-                className="object-cover object-[88%_center]"
+                className="absolute max-w-none"
+                style={{ width: 450, height: 300, left: -12, top: -32 }}
               />
             </div>
-            <PhilosophyCard compact className="absolute left-5 top-1/2 z-10 -translate-y-1/2" />
+            <PhilosophyCard compact className="absolute top-1/2 left-5 z-10 -translate-y-1/2" />
           </div>
         </div>
       </div>

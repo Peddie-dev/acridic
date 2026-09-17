@@ -18,11 +18,15 @@ export default function ResearchPage() {
     <>
       <Navbar />
       <main className="relative z-0 overflow-x-clip bg-[#F8FAFC]">
-        <ResearchHero />
-        <ResearchApproach />
-        <ResearchMethodology />
-        <ResearchImpactStats />
-        <ResearchPrinciples />
+        <div className="research-overview">
+          <div className="research-overview-stage">
+            <ResearchHero />
+            <ResearchApproach />
+            <ResearchMethodology />
+            <ResearchImpactStats />
+            <ResearchPrinciples />
+          </div>
+        </div>
         <Footer />
       </main>
     </>
