@@ -76,6 +76,12 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .research-areas-hero {
+    margin-top: -128px;
+  }
+}
+
 /* Desktop hero: keep the Figma 1440×1024 composition; scale it below 1440 */
 .hero-section {
   --hero-scale: 1;
