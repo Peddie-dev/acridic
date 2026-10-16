@@ -7,7 +7,7 @@ export default function EvidenceToChange() {
       <div className="mx-auto grid max-w-[1247px] grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
           <Image
-            src="/images/evidence-to-change.jpg"
+            src="/images/evidence-to-change.png"
             alt="Research reports on a desk"
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"

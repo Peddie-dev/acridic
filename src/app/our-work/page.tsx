@@ -5,7 +5,6 @@ import FocusAreas from "@/components/our-work/FocusAreas";
 import EvidenceToChange from "@/components/our-work/EvidenceToChange";
 import WorkInPractice from "@/components/our-work/WorkInPractice";
 import CollaborateBanner from "@/components/our-work/CollaborateBanner";
-import BuildTogether from "@/components/our-work/BuildTogether";
 
 export const metadata: Metadata = {
   title: "Our Work | ACRIDC-Africa",
@@ -22,7 +21,7 @@ export default function OurWorkPage() {
       <EvidenceToChange />
       <WorkInPractice />
       <CollaborateBanner />
-      <BuildTogether />
+      
     </>
   );
 }

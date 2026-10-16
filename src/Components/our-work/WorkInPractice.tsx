@@ -8,7 +8,7 @@ const PROJECTS = [
     title: "Digital Agriculture",
     description:
       "Improving farmer productivity and market access through innovation.",
-    image: "/images/work-agriculture.jpg",
+    image: "/images/work-agriculture.png",
     href: "/our-work/digital-agriculture",
   },
   {
@@ -16,7 +16,7 @@ const PROJECTS = [
     title: "Health Systems Strengthening",
     description:
       "Building resilient healthcare systems through research and evidence.",
-    image: "/images/work-health.jpg",
+    image: "/images/work-health.png",
     href: "/our-work/health-systems-strengthening",
   },
   {
@@ -24,7 +24,7 @@ const PROJECTS = [
     title: "Climate Resilience",
     description:
       "Supporting sustainable solutions for communities and ecosystems.",
-    image: "/images/work-climate.jpg",
+    image: "/images/work-climate.png",
     href: "/our-work/climate-resilience",
   },
 ];
