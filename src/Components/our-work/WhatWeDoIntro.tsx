@@ -21,13 +21,13 @@ const PILLARS: { icon: LucideIcon; title: string; description: string }[] = [
 export default function WhatWeDoIntro() {
   return (
     <section className="bg-white px-4 py-16 sm:px-6 lg:py-20">
-      <div className="mx-auto grid max-w-[1247px] grid-cols-1 items-center gap-10 lg:grid-cols-[1fr_1.2fr]">
+      <div className="mx-auto grid lg:w-[min(1247px,86.6vw)] grid-cols-1 items-center gap-10 lg:grid-cols-[1fr_1.2fr]">
         <div>
           <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-[color:var(--emerald)]">
             <span>•</span>
             What We Do
           </span>
-          <h2 className="mt-4 max-w-sm text-3xl font-extrabold leading-[1.15] tracking-tight text-[color:var(--heading)] sm:text-4xl">
+          <h2 className="mt-4 max-w-sm text-3xl font-bold leading-[1.15] tracking-tight text-[color:var(--heading)] sm:text-4xl">
             Turning Knowledge Into Real Change.
           </h2>
           <p className="mt-4 max-w-sm text-base leading-relaxed text-[color:var(--body)]">

@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 export default function CollaborateBanner() {
   return (
     <section className="px-4 py-12 sm:px-6 lg:py-16">
-      <div className="relative isolate mx-auto max-w-[1247px] overflow-hidden rounded-2xl bg-[#0E3D20] px-6 py-10 text-white shadow-xl shadow-emerald-950/10 sm:px-10 lg:px-12 lg:py-12">
+      <div className="relative isolate mx-auto lg:w-[min(1247px,86.6vw)] overflow-hidden rounded-2xl bg-[#0E3D20] px-6 py-10 text-white shadow-xl shadow-emerald-950/10 sm:px-10 lg:px-12 lg:py-12">
         <div className="absolute inset-0 -z-10">
           <Image
             src="/images/collaborate-bg.png"

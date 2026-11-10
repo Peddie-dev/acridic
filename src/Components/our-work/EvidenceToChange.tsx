@@ -11,7 +11,7 @@ export default function EvidenceToChange() {
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(22,163,74,0.08),transparent_55%)]"
       />
 
-      <div className="relative mx-auto grid max-w-[1247px] grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,677px)_minmax(0,1fr)] lg:gap-[76px]">
+      <div className="relative mx-auto grid lg:w-[min(1247px,86.6vw)] grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,677px)_minmax(0,1fr)] lg:gap-[76px]">
         {/* Image with translucent caption panel */}
         <div className="relative aspect-[677/484] w-full overflow-hidden rounded-lg shadow-sm">
           <Image

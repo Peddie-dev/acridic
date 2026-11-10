@@ -32,7 +32,7 @@ const PROJECTS = [
 export default function WorkInPractice() {
   return (
     <section id="projects" className="px-4 py-14 sm:px-6 lg:py-16">
-      <div className="relative mx-auto max-w-[1247px]">
+      <div className="relative mx-auto lg:w-[min(1247px,86.6vw)]">
         {/* Faint dotted Africa, top-right of the header */}
         <div
           aria-hidden

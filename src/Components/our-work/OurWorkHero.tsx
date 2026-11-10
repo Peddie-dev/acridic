@@ -17,7 +17,7 @@ export default function OurWorkHero() {
         />
       </div>
 
-      <div className="mx-auto max-w-[1247px] px-4 pb-20 pt-10 sm:px-6 lg:pb-24 lg:pt-36">
+      <div className="mx-auto px-4 pb-20 pt-10 sm:px-6 lg:w-[min(1247px,86.6vw)] lg:px-0 lg:pb-24 lg:pt-36">
         <nav
           aria-label="Breadcrumb"
           className="flex items-center gap-2 text-xs text-slate-600"
@@ -34,7 +34,7 @@ export default function OurWorkHero() {
           Our Work
         </span>
 
-        <h1 className="mt-4 text-4xl font-extrabold leading-[1.1] tracking-tight text-[color:var(--heading)] sm:text-[2.6rem]">
+        <h1 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight text-[color:var(--heading)] sm:text-[2.6rem]">
           Research That Creates
           <br />
           <span className="text-[color:var(--emerald)]">Lasting Impact.</span>
@@ -64,3 +64,4 @@ export default function OurWorkHero() {
     </section>
   );
 }
+

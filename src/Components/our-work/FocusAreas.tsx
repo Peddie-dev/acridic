@@ -82,14 +82,14 @@ const AREAS: Area[] = [
 export default function FocusAreas() {
   return (
     <section className="bg-white px-4 py-12 sm:px-6 lg:py-16">
-      <div className="mx-auto max-w-[1247px]">
+      <div className="mx-auto lg:w-[min(1247px,86.6vw)]">
         <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div>
             <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-[color:var(--emerald)]">
               <span>•</span>
               Focus Areas
             </span>
-            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[color:var(--heading)] sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-[color:var(--heading)] sm:text-4xl">
               Areas Where We Make a Difference.
             </h2>
           </div>
