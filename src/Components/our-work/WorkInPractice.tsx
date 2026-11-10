@@ -31,53 +31,53 @@ const PROJECTS = [
 
 export default function WorkInPractice() {
   return (
-    <section
-      id="projects"
-      className="relative overflow-hidden bg-white px-4 py-16 sm:px-6 lg:py-20"
-    >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-6 top-6 hidden aspect-[220/260] w-[140px] opacity-40 lg:block"
-      >
-        <Image
-          src="/images/dotted-africa.png"
-          alt=""
-          fill
-          sizes="140px"
-          className="object-contain"
-        />
-      </div>
-
+    <section id="projects" className="px-4 py-14 sm:px-6 lg:py-16">
       <div className="relative mx-auto max-w-[1247px]">
-        <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-emerald-600">
+        {/* Faint dotted Africa, top-right of the header */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute right-10 top-8 hidden aspect-square w-[130px] opacity-50 lg:block"
+        >
+          <Image
+            src="/images/dotted-africa.png"
+            alt=""
+            fill
+            sizes="130px"
+            className="object-contain"
+          />
+        </div>
+
+        <span className="relative flex items-center gap-2 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--emerald)]">
           <span>•</span>
           Selected Work
         </span>
-        <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+        <h2 className="relative mt-4 text-4xl font-bold tracking-tight text-[color:var(--heading)] sm:text-[2.6rem] sm:leading-tight">
           Our Work in Practice
         </h2>
-        <div className="mt-3 flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
-          <p className="text-sm text-slate-500">
+        <span className="relative mt-3 block h-0.5 w-12 bg-[color:var(--emerald)]" />
+
+        <div className="relative mt-5 flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
+          <p className="text-[15px] text-[color:var(--body)]">
             Explore selected projects demonstrating how research and
             collaboration create meaningful change.
           </p>
           <Link
             href="/what-we-do/projects"
-            className="flex shrink-0 items-center gap-1.5 text-sm font-medium text-emerald-700 hover:text-emerald-800"
+            className="flex shrink-0 items-center gap-1.5 text-[13px] font-semibold text-[color:var(--emerald)] hover:opacity-80"
           >
             View All Projects
             <ArrowRight size={14} />
           </Link>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {PROJECTS.map((project) => (
             <Link
               key={project.title}
               href={project.href}
-              className="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-100 transition-shadow hover:shadow-md"
+              className="group overflow-hidden rounded-[20px] bg-white shadow-sm shadow-slate-900/5 transition-shadow hover:shadow-md"
             >
-              <div className="relative h-44 w-full">
+              <div className="relative aspect-[308/183] w-full">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -85,19 +85,19 @@ export default function WorkInPractice() {
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <span className="absolute bottom-3 left-3 rounded-md bg-white/90 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-emerald-700">
+                <span className="absolute bottom-3 left-3 rounded-md bg-emerald-50 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-[color:var(--emerald)]">
                   {project.tag}
                 </span>
               </div>
               <div className="p-5">
-                <h3 className="text-base font-semibold text-slate-900">
+                <h3 className="text-[17px] font-semibold text-[color:var(--heading)]">
                   {project.title}
                 </h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-slate-500">
+                <p className="mt-2 min-h-[44px] text-[15px] leading-relaxed text-[color:var(--body)]">
                   {project.description}
                 </p>
-                <span className="mt-4 flex h-9 w-9 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 transition-transform group-hover:translate-x-1">
-                  <ArrowRight size={16} />
+                <span className="mt-4 flex h-11 w-11 items-center justify-center rounded-full bg-emerald-100 text-[color:var(--emerald)] transition-transform group-hover:translate-x-1">
+                  <ArrowRight size={18} />
                 </span>
               </div>
             </Link>
@@ -107,3 +107,4 @@ export default function WorkInPractice() {
     </section>
   );
 }
+

@@ -26,7 +26,7 @@ const AREAS: Area[] = [
     title: "Agriculture & Food Systems",
     href: "/what-we-do/agriculture-food-systems",
     tile: "bg-emerald-50/70",
-    iconBg: "bg-emerald-100 text-emerald-600",
+    iconBg: "bg-emerald-100 text-[color:var(--emerald)]",
   },
   {
     icon: TrendingUp,
@@ -47,7 +47,7 @@ const AREAS: Area[] = [
     title: "Environment & Natural Resources",
     href: "/what-we-do/environment-natural-resources",
     tile: "bg-emerald-50/70",
-    iconBg: "bg-emerald-100 text-emerald-600",
+    iconBg: "bg-emerald-100 text-[color:var(--emerald)]",
   },
   {
     icon: Heart,
@@ -85,17 +85,17 @@ export default function FocusAreas() {
       <div className="mx-auto max-w-[1247px]">
         <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div>
-            <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-emerald-600">
+            <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-[color:var(--emerald)]">
               <span>•</span>
               Focus Areas
             </span>
-            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[color:var(--heading)] sm:text-4xl">
               Areas Where We Make a Difference.
             </h2>
           </div>
           <Link
             href="/research/case-studies"
-            className="flex items-center gap-1.5 text-sm font-medium text-emerald-700 hover:text-emerald-800"
+            className="flex items-center gap-1.5 text-sm font-medium text-[color:var(--emerald)] hover:opacity-80"
           >
             View All Case Studies
             <ArrowRight size={14} />
@@ -121,7 +121,7 @@ export default function FocusAreas() {
                 </span>
                 <ArrowRight
                   size={14}
-                  className="shrink-0 text-emerald-600 transition-transform group-hover:translate-x-1"
+                  className="shrink-0 text-[color:var(--emerald)] transition-transform group-hover:translate-x-1"
                 />
               </Link>
             );

@@ -4,48 +4,51 @@ import { ArrowRight } from "lucide-react";
 
 export default function CollaborateBanner() {
   return (
-    <section className="bg-white px-4 py-12 sm:px-6 lg:py-16">
-      <div className="relative isolate mx-auto max-w-[1247px] overflow-hidden rounded-3xl bg-[#0F3D26] px-6 py-10 text-white sm:px-10 lg:px-14 lg:py-14">
+    <section className="px-4 py-12 sm:px-6 lg:py-16">
+      <div className="relative isolate mx-auto max-w-[1247px] overflow-hidden rounded-2xl bg-[#0E3D20] px-6 py-10 text-white shadow-xl shadow-emerald-950/10 sm:px-10 lg:px-12 lg:py-12">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/images/collaborate-bg.jpg"
+            src="/images/collaborate-bg.png"
             alt=""
             fill
             sizes="1247px"
-            className="object-cover opacity-40"
+            className="object-cover object-right"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0F3D26] via-[#0F3D26]/85 to-[#0F3D26]/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0E3D20]/95 via-[#0E3D20]/80 to-[#0E3D20]/55" />
         </div>
 
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[1fr_auto]">
           <div>
-            <span className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-wide text-emerald-300">
-              <span>•</span>
-              Let&apos;s Collaborate
+            <span className="flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.14em] text-white/85">
+              <span className="text-[color:var(--emerald)]">•</span>
+              Let’s Collaborate
             </span>
-            <h2 className="mt-3 max-w-lg text-2xl font-bold leading-snug sm:text-3xl">
+
+            <h2 className="mt-4 text-2xl font-semibold leading-snug sm:text-[26px]">
               Every Success Story Begins With Evidence
             </h2>
-            <p className="mt-3 max-w-md text-sm leading-relaxed text-white/70">
+
+            <p className="mt-4 max-w-[480px] text-sm leading-relaxed text-white/80">
               Explore how research is transforming communities, influencing
               policy, and creating sustainable development across Africa.
             </p>
+
             <Link
               href="/partner-with-us"
-              className="mt-6 inline-flex items-center gap-2 whitespace-nowrap rounded-lg bg-white px-5 py-2.5 text-sm font-medium text-slate-900 transition-colors hover:bg-emerald-50"
+              className="mt-7 inline-flex items-center gap-2.5 whitespace-nowrap rounded-lg bg-white px-6 py-3 text-sm font-medium text-[color:var(--emerald)] transition-colors hover:bg-emerald-50"
             >
               Become a Partner
-              <ArrowRight size={14} />
+              <ArrowRight size={16} />
             </Link>
           </div>
 
-          <ul className="flex flex-col gap-3 text-sm font-medium uppercase tracking-wide lg:pr-6">
-            <li className="text-emerald-300">Research</li>
+          <ul className="flex flex-col gap-3.5 text-sm font-medium uppercase tracking-[0.12em]">
+            <li className="text-[color:var(--emerald)]">Research</li>
+            <li className="text-white">Collaborate</li>
             <li className="text-white">
-              Collaborate
-              <span className="mt-1 block h-px w-8 bg-emerald-400" />
+              Transform
+              <span className="mt-3 block h-0.5 w-6 bg-[color:var(--emerald)]" />
             </li>
-            <li className="text-emerald-300">Transform</li>
           </ul>
         </div>
       </div>

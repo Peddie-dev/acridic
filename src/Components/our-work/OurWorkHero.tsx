@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 
 export default function OurWorkHero() {
   return (
-    <section className="relative isolate overflow-hidden rounded-b-[40px] bg-white">
+    <section className="relative isolate min-h-[560px] overflow-hidden rounded-b-[40px] bg-white lg:-mt-[128px] lg:min-h-[677px]">
+      {/* Full hero composition (photo, faint Africa map and fade are all in the image) */}
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/our-work-hero.png"
@@ -12,46 +13,49 @@ export default function OurWorkHero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-right"
+          className="object-cover object-center"
         />
-        <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-r from-white via-white/80 to-transparent lg:w-3/5" />
       </div>
 
-      <div className="mx-auto max-w-[1247px] px-4 pb-20 pt-36 sm:px-6 lg:pb-28 lg:pt-44">
-        <nav aria-label="Breadcrumb" className="text-xs text-slate-500">
-          <Link href="/" className="hover:text-emerald-600">
+      <div className="mx-auto max-w-[1247px] px-4 pb-20 pt-10 sm:px-6 lg:pb-24 lg:pt-36">
+        <nav
+          aria-label="Breadcrumb"
+          className="flex items-center gap-2 text-xs text-slate-600"
+        >
+          <Link href="/" className="hover:text-[color:var(--emerald)]">
             Home
           </Link>
-          <span className="mx-2 text-slate-300">›</span>
-          <span className="font-medium text-emerald-600">Our Work</span>
+          <ChevronRight size={12} className="text-slate-400" />
+          <span className="font-medium text-[color:var(--emerald)]">Our Work</span>
         </nav>
 
-        <span className="mt-8 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-emerald-600">
+        <span className="mt-10 flex items-center gap-2 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--emerald)]">
           <span>•</span>
           Our Work
         </span>
 
-        <h1 className="mt-4 max-w-lg text-4xl font-extrabold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl">
-          Research That Creates{" "}
-          <span className="text-emerald-600">Lasting Impact.</span>
+        <h1 className="mt-4 text-4xl font-extrabold leading-[1.1] tracking-tight text-[color:var(--heading)] sm:text-[2.6rem]">
+          Research That Creates
+          <br />
+          <span className="text-[color:var(--emerald)]">Lasting Impact.</span>
         </h1>
 
-        <p className="mt-5 max-w-md text-base leading-relaxed text-slate-500">
+        <p className="mt-6 max-w-sm text-[15px] leading-relaxed text-slate-600">
           We combine research, collaboration, and expertise to address
           Africa&apos;s most pressing development challenges.
         </p>
 
-        <div className="mt-8 flex flex-wrap items-center gap-3">
+        <div className="mt-9 flex flex-wrap items-center gap-4">
           <Link
             href="/our-work#projects"
-            className="flex items-center gap-2 whitespace-nowrap rounded-full bg-emerald-600 px-6 py-3 text-[15px] font-medium text-white transition-colors hover:bg-emerald-700"
+            className="flex items-center gap-2 whitespace-nowrap rounded-xl bg-[color:var(--emerald)] px-6 py-3 text-sm font-semibold text-white transition-colors hover:brightness-90"
           >
             Explore Our Projects
             <ArrowRight size={16} />
           </Link>
           <Link
             href="/contact"
-            className="whitespace-nowrap rounded-full border border-slate-300 bg-white/70 px-6 py-3 text-[15px] font-medium text-slate-800 backdrop-blur transition-colors hover:bg-white"
+            className="whitespace-nowrap rounded-xl border border-slate-600/40 bg-white/50 px-6 py-3 text-sm font-semibold text-slate-800 backdrop-blur transition-colors hover:bg-white"
           >
             Contact Us
           </Link>
